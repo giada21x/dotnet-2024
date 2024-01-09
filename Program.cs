@@ -1,12 +1,15 @@
-﻿class Program
+﻿
+class Program 
     {
         static void Main(string[] args)
         {
-            string nome = "Giada";
-            string cognome = "Adamo";
-            Console.WriteLine($"Ciao {nome} {cognome}");
-            Console.WriteLine("Ciao " + nome + " " + cognome);
+            int a = 10;
+            int b = 20;
+            decimal c = 1.5m;
+            decimal d = a + b + c;
+            Console.WriteLine($"La somma di {a} e {b} e {c} è {d} "); 
+       }
+    } 
     
-        }
-     }
+    
     

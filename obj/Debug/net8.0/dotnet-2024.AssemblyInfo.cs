@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("dotnet-2024")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+01ca8a175cc07f62d8fb5a13159aac533eafe696")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8c415da5f12c788ccaba758e5f6489654dd0bfe8")]
 [assembly: System.Reflection.AssemblyProductAttribute("dotnet-2024")]
 [assembly: System.Reflection.AssemblyTitleAttribute("dotnet-2024")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
