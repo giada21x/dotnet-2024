@@ -1,14 +1,13 @@
-﻿
-class Program 
+﻿class Program 
     {
         static void Main(string[] args)
         {
-            string nome = "Mario";
-            string cognome = "Rossi";
-            bool uguali = nome == cognome;
-            Console.WriteLine($"I due nomi sono uguali? {uguali}"); 
+            int a = 10;
+            int b = 20;
+            bool maggiore = a > b;
+            Console.WriteLine($"Il primo numero è maggiore del secondo? {maggiore}"); 
        }
-    }  
+    }       
     
     
     
