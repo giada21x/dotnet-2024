@@ -1,14 +1,14 @@
-﻿class Program 
-    {
+﻿ class Program
+ {
         static void Main(string[] args)
          {
-            Stack<string> nomi = new Stack<string>(); 
-            nomi.Push("Mario"); 
-            nomi.Push("Luigi"); 
-            nomi.Push("Giovanni"); 
-            Console.WriteLine($"Ciao {nomi.Pop()}, {nomi.Pop()}, {nomi.Pop()}");
+            Queue<string> nomi = new Queue<string>(); 
+            nomi.Enqueue("Mario"); 
+            nomi.Enqueue("Luigi"); 
+            nomi.Enqueue("Giovanni"); 
+            Console.WriteLine($"Ciao {nomi.Dequeue()}, {nomi.Dequeue()}, {nomi.Dequeue()}");
          }
-    }
+    } 
   
     
     
