@@ -1,14 +1,14 @@
-﻿    class Program 
+﻿  class Program 
     {
         static void Main(string[] args)
         {
-            string[] nomi = new string[3];
-            nomi[0] =  "Mario";
-            nomi[1] = "Luigi";
-            nomi[2] = "Giovanni";
-            Console.WriteLine($"Ciao {nomi[0]}, {nomi[1]}, {nomi[2]}");
-        }
-    }       
+            int[] numeri = new int[3]; 
+            numeri[0] = 10; 
+            numeri[1] = 20; 
+            numeri[2] = 30;
+            Console.WriteLine($"I numeri sono {numeri[0]}, {numeri[1]}, {numeri[2]}");
+       }
+    }  
       
          
     
