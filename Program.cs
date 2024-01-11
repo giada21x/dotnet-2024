@@ -2,15 +2,13 @@
     {
         static void Main(string[] args)
          {
-            List<string> nomi = new List<string>(); 
-            nomi.Add("Mario"); 
-            nomi.Add("Luigi"); 
-            nomi.Add("Giovanni"); 
-            Console.WriteLine($"Ciao {nomi[0]}, {nomi[1]}, {nomi[2]}");
-            Console.WriteLine($"Il numero di elementi è {nomi.Count}");
+            Stack<string> nomi = new Stack<string>(); 
+            nomi.Push("Mario"); 
+            nomi.Push("Luigi"); 
+            nomi.Push("Giovanni"); 
+            Console.WriteLine($"Ciao {nomi.Pop()}, {nomi.Pop()}, {nomi.Pop()}");
          }
-    } 
-      
+    }
   
     
     
