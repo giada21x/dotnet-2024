@@ -1,17 +1,15 @@
-﻿class Program 
+﻿    class Program 
     {
         static void Main(string[] args)
         {
-            int a = 10;
-            int b = 20;
-            bool maggiore = a > b;
-            bool minore = a < b;
-            bool uguale = a == b;
-            Console.WriteLine($"Il primo numero è maggiore del secndoo? {maggiore}"); 
-            Console.WriteLine($"Il primo numero è maggiore del secndoo? {minore}"); 
-            Console.WriteLine($"Il primo numero è maggiore del secndoo? {uguale}");
-       }
-    }     
+            string[] nomi = new string[3];
+            nomi[0] =  "Mario";
+            nomi[1] = "Luigi";
+            nomi[2] = "Giovanni";
+            Console.WriteLine($"Ciao {nomi[0]}, {nomi[1]}, {nomi[2]}");
+        }
+    }       
+      
          
     
     
