@@ -2,12 +2,17 @@
 {
     static void Main(string[] args)
     {
-        for (int i = 0; i < 10; i++)
+        string[] nomi = new string[3];
+        nomi[0] = "Mario";
+        nomi[1] = "Luigi";
+        nomi[2] = "Giovanni"; 
+        //string[] nomi = new string[] {"Mario", "Luigi", "Giovanni"};
+        foreach (string nome in nomi)
         {
-            Console.WriteLine($"Il valore di i è {i}");
-        }    
+            Console.WriteLine($"Ciao {nome}");
+        }
     }
-}
+} 
 
     
     
