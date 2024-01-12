@@ -2,14 +2,10 @@
 {
     static void Main(string[] args)
     {
-        Dictionary<string, int> eta = new Dictionary<string, int>
+        for (int i = 0; i < 10; i++)
         {
-            {"Mario", 25},
-            {"Luigi", 30},
-            {"Giovanni", 35}
-        };
-            Console.WriteLine($"L'età dei tre ragazzi è {eta["Mario"]} {eta["Luigi"]} e {eta["Giovanni"]}");
-        
+            Console.WriteLine($"Il valore di i è {i}");
+        }    
     }
 }
 
