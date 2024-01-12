@@ -1,24 +1,22 @@
-﻿class Program 
+﻿ class Program 
 {
     static void Main(string[] args)
     {
         int a = 10;
         int b = 20;
-        if (a > b) //la condizione da verificare si scrive tra parentesi
+        switch (a)
         {
-            Console.WriteLine($"{a} è maggiore di {b}");
-        } 
-        else  
-        {
-            Console.WriteLine($"{a} è uguale a {b}");
+            case 10:
+                Console.WriteLine($"{a} è uguale a 10");
+                break;
+            case 20:
+                Console.WriteLine($"{a} è uguale a 20"); 
+                break;
+            default:
+                Console.WriteLine($"{a} non è uguale a 10 o 20");
+                break;
         }
-        else if (a < b)
-        {
-            Console.WriteLine($"{a} è minore di {b}");
-        }    
-        
     }
 }
-    
     
     
