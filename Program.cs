@@ -1,15 +1,16 @@
-﻿ class Program
- {
-        static void Main(string[] args)
-         {
-            Queue<string> nomi = new Queue<string>(); 
-            nomi.Enqueue("Mario"); 
-            nomi.Enqueue("Luigi"); 
-            nomi.Enqueue("Giovanni"); 
-            Console.WriteLine($"Ciao {nomi.Dequeue()}, {nomi.Dequeue()}, {nomi.Dequeue()}");
-         }
-    } 
-  
+﻿class Program 
+{
+    static void Main(string[] args)
+    {
+        int a = 10;
+        int b = 20;
+        if (a > b) //la condizione da  verificare si scrive tra parentesi
+        {
+            Console.WriteLine($"{a} è maggiore di {b}");
+        }
+    }
+}
+        
     
     
     
