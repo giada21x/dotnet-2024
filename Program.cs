@@ -1,18 +1,20 @@
-﻿//
-
-class Program
+﻿class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Premi 'N' per terminare...");
+        Console.WriteLine("Premi 'Ctrl' + 'N' per terminare...");
 
-        //ciclo che continua fino a quando viene premuto il tasto 'N'
+        
         while (true)
         {
-            ConsoleKeyInfo keyInfo = Console.ReadKey();
-            if (keyInfo.Key == ConsoleKey.N)
+            ConsoleKeyInfo keyInfo = Console.ReadKey(true);
+            if ((keyInfo.Modifiers & ConsoleModifiers.Control) != 0)
             {
-                break; //esce dal ciclo se viene premuto 'N'
+                if (keyInfo.Key == ConsoleKey.N)
+                {
+                    Console.WriteLine("Combinazione 'Ctrl' + 'N' rilevata, uscita in corso ...");
+                    break;
+                }
             }
         }
     }
