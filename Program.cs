@@ -2,39 +2,39 @@
 {
     static void Main(string[] args)
     {
-        while(true)
-        { 
-            Console.Clear(); //pulisce la console ad ogni iterazione
-            Console.WriteLine("Menù di sselezione");
-            Console.WriteLine("1. Opzione Uno");
-            Console.WriteLine("2. Opzione Due");
-            Console.WriteLine("3. Opzione Tre");
-            Console.WriteLine("4, Esci");
 
-            Console.WriteLine("Inserisci il numero dell'opzione desiderata");
+        Console.WriteLine("Inserisci un comando speciale (esempio: 'cmd:info' , 'cmd:exit')");
+
+        while (true)
+        {
             string input = Console.ReadLine();
-
-            switch (input)
+            //analizzare l'input per vedere se segue un formato specifico
+            if (input.StartsWith("cmd:"))
             {
-                case "1":
-                    Console.WriteLine("Hai selezionato l'Opzione Uno" );
-                    break;
-                case "2":
-                    Console.WriteLine("Hai scelto l'Opzione Due");
-                    break;
-                case "3":
-                    Console.WriteLine("Hai scelto l'Opzione Tre");
-                    break;
-                case "4":
-                    Console.WriteLine("Uscita in corso...");
-                    return;
-                default:
-                    Console.WriteLine("selezione non valida. Riprova.");
-                    break;
+                string comando = input.Substring(4); //estrae la parte del comando dopo "cmd:"
 
+                switch (comando.ToLower())
+                {
+                    case "info":
+                        Console.WriteLine("Comando 'info' riconosciuto. Mostrando le informazioni...");
+                        //aggiungi qui la logica per mostrare le informazioni
+                        break;
+                    case "exit":
+                        Console.WriteLine("Comando 'exit' riconosciuto. Uscita in corso...");
+                        return; //esce dal programma
+                    default:
+                        Console.WriteLine($"Comando '{comando}' non riconosciuto.");
+                        break;
 
+                }
             }
+            else
+            {
+                Console.WriteLine("Input non valido. Inserici un comando");
+            }
+
+            Console.WriteLine("\nInserisci un altro comando");
+
         }
-          
     }
 }
