@@ -1,20 +1,19 @@
-﻿// using System;
-// using System.Collections.Generic;
+﻿//
+
 class Program
 {
     static void Main(string[] args)
     {
-        List<string> nomi = new List<string>();
-        nomi.Add("Mario");
-        nomi.Add("Luigi");
-        nomi.Add("Giovanni");
-        // List<string> nomi = new List<string> { "Mario", "Luigi", "Giovanni" };
+        Console.WriteLine("Premi 'N' per terminare...");
 
-        int i = 0; // Indice inizializzato a 0
-        while (i < nomi.Count) // Il ciclo continua finché l'indice è minore del numero di elementi nella lista
+        //ciclo che continua fino a quando viene premuto il tasto 'N'
+        while (true)
         {
-            Console.WriteLine($"Ciao {nomi[i]}");
-            i++; // Incremento dell'indice
+            ConsoleKeyInfo keyInfo = Console.ReadKey();
+            if (keyInfo.Key == ConsoleKey.N)
+            {
+                break; //esce dal ciclo se viene premuto 'N'
+            }
         }
     }
 }
