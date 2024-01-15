@@ -1,15 +1,17 @@
-﻿class Program
+﻿// using System;
+// using System.Collections.Generic;
+class Program
 {
     static void Main(string[] args)
     {
-        string[] nomi = new string[3];
-        nomi[0] = "Mario";
-        nomi[1] = "Luigi";
-        nomi[2] = "Giovanni";
-        // string[] nomi = new string[] { "Mario", "Luigi", "Giovanni" };
+        List<string> nomi = new List<string>();
+        nomi.Add("Mario");
+        nomi.Add("Luigi");
+        nomi.Add("Giovanni");
+        // List<string> nomi = new List<string> { "Mario", "Luigi", "Giovanni" };
 
-        int i = 0; // Variabile indice inizializzata a 0
-        while (i < nomi.Length) // Il ciclo continua finché l'indice è minore della lunghezza dell'array
+        int i = 0; // Indice inizializzato a 0
+        while (i < nomi.Count) // Il ciclo continua finché l'indice è minore del numero di elementi nella lista
         {
             Console.WriteLine($"Ciao {nomi[i]}");
             i++; // Incremento dell'indice
