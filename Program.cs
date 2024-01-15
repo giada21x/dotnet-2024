@@ -2,20 +2,39 @@
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Premi 'Ctrl' + 'N' per terminare...");
+        while(true)
+        { 
+            Console.Clear(); //pulisce la console ad ogni iterazione
+            Console.WriteLine("Menù di sselezione");
+            Console.WriteLine("1. Opzione Uno");
+            Console.WriteLine("2. Opzione Due");
+            Console.WriteLine("3. Opzione Tre");
+            Console.WriteLine("4, Esci");
 
-        
-        while (true)
-        {
-            ConsoleKeyInfo keyInfo = Console.ReadKey(true);
-            if ((keyInfo.Modifiers & ConsoleModifiers.Control) != 0)
+            Console.WriteLine("Inserisci il numero dell'opzione desiderata");
+            string input = Console.ReadLine();
+
+            switch (input)
             {
-                if (keyInfo.Key == ConsoleKey.N)
-                {
-                    Console.WriteLine("Combinazione 'Ctrl' + 'N' rilevata, uscita in corso ...");
+                case "1":
+                    Console.WriteLine("Hai selezionato l'Opzione Uno" );
                     break;
-                }
+                case "2":
+                    Console.WriteLine("Hai scelto l'Opzione Due");
+                    break;
+                case "3":
+                    Console.WriteLine("Hai scelto l'Opzione Tre");
+                    break;
+                case "4":
+                    Console.WriteLine("Uscita in corso...");
+                    return;
+                default:
+                    Console.WriteLine("selezione non valida. Riprova.");
+                    break;
+
+
             }
         }
+          
     }
 }
