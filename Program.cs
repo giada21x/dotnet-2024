@@ -4,10 +4,10 @@
     {
 
         Console.WriteLine("Inserisci un comando speciale (esempio: 'cmd:info' , 'cmd:exit')");
-
+        string nome = "Giada";
         while (true)
         {
-            string input = Console.ReadLine();
+            string? input = Console.ReadLine();
             //analizzare l'input per vedere se segue un formato specifico
             if (input.StartsWith("cmd:"))
             {
@@ -17,6 +17,10 @@
                 {
                     case "info":
                         Console.WriteLine("Comando 'info' riconosciuto. Mostrando le informazioni...");
+                        //aggiungi qui la logica per mostrare le informazioni
+                        break;
+                    case "nome":
+                        Console.WriteLine($"Ciao {nome}");
                         //aggiungi qui la logica per mostrare le informazioni
                         break;
                     case "exit":
