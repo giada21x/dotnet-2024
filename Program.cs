@@ -1,98 +1,59 @@
-<<<<<<< HEAD
-﻿using System.ComponentModel;
-using System.Drawing;
-using System.Runtime.CompilerServices;
+﻿
 
 class Program
 {
     static void Main(string[] args)
     {
-        
-        List<int> listaFizzBuzz = new List<int>();
-        List<int> listaFizz = new List<int>();
-        List<int> listaBuzz = new List<int>();
-        
-        for (int i = 0; i < 10; i++)
+        Random random = new Random();
+        List<string> fizzbuzz = new List<string>();
+        List<string> fizz = new List<string>();
+        List<string> buzz = new List<string>();
+        List<string> numero = new List<string>();
+        Console.WriteLine("I numeri usciti sono:");
+        for (int i = 1; i <= 100; i++)
         {
-            
-            if((i % 5 == 0) & (i % 3 == 0) )
+            int numeroCasuale = random.Next(1, 101);
+            Console.Write($"{numeroCasuale}, ");
+            if (numeroCasuale % 3 == 0 && numeroCasuale % 5 == 0)
             {
-                listaFizzBuzz.Add(i);
-                Console.WriteLine($"{i} = Fizz-Buzz");
-                
-                
-                
-                
+                // aggiungi il numero alla lista fizzbuzz
+                fizzbuzz.Add(numeroCasuale.ToString());
             }
-            else if(i % 5 == 0)
+            else if (numeroCasuale % 3 == 0)
             {
-                listaFizz.Add(i);
-                Console.WriteLine($"{i} = Fizz");
-                
-                
-                
-                
-
+                // aggiungi il numero alla lista fizz
+                fizz.Add(numeroCasuale.ToString());
             }
-            else if (i % 3 == 0)
+            else if (numeroCasuale % 5 == 0)
             {
-                listaBuzz.Add(i);
-                Console.WriteLine($"{i} = Buzz");
-                
-                
+                // aggiungi il numero alla lista buzz
+                buzz.Add(numeroCasuale.ToString());
             }
             else
             {
-                
-                Console.WriteLine($"{i} non divisibile");
-                
+                // aggiungi il numero alla lista numero
+                numero.Add(numeroCasuale.ToString());
             }
-            Console.WriteLine($"");
-            
-        
-            
-        
-            Thread.Sleep(300);
-            
-            
-            
-        }  
-        Console.WriteLine("Questa è la lista FizzBuzz");
-        foreach (int nuovo in listaFizzBuzz)
-        {
-            Console.WriteLine($"{nuovo}");
-            
+            Thread.Sleep(30);
         }
-        Console.WriteLine("Questa è la lista Fizz");
-        foreach (int nuovo in listaFizz)
+        Console.WriteLine();
+        Console.WriteLine();
+        Console.WriteLine($"I numeri FizzBuzz sono {fizzbuzz.Count} ed i numeri contenuti sono:");
+        foreach (string item in fizzbuzz)
         {
-            Console.WriteLine($"{nuovo}");
-            
+            Console.Write($"{item}, ");
         }
-        Console.WriteLine("Questa è la lista Buzz");
-       foreach (int nuovo in listaBuzz)
-        {
-            Console.WriteLine($"{nuovo}");
-            
-        }
-        
-            
-            
-           
-    
-            
-       
-=======
-﻿class Program
-{
-    static void Main(string[] args)
-    {
-        string[] nomi = ["Mario", "Luigi", "Giovanni"]; //array di stringhe 
-        Random random = new Random(); //oggetto per generare numeri casuali in questo caso tra 0 e 2 
-        int indice = random.Next(0, 3); //random.next è un metodo della classe Random
-        Console.WriteLine($"Il nome selezionato è {nomi[indice]}");//stampa il nome sorteggiato
-        
->>>>>>> 07cd73db9f5018094edc2a642ec93fea5cd6e696
+        Console.WriteLine();
+        Console.WriteLine();
+        Console.WriteLine($"I numeri Fizz sono {fizz.Count} ed i numeri contenuti sono {string.Join(", ", fizz)}");
+        Console.WriteLine();
+        Console.WriteLine($"I numeri Buzz sono {buzz.Count} ed i numeri contenuti sono {string.Join(", ", buzz)}");
+        Console.WriteLine();
+        Console.WriteLine($"I numeri sono {numero.Count} ed i numeri contenuti sono {string.Join(", ", numero)}");
+
+
+
+
     }
 }
 
