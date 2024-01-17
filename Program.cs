@@ -2,14 +2,47 @@
 {
     static void Main(string[] args)
     {
-        string[] nomi = ["Mario", "Luigi", "Giovanni"]; //array di stringhe 
-        Random random = new Random(); //oggetto per generare numeri casuali in questo caso tra 0 e 2 
-        int indice = random.Next(0, 3); //random.next è un metodo della classe Random
-        Console.WriteLine($"Il nome selezionato è {nomi[indice]}");//stampa il nome sorteggiato
         
+        
+        for (int i = 0; i < 10; i++)
+        {
+            if((i % 5 == 0) & (i % 3 == 0) )
+            {
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine($"{i} = Fizz-Buzz");
+                
+            }
+            else if(i % 5 == 0)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine($"{i} = Fizz");
+                
+            }
+            else if (i % 3 == 0)
+            {
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                Console.WriteLine($"{i} = Buzz");
+                
+            }
+            else
+            {
+                Console.ForegroundColor = ConsoleColor.DarkYellow;
+                Console.WriteLine($"{i} non divisibile");
+            }
+            Thread.Sleep(300);
+        }  
+       
+
+       
+        
+            
+            
+           
+    
+            
+       
     }
 }
-
 
 
 
