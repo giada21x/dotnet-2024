@@ -1,39 +1,28 @@
-﻿using System.Runtime.ConstrainedExecution;
-
+﻿//questo programma genera 10 numeri casuali (da 1 a 10) e ne calcola la somma
 class Program
 {
     static void Main(string[] args)
     {
-        int timeoutInSeconds = 5; //inizialiazza il tempo di timeout
-        Console.WriteLine($"Inserisci un input entro {timeoutInSeconds} secondi");
-
-        bool inputReceived = false; //inizializza input come non ricevuto finchè non si verifica il Console.KeyAvailable
-        string? input = ""; //inizializza una variabile di tipo string chiamata input con una stringa vuota così puoi assegnare un valore a input all'interno del ciclo e poi accedere a quel valore anche al di fuori del ciclo (all'interno dell'intera funzione Main)
-        DateTime endTime = DateTime.Now.AddSeconds(timeoutInSeconds);//DateTime.now restuituisce l'ora corrente. il metodo AddSeconds(timeoutInseconds) aggiunge il numero specificato di secondi (in questo, il valore della variabile timeoutinseconds) all'ora corrente.Il risultato è un DateTime che rappresenta il momento esatto quando il tempo di attesa in scadenza.
-        while (DateTime.Now < endTime)//il ciclo while (DateTime.Now < endtime) continua a eseguirsi finchè l'ora corrente (Datetime.Now) è inferiore a endTime. Questo significa che il ciclo continuerà a girare per la durata specificata da timeoutInSeconds (5)
+        Random random = new Random(); //generatore di numeri casuali (creo la classe Random)
+        int somma = 0; //la somma inziale è zero
+        for (int i = 0; i < 10; i++) //definiamo la i(contatore) e gli diamo un valore iniziale di 0 e un valore massimo minore di 10 e lo andiamo a incrementare con ++
         {
-            if (Console.KeyAvailable) //viene utilizzato per verificare se è stato premuto un tasto, permettendo al programma di reagire immediatamente all'input dell'utente senza bloccare l'esecuzione.
-            {
-                input = Console.ReadLine();
-                inputReceived = true; //dato che il valore di input viene controlalto dopo il ciclo per dterminare se l'utente ha fornito con input, inizializzando con una stringa vuota si stabilice un valore di patenza noto. Se input rimane una stringa vuota dopo il ciclo, significa che l'utente non ha inserito alcun dato.
-                break;
-            }
-            Thread.Sleep(100);//piccola pausa per ridurre il carico dela CPU
-        }
-
-        if (inputReceived)
-        {
-            Console.WriteLine($"hai inserito: {input}");
+            int numero = random.Next(1, 11);//genera un numero casuale tra 1 e 10, si dice che l'intervallo è [1, 10) cioè l'intervallo semiaperto 
+            somma += numero; //somma = somma + numero utilizzando operatore di assegnazione composto
+            Console.Write($"Il numero casuale è ");//utilizzo il Console.Write per non andare a capo
+            Console.ForegroundColor = ConsoleColor.DarkMagenta;
+            Console.WriteLine($"{numero}");
+            Console.ResetColor();//resettato il colore di default
             
         }
-        else
-        {
-            Console.WriteLine($"Tempo scaduto!");
-            
-        }
-
+        Console.Write($"La somma è ");
+        Console.ForegroundColor = ConsoleColor.DarkGreen;
+        Console.WriteLine($"{somma}");
+        
+        Console.ResetColor();
     }
 }
+
 
 
 
