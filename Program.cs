@@ -1,59 +1,67 @@
-﻿
+﻿//inseriamo un numero, inseriamo un secondo numero e mettiamo un'operazione //metodo console che mi chieda il primo numero //console secondo numero //console operazione //
+using System.Runtime.InteropServices;
 
 class Program
 {
     static void Main(string[] args)
     {
-        Random random = new Random();
-        List<string> fizzbuzz = new List<string>();
-        List<string> fizz = new List<string>();
-        List<string> buzz = new List<string>();
-        List<string> numero = new List<string>();
-        Console.WriteLine("I numeri usciti sono:");
-        for (int i = 1; i <= 100; i++)
+        bool continua = true;
+        do
         {
-            int numeroCasuale = random.Next(1, 101);
-            Console.Write($"{numeroCasuale}, ");
-            if (numeroCasuale % 3 == 0 && numeroCasuale % 5 == 0)
+            Console.WriteLine("Inserisci i due operandi: ");
+            int a = Int32.Parse(Console.ReadLine());
+            int b = Int32.Parse(Console.ReadLine());
+
+            Console.WriteLine("Scegli l'operazione:");
+
+            Console.WriteLine("1. Moltiplicazione ");
+            Console.WriteLine("2. Divisione ");
+            Console.WriteLine("3. Somma ");
+            Console.WriteLine("4. Sottrazione ");
+            Console.WriteLine("5. Uscita ");
+
+            int risultato = 0;
+
+            string input = Console.ReadLine();
+            switch (input)
             {
-                // aggiungi il numero alla lista fizzbuzz
-                fizzbuzz.Add(numeroCasuale.ToString());
+
+                case "1":
+
+
+                    risultato = a * b;
+                    Console.WriteLine($"Il risultato della moltiplicazione è: {risultato}");
+                    break;
+                case "2":
+
+
+                    risultato = a / b;
+                    Console.WriteLine($"Il risultato della divisione è: {risultato}");
+                    break;
+                case "3":
+
+
+                    risultato = a + b;
+                    Console.WriteLine($"Il risultato della somma è: {risultato}");
+                    break;
+                case "4":
+
+
+                    risultato = a - b;
+                    Console.WriteLine($"Il risultato della sottrazione è: {risultato}");
+                    break;
+                default:
+                    Console.WriteLine("Uscita in corso...");
+                    return;
             }
-            else if (numeroCasuale % 3 == 0)
+            Console.WriteLine($"Vuoi continuare? (s/n)");
+            string? risposta = Console.ReadLine();
+            if (risposta == "n")
             {
-                // aggiungi il numero alla lista fizz
-                fizz.Add(numeroCasuale.ToString());
+                return;
             }
-            else if (numeroCasuale % 5 == 0)
-            {
-                // aggiungi il numero alla lista buzz
-                buzz.Add(numeroCasuale.ToString());
-            }
-            else
-            {
-                // aggiungi il numero alla lista numero
-                numero.Add(numeroCasuale.ToString());
-            }
-            Thread.Sleep(30);
         }
-        Console.WriteLine();
-        Console.WriteLine();
-        Console.WriteLine($"I numeri FizzBuzz sono {fizzbuzz.Count} ed i numeri contenuti sono:");
-        foreach (string item in fizzbuzz)
-        {
-            Console.Write($"{item}, ");
-        }
-        Console.WriteLine();
-        Console.WriteLine();
-        Console.WriteLine($"I numeri Fizz sono {fizz.Count} ed i numeri contenuti sono {string.Join(", ", fizz)}");
-        Console.WriteLine();
-        Console.WriteLine($"I numeri Buzz sono {buzz.Count} ed i numeri contenuti sono {string.Join(", ", buzz)}");
-        Console.WriteLine();
-        Console.WriteLine($"I numeri sono {numero.Count} ed i numeri contenuti sono {string.Join(", ", numero)}");
-
-
-
-
+        while (continua);
     }
 }
 
