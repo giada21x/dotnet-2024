@@ -1,71 +1,44 @@
-﻿//inseriamo un numero, inseriamo un secondo numero e mettiamo un'operazione //metodo console che mi chieda il primo numero //console secondo numero //console operazione //
-using System.Runtime.InteropServices;
+﻿//genere numeri tra 1 e 10 e ci chiede di indovinar eil numero //se lo indovina dice indovintao e se non lo indovina dice sbahliato
+//10 tentativi
+
 
 class Program
 {
     static void Main(string[] args)
     {
-        bool continua = true;
-        do
-        {
-            Console.WriteLine("Inserisci i due operandi: ");
-            int a = Int32.Parse(Console.ReadLine());
-            int b = Int32.Parse(Console.ReadLine());
+        Console.WriteLine("Inserisci un numero:");
 
-            Console.WriteLine("Scegli l'operazione:");
+        Random random = new Random(); //generatore di numeri casuali 
+        int numero = int.Parse(Console.ReadLine()!);
+        int numeroRandom = random.Next(1, 10);
+        int tentativi = 10;
 
-            Console.WriteLine("1. Moltiplicazione ");
-            Console.WriteLine("2. Divisione ");
-            Console.WriteLine("3. Somma ");
-            Console.WriteLine("4. Sottrazione ");
-            Console.WriteLine("5. Uscita ");
-
-            int risultato = 0;
-
-            string input = Console.ReadLine();
-            switch (input)
+        
+            
+            while (tentativi != 0)
             {
 
-                case "1":
-
-
-                    risultato = a * b;
-                    Console.WriteLine($"Il risultato della moltiplicazione è: {risultato}");
-                    break;
-                case "2":
-
-
-                    risultato = a / b;
-                    Console.WriteLine($"Il risultato della divisione è: {risultato}");
-                    break;
-                case "3":
-
-
-                    risultato = a + b;
-                    Console.WriteLine($"Il risultato della somma è: {risultato}");
-                    break;
-                case "4":
-
-
-                    risultato = a - b;
-                    Console.WriteLine($"Il risultato della sottrazione è: {risultato}");
-                    break;
-                default:
-                    Console.WriteLine("Uscita in corso...");
+                Console.WriteLine($"Il numero casuale è {numeroRandom}");
+                if (numero == numeroRandom)
+                {
+                    Console.WriteLine("Hai indovinato!");
                     return;
+                }
+                else
+                {
+                    Console.WriteLine($"Non hai indovinato!");
+                    tentativi-- ; //tentativi = tentativi -1
+                    Console.WriteLine($"Hai ancora {tentativi}");
+                    
+                    Console.WriteLine("Inserisci un nuovo numero");
+                    
+                    numero = int.Parse(Console.ReadLine()!);
+                }
             }
-            Console.WriteLine($"Vuoi continuare? (s/n)");
-            string? risposta = Console.ReadLine();
-            if (risposta == "n")
-            {
-                return;
-            }
-        }
-        while (continua);
+        
+
     }
 }
-
-
 
 
 
