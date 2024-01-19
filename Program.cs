@@ -18,10 +18,11 @@ class Program
             while (tentativi != 0)
             {
 
-                Console.WriteLine($"Il numero casuale è {numeroRandom}");
+                
                 if (numero == numeroRandom)
                 {
                     Console.WriteLine("Hai indovinato!");
+                    Console.WriteLine($"Il numero casuale è {numeroRandom}");
                     return;
                 }
                 else
@@ -29,7 +30,24 @@ class Program
                     Console.WriteLine($"Non hai indovinato!");
                     tentativi-- ; //tentativi = tentativi -1
                     Console.WriteLine($"Hai ancora {tentativi}");
-                    
+                    if (numeroRandom < numero)
+                    {
+                        Console.WriteLine("Suggerimento: prova a inserire un numero più piccolo...");
+                        
+                    }
+                    else if (numeroRandom > numero)
+                    {
+                        Console.WriteLine("Suggerimento: prova a inserire un numero più grande...");
+                        
+                    }
+                    else if (numeroRandom % 2 == 0 )
+                    {
+                        Console.WriteLine($"Suggerimento: Il numero da indovinare è pari");
+                        
+                    }
+
+
+                
                     Console.WriteLine("Inserisci un nuovo numero");
                     
                     numero = int.Parse(Console.ReadLine()!);
