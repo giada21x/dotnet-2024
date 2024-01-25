@@ -3,13 +3,14 @@
 
 
 using System.ComponentModel;
+using System.Runtime.CompilerServices;
 
 class Program
 {
    static void Main(string[] args)
    {
       Console.WriteLine("INIZIO GIOCO!");
-      Console.WriteLine($"Il punteggio massimo è 20 punti: perdi tot punti in base al suggerimento che sfrutti"); 
+      Console.WriteLine($"Il punteggio massimo è 20 punti: perdi tot punti in base al suggerimento che sfrutti");
       //max punti = 20 punti
 
 
@@ -18,37 +19,31 @@ class Program
       Random random = new Random(); //generatore di numeri casuali 
 
       int numeroRandom = random.Next(1, 51);
-      int tentativi = 0;
+      int tentativi = 1;
       int punteggio = 20;
       int numero = 0;
 
       //implementazione del try-catch: verificare se l'elemento inserito è un numero
-      Console.WriteLine("Inserisci un numero:");
+      while (tentativi != 10 || punteggio != 0)
       {
-      try
-      {
-         
-         numero = int.Parse(Console.ReadLine()!);
-         Console.WriteLine("Il numero è valido");
-            
-            
-      }
-      catch (Exception e)
-      {
-         Console.WriteLine("Non hai inserito un numero");
-         Console.WriteLine("Inserisci un numero");
-         numero = int.Parse(Console.ReadLine()!);
-         
-         
-      }
-      }
+         Console.WriteLine($"Sei al tentativo numero {tentativi}");
+         Console.WriteLine("Inserisci il numero:");
+         try
+         {
 
-     
+            numero = int.Parse(Console.ReadLine()!);
+            Console.WriteLine("Il numero è valido");
 
-      while (true)
-      {
+
+         }
+         catch (Exception e)
+         {
+            Console.WriteLine("Non hai inserito un numero");
+
+         }
+
          tentativi++;
-         
+
 
 
          if (numero == numeroRandom)
@@ -102,7 +97,7 @@ class Program
                         Console.WriteLine("Suggerimento: prova a inserire un numero più grande...");
                         Console.WriteLine($"Sei a {punteggio} punti");
                      }
-                     
+
 
 
                      break;
@@ -145,28 +140,63 @@ class Program
 
                }
             }
+            else if (risposta == "n")
+            {
+               Console.WriteLine($"Ok campione! Sei a {punteggio} punti");
+
+            }
             else
             {
-               Console.WriteLine($"Sei a {punteggio} punti");
+               Console.WriteLine("Non hai risposto alla domanda...");
 
             }
 
 
+            //Console.WriteLine($"Sei al tentativo numero {tentativi}";)
 
             Console.WriteLine("Inserisci un nuovo numero");
-            numero = int.Parse(Console.ReadLine()!);
+
+            
+               try
+               {
+
+                  numero = int.Parse(Console.ReadLine()!);
+                  Console.WriteLine("Il numero è valido");
+                  Console.WriteLine("Conferma il numero");
+
+               }
+               catch (Exception e)
+               {
+                  Console.WriteLine("Non hai inserito un numero");
+
+
+
+
+               }
+            
 
          }
 
 
-         if (tentativi == 10 || punteggio == 0)
+         if (tentativi == 10)
          {
             Console.WriteLine($" FINE! HAI PERSO!");
             Console.WriteLine($"Hai esaurito i tentativi");
             Console.WriteLine($"Il numero casuale era {numeroRandom}");
+            return;
+
          }
+         else if (punteggio == 0)
+         {
+            Console.WriteLine("FINE! HAI PERSO!");
+            Console.WriteLine("Sei arrivato a 0 punti");
+            Console.WriteLine($"Il numero casuale era {numeroRandom}");
+            return;
+         }
+
       }
    }
+
 }
 
 
