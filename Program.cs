@@ -15,8 +15,19 @@ class Program
       int index = random.Next(nomi.Length); //genera un numero casuale tra 0 e la lunghezza dell'array di stringhe 
       Console.WriteLine(nomi[index]); //stampa il nome corrispondente all'indice generato casualmente 
       string path2 =  @"test2.txt";
-      File.Create(path2).Close();
-      File.AppendAllText(path2, nomi[index] + "\n"); //scrive la riga nel file
+      if (!File.Exists(path2)) //controlla se il file esiste 
+      {
+         File.Create(path2).Close(); //crea il file
+      }
+      if (!File.ReadAllLines(path2).Contains(nomi[index])) //controlla se il nome sorteggiato è già presente nel file
+      {
+         File.AppendAllText(path2, nomi[index] + "\n"); //scrive la riga del file;
+      }
+      else
+      {
+         Console.WriteLine("Il nome è già presente nel file");
+         
+      }
       
    }
 }
