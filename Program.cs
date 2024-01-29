@@ -2,233 +2,160 @@
 {
    static void Main(string[] args)
    {
-      string path = @"test.txt"; // il file deve essere nella stessa cartella del programma
-      string[] lines = File.ReadAllLines(path); //legge tutte le righe del file
-      string[] nomi = new string[lines.Length];
+
+      ConsoleColor currentForeground = Console.ForegroundColor;
+      ConsoleColor currentBackground = Console.BackgroundColor;
+      int manche= 0;
+      Console.WriteLine("Inizio del gioco!");
+      Console.WriteLine("Inserisci il tuo nome:");
+      
+      Console.ForegroundColor = ConsoleColor.DarkGreen;
+      string nome = Console.ReadLine()!;
+      Console.ForegroundColor = currentForeground;
+      Random random = new Random();
+      int mancheVinteGiada = 0;
+      int mancheVinteComputer = 0;
       
 
-      for (int i = 0; i < lines.Length; i++)
+
+      while (manche != 5)
       {
-         nomi[i] = lines[i];
-      }
 
-      string nome = lines[0];
-      string punteggione = lines[1];
-      Console.Write("Ciao ");
-      Console.WriteLine(nome);
-      Console.WriteLine("");
-      Console.WriteLine("Il punteggio della partita precedente: ");
-      
-      Console.WriteLine(punteggione);
+         manche++;
+         int dado1 = random.Next(1, 21);
+         int dado2 = random.Next(1, 21);
+         int punteggio1 = dado1 + dado2;
+         Console.WriteLine($"INIZIO MANCHE");
 
-      Console.WriteLine("INIZIO GIOCO!");
-      Console.WriteLine($"Il punteggio massimo è 20 punti: perdi tot punti in base al suggerimento che sfrutti");
-      //max punti = 20 punti
-
-
-
-
-      Random random = new Random(); //generatore di numeri casuali 
-
-      int numeroRandom = random.Next(1, 51);
-      int tentativi = 0;
-      int numero = 0;
-      int punteggio = 20;
-      
-
-      while (tentativi != 10 || punteggio != 0)
-      { 
-         tentativi++;
-         Console.WriteLine($"Sei al tentativo numero {tentativi}");
-         Console.WriteLine("Inserisci il numero:");
          
-         //implementazione del try-catch: verificare se l'elemento inserito è un numero
-         try
+         Console.WriteLine($"Sono usciti i numeri: ");
+         Console.ForegroundColor = ConsoleColor.Cyan;
+         Console.WriteLine($"{dado1}  {dado2}");
+         Console.ForegroundColor = currentForeground;
+         
+         Console.ForegroundColor = ConsoleColor.DarkGreen;
+         Console.WriteLine($"Sei a {punteggio1} punti");
+         Console.ForegroundColor = currentForeground;
+
+         Thread.Sleep(2000);
+
+         if (dado1 == dado2)
          {
 
-            numero = int.Parse(Console.ReadLine()!);
-            Console.WriteLine("Il numero è valido");
-
-
+            Console.WriteLine("Wow! Hai raddoppiato il tuo punteggio!");
+            punteggio1 *= 2;
+            Console.ForegroundColor = ConsoleColor.DarkGreen;
+            Console.WriteLine($"Hai totalizzato {punteggio1} punti");
+            Console.ForegroundColor = ConsoleColor.DarkGreen;
+            Thread.Sleep(2000);
          }
-         catch (Exception e)
+         else if (punteggio1 == 9 || punteggio1 == 23)
          {
-            Console.WriteLine("Non hai inserito un numero");
-
+            punteggio1 -= 5;
+            Console.WriteLine($"Peccato! Hai perso -5 punti");
+            Console.ForegroundColor = ConsoleColor.DarkGreen;
+            Console.WriteLine($"Il tuo punteggio ora è {punteggio1} punti");
+            Console.ForegroundColor = currentForeground;
+            Thread.Sleep(2000);
          }
-
-        
-
-         if (numero == numeroRandom)
+         else if ((dado1 == 5 && dado2 == 6) || (dado1 == 12 && dado2 == 18))
          {
-
-            Console.WriteLine("HAI VINTO!");
-            Console.WriteLine($"Il numero casuale è {numeroRandom}");
-            Console.WriteLine($"Hai indovinato in {tentativi} tentativi");
-            Console.WriteLine($"Il tuo punteggio è {punteggio}");
-
-
-           
-            
-            
-                
-               
-                  lines[0] = nome;
-                  lines[1] = punteggio.ToString();
-                  File.WriteAllLines(path, lines);
-                  
-                  Console.WriteLine("Salvataggio...");
-                                                            
-
-               
-
-            
-
-
-            return;
-         }
-
-
-         else
-         {
-
-
-            Console.WriteLine($"Non hai indovinato!");
-            Console.WriteLine($"Vuoi usufruire di un suggerimento? (s/n)");
-
-            string risposta = Console.ReadLine()!;
-            if (risposta == "s")
-
-            {
-
-               Console.WriteLine("Ecco i suggerimenti: quale preferisci?");
-               Console.WriteLine("1. E' maggiore o minore?");
-               Console.WriteLine("2. E' Pari o dispari?");
-               Console.WriteLine("3. E' maggiore o minore di 25?");
-               Console.WriteLine("4. Qual è il suo quadrato? ");
-               ConsoleKeyInfo key = Console.ReadKey(true); //serve per nascondere il numero dell'opzione di scelta che andiamo a inserie manualmente nel terminale
-               string scelta = key.KeyChar.ToString();
-
-
-
-
-               switch (scelta)
-               {
-                  case "1":  //penalità suggerimento 1: -1 punti
-                     if (numeroRandom < numero)
-                     {
-                        punteggio -= 1;
-                        Console.WriteLine("Suggerimento: prova a inserire un numero più piccolo...");
-                        Console.WriteLine($"Sei a {punteggio} punti");
-
-                     }
-                     else
-                     {
-                        punteggio -= 1;
-                        Console.WriteLine("Suggerimento: prova a inserire un numero più grande...");
-                        Console.WriteLine($"Sei a {punteggio} punti");
-                     }
-
-
-
-                     break;
-                  case "2": //penalità suggerimento 2: -3 punti
-                     if (numeroRandom % 2 == 0)
-                     {
-                        punteggio -= 3;
-                        Console.WriteLine("Suggerimento: Il numero da indovinare è pari");
-                        Console.WriteLine($"Sei a {punteggio} punti");
-                     }
-                     else
-                     {
-                        punteggio -= 3;
-                        Console.WriteLine("Suggerimento: Il numero da indovinare è pari");
-                        Console.WriteLine($"Sei a {punteggio} punti");
-                     }
-                     break;
-                  case "3": //penalità suggerimento 1: -4 punti
-                     if (numeroRandom > 25)
-                     {
-                        punteggio -= 4;
-                        Console.WriteLine("Suggerimento: Il numero è maggiore di 25 ");
-                        Console.WriteLine($"Sei a {punteggio} punti");
-                     }
-                     else
-                     {
-                        punteggio -= 4;
-                        Console.WriteLine("Suggerimento: Il numero è minore di 25 ");
-                        Console.WriteLine($"Sei a {punteggio} punti");
-                     }
-                     break;
-                  case "4": //penalità suggerimento 1: -5 punti
-                     punteggio -= 5;
-                     double risultato = Math.Pow(numeroRandom, 2);
-                     Console.WriteLine($"Il quadrato è {risultato}");
-                     Console.WriteLine($"Sei a {punteggio} punti");
-
-                     break;
-
-
-               }
-            }
-            else if (risposta == "n")
-            {
-               Console.WriteLine($"Ok Fenomeno! Sei a {punteggio} punti");
-
-            }
-            else
-            {
-               Console.WriteLine("Non hai risposto alla domanda...");
-
-            }
-
-
-            //Console.WriteLine($"Sei al tentativo numero {tentativi}";)
-
-            Console.WriteLine("Inserisci un nuovo numero");
-
-            {
-               try
-               {
-
-                  numero = int.Parse(Console.ReadLine()!);
-                  Console.WriteLine("Il numero è valido");
-                  Console.WriteLine("Conferma il numero");
-
-               }
-               catch (Exception e)
-               {
-                  Console.WriteLine("Non hai inserito un numero");
-
-
-
-
-               }
-            }
-
-         }
-
-
-         if (tentativi == 10)
-         {
-            Console.WriteLine($" FINE! HAI PERSO!");
-            Console.WriteLine($"Hai esaurito i tentativi");
-            Console.WriteLine($"Il numero casuale era {numeroRandom}");
+            Console.BackgroundColor = ConsoleColor.DarkGreen;
+            Console.WriteLine("COMPLIMENTI! HAI VINTO!");
+            Console.BackgroundColor = currentBackground;
             return;
 
          }
-         else if (punteggio == 0)
-         {
-            Console.WriteLine("FINE! HAI PERSO!");
-            Console.WriteLine("Sei arrivato a 0 punti");
-            Console.WriteLine($"Il numero casuale era {numeroRandom}");
-            return;
-         }
 
+         Random random2 = new Random();
+         int dado3 = random.Next(1, 21);
+         int dado4 = random.Next(1, 21);
+         int punteggioComputer;
+         punteggioComputer = dado3 + dado4;
+         Console.WriteLine("Sono usciti i numeri:"); 
+         Console.ForegroundColor = ConsoleColor.DarkCyan;
+         Console.WriteLine($"{dado3}  {dado4}");
+         Console.ForegroundColor = currentForeground;
+         Console.ForegroundColor = ConsoleColor.DarkRed;
+         Console.WriteLine($"Il computer è a {punteggioComputer} punti");
+         Console.ForegroundColor = currentForeground;
+         Thread.Sleep(2000);
+         
+         if (dado3 == dado4)
+         {
+            punteggioComputer *= 2;
+            Console.WriteLine("Il computer ha raddoppiato il suo punteggio!");
+            Console.ForegroundColor = ConsoleColor.DarkRed;
+            Console.WriteLine($"Il computer ha totalizzato {punteggioComputer} punti");
+            Console.ForegroundColor = currentForeground;
+            Thread.Sleep(2000);
+         }
+         else if (punteggioComputer == 9 || punteggioComputer == 23)
+         {
+            punteggioComputer -= 5;
+            Console.WriteLine("Il computer ha perso -5 punti");
+            Console.ForegroundColor = ConsoleColor.DarkRed;
+            Console.WriteLine($"Il computer ha totalizzato {punteggioComputer} punti");
+            Console.ForegroundColor = currentForeground;
+            Thread.Sleep(2000);
+         }
+         else if ((dado1 == 5 && dado2 == 6) || (dado1 == 12 && dado2 == 18))
+         {
+            Console.BackgroundColor = ConsoleColor.DarkRed;
+            Console.WriteLine("Il computer ha vinto!");
+            Console.BackgroundColor = currentBackground;
+            return;
+
+         }
+         Console.WriteLine("Chi ha vinto questa manche?");
+         
+         if (punteggio1 > punteggioComputer)
+         {
+            Console.ForegroundColor = ConsoleColor.DarkGreen;
+            Console.WriteLine("HAI VINTO LA MANCHE");
+            Console.ForegroundColor = currentForeground;
+            mancheVinteGiada++;
+
+            
+         }
+         else if (punteggio1 < punteggioComputer)
+         {
+            Console.ForegroundColor = ConsoleColor.DarkRed;
+            Console.WriteLine("MANCHE VINTA DAL COMPUTER");
+            Console.ForegroundColor = currentForeground;
+            mancheVinteComputer++;
+         }
+         else if (punteggio1 == punteggioComputer)
+         {
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
+            Console.WriteLine("PAREGGIO!");
+            Console.ForegroundColor = currentForeground;
+         }
+         Thread.Sleep(3000);
+          
+         }
+      
+      if (mancheVinteGiada > mancheVinteComputer)
+      {
+         Console.BackgroundColor = ConsoleColor.DarkGreen;
+         Console.WriteLine($"HAI VINTO");
+         Console.BackgroundColor = currentBackground;
       }
-
-   }
-
+      else if (mancheVinteGiada < mancheVinteComputer)
+      {
+         Console.BackgroundColor = ConsoleColor.DarkRed;
+         Console.WriteLine($"IL COMPUTER HA VINTO LA PARTITA");
+         Console.BackgroundColor = currentBackground;
+      } 
+      else if (mancheVinteGiada == mancheVinteComputer)
+      {
+         Console.BackgroundColor = ConsoleColor.DarkYellow;
+         Console.WriteLine("PAREGGIO");
+         Console.BackgroundColor = currentBackground;
+         
+      }
+   }  
+   
 }
 
 
