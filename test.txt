@@ -1,2 +1,2 @@
-Giada
-15
+Chi ha vinto la partita precedente? 
+Ha vinto il computer
