@@ -19,10 +19,17 @@ Le manche si vincono in base ai punti che si totalizzano:
 - [X] L'applicazione permette di subire una penalità di -5 punti se la somma dei due dadi eqivale a 9 o 23
 - [X] L'applicazione permette di vincere subito se escono un dado da 5 e un dado da 6 oppure un dado da 12 e un dado da 18
 - [X] L'applicazione permette di verificare se il file txt esiste
+- [X] L'applicazione permette la Richiesta di un rematch a fine partita
+- [X] L'applicazione permette al giocatore di inserire l'età per verificare che possa giocare in base all'età
+- [X] L'applicazione permette al giocatore di scommettere soldi a piacimento
+- [X] L'applicazione permette di guadagnare il doppio della puntata se il giocatore vince la partita
+- [X] L'applicazione permette di perdere i soldi della puntata se il giocatore non vince la partita
+- [X] L'applicazione permette di riavere indietro i soldi della puntata in caso di pareggio
 
 ### PIANIFICAZIONE E DESIGN DELL'ARCHITETTURA
 
-- [X] L'applicazione deve memorizzare il punteggio in un file di testo
+- [X] L'applicazione deve memorizzare il vincitore della partita in un file di testo
+- [X] L'applicazione verifica attraverso un file csv se una persona può effettivamente giocare in base all'età
 - [X] L'applicazione deve essere un minimo colorata 
 
 ### DEFINIZIONE DI STRUTTURE E CONVENZIONI
