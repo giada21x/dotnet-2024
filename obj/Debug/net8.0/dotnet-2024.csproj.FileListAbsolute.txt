@@ -13,3 +13,6 @@ C:\Users\DOTNET\Documents\pinguino\dotnet-2024\obj\Debug\net8.0\refint\dotnet-20
 C:\Users\DOTNET\Documents\pinguino\dotnet-2024\obj\Debug\net8.0\dotnet-2024.pdb
 C:\Users\DOTNET\Documents\pinguino\dotnet-2024\obj\Debug\net8.0\dotnet-2024.genruntimeconfig.cache
 C:\Users\DOTNET\Documents\pinguino\dotnet-2024\obj\Debug\net8.0\ref\dotnet-2024.dll
+C:\Users\DOTNET\Documents\pinguino\dotnet-2024\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\DOTNET\Documents\pinguino\dotnet-2024\obj\Debug\net8.0\dotnet-2024.csproj.AssemblyReference.cache
+C:\Users\DOTNET\Documents\pinguino\dotnet-2024\obj\Debug\net8.0\dotnet-2024.csproj.CopyComplete
