@@ -1,14 +1,24 @@
-# BETA TESTING
+# GIOCO INDOVINA IL NUMERO
 
-### COSA CONTROLLARE: 
+Programma che permette all'utente di provare a indovinare un numero randomico (tra 1 e 50) sorteggiato dal computer. L'utente ha a diposizione 10 tentativi per poter indovinare il numero segreto. Inoltre ha anche a disposizione dei suggerimenti da poter utilizzare. Ogni suggerimento però ti fa perdere dei punti.
 
-1. ECCEZIONI del try-catch: prova bene tutte le eccezioni possibili
-2. BUG: controllare un problema x 
-3. Miglioramenti
-
-### USER EXPERIENCE:
-- Hai suggerimenti per migliorare l'esperienza dell'utente su questo gioco? 
-- Come valuti l'usabilità e la chiarezza del gioco?
+### DEFINIZIONE DEI REQUISITI E ANALSI:
+- [X] L'applicazione pemette di 
+- [X] L'applicazione permette di inserire il nome del giocatore
+- [X] L'applicazione permette di fare un salvataggio della partita (salva nel file txt il vincitore della partita)
+- [X] L'applicazione permette di terminare il gioco alla fine della quinta manche 
+- [X] L'applicazione permette di sommare i valori dei due dadi 
+- [X] L'applicazione permette di far vincere il giocatore che ha vinto più manche
+- [X] L'applicazione permette di usare un moltiplicatore quando escono due dadi dello stesso numero
+- [X] L'applicazione permette di subire una penalità di -5 punti se la somma dei due dadi eqivale a 9 o 23
+- [X] L'applicazione permette di vincere subito se escono un dado da 5 e un dado da 6 oppure un dado da 12 e un dado da 18
+- [X] L'applicazione permette di verificare se il file txt esiste
+- [X] L'applicazione permette la Richiesta di un rematch a fine partita
+- [X] L'applicazione permette al giocatore di inserire l'età per verificare che possa giocare in base all'età
+- [X] L'applicazione permette al giocatore di scommettere soldi a piacimento
+- [X] L'applicazione permette di guadagnare il doppio della puntata se il giocatore vince la partita
+- [X] L'applicazione permette di perdere i soldi della puntata se il giocatore non vince la partita
+- [X] L'applicazione permette di riavere indietro i soldi della puntata in caso di pareggio
 
 ## POST BETA TEST
 <details>
@@ -44,20 +54,6 @@ Se sistemi queste piccole cose secondo me questo giochino è un bel passatempo!
 - [X] ECCEZIONE TRY CATCH INSERIMENTO LETTERE AL POSTO DEI NUMERI
 - [X] BUG SUGGERIMENTO
 
-## GRAFICI GIANT 
 
-```mermaid
-
-gantt
-    title A Gantt Diagram
-    dateFormat  YYYY-MM-DD
-    section Section
-    First Task       :a1, 2018-07-01, 30d
-    Another Task     :after a1, 20d
-    section Another
-    Second Task      :2018-07-12, 12d
-    Third Task       : 24d
-
-```
 </details>
 
