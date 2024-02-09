@@ -10,12 +10,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("DatabaseVideogiochi")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("IndovinaIlNumero")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
-[assembly: System.Reflection.AssemblyProductAttribute("DatabaseVideogiochi")]
-[assembly: System.Reflection.AssemblyTitleAttribute("DatabaseVideogiochi")]
+[assembly: System.Reflection.AssemblyProductAttribute("IndovinaIlNumero")]
+[assembly: System.Reflection.AssemblyTitleAttribute("IndovinaIlNumero")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Generato dalla classe WriteCodeFragment di MSBuild.
