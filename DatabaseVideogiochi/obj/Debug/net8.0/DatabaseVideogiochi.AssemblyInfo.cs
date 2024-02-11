@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DatabaseVideogiochi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+afd2a6240b0b919d7faa53e925e8f74b81705c71")]
 [assembly: System.Reflection.AssemblyProductAttribute("DatabaseVideogiochi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DatabaseVideogiochi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
