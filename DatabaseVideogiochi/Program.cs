@@ -534,7 +534,7 @@ class Program
       if (risposta7 == "s")
       {
          Console.WriteLine($"OK!");
-         Console.WriteLine("Proseguiamo? (s/n)");
+         Console.WriteLine("Cosa vuoi fare? (l/e)");
 
 
       }
