@@ -1,0 +1,4 @@
+Nome giocatore partita precedente:
+Giorgio
+Punteggio:
+14
