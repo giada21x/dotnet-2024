@@ -27,3 +27,68 @@ nav a:hover {
     background-color: #fff;
     color: #000;
 }
+
+section {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #666;
+    padding: 20px;
+    text-align: justify;
+}
+
+img {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+p {
+    text-align: justify;
+    text-indent: 20px;
+    line-height: 1.5;
+}
+
+h1 {
+    text-align: center;
+}
+
+header h1 {
+    text-align: center;
+    text-indent: 20px;
+    line-height: 1.5;
+}
+
+header p {
+    text-align: center;
+    text-indent: 20px;
+    line-height: 1.5;
+}
+
+ul {
+    list-style-type: circle;
+    padding: 0;
+}
+
+ul li{
+    padding: 10px;
+}
+
+ol{
+    list-style-type: upper-alpha;
+    padding: 20px;
+}
+
+ol li{
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a :hover {
+    color: blue;
+}
