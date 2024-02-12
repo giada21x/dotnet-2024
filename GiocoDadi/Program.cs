@@ -8,35 +8,33 @@
       string risposta = "ciao";
       while (risposta != "n")
       {
-         
-         string path1 = @"controlloetà.csv"; //il file deve essere nella stessa cartella del programma
-         File.Create(path1).Close(); //crea il file
 
+
+         Console.Clear();
 
          Console.WriteLine($"Controllo dati personali");
          Console.WriteLine($"Inserisci nome, cognome ed eta");
-         Console.ForegroundColor = ConsoleColor.DarkGreen;
-         
-         string nome = Console.ReadLine()!; //legge il nome
-         string cognome = Console.ReadLine()!;//legge il cognome
-         int eta = int.Parse(Console.ReadLine()!);//legge l'età
-         Console.ForegroundColor = currentForeground;
-         File.AppendAllText(path1, nome + "," + cognome + "," + eta + "\n");//scrive la riga nel file
-         if (eta < 18)
-         {
-            Console.WriteLine("Mi dispiace! Non puoi giocare...");
-            return;
-         }
-         else
-         {
-            Console.WriteLine($"Ok! Proseguiamo");
 
-         }
+         string path1 = @"controlloetà.csv"; //il file deve essere nella stessa cartella del programma
+         File.Create(path1).Close(); //crea il file
+
+         string nome = null;
+         string cognome = null;
+         int eta = 0;
+
+         DatiValidi(nome, cognome, path1);
+         EtaValida(eta, path1);
+
+
+         //File.AppendAllText(path1, nome + "," + cognome + "," + eta + "\n");//scrive la riga nel file
+
          Console.WriteLine($"Inserimento dati...");
          Thread.Sleep(3000);
-         
-      
+         Console.Clear();
+
+
          string path = @"vincitoregiocodadi.txt"; // il file deve essere nella stessa cartella del programma
+
          string[] lines = File.ReadAllLines(path); // legge tutte le righe del file
          string[] nomi = new string[lines.Length];
          for (int i = 0; i < lines.Length; i++)
@@ -47,23 +45,48 @@
          string risultato = lines[1];
          Console.WriteLine("Chi ha vinto la partita precedente?");
          Console.WriteLine(risultato);
-
+         Thread.Sleep(2000);
+         Console.Clear();
 
          int manche = 0;
-         Console.WriteLine("Inizio del gioco!");
-         Console.WriteLine("Inserisci di nuovo il tuo nome:");
+
+         //Console.WriteLine("Inserisci di nuovo il tuo nome:");
 
          Console.ForegroundColor = ConsoleColor.DarkGreen;
-         string nome1 = Console.ReadLine()!; ;
+         //string nome = Console.ReadLine()!; 
          Console.ForegroundColor = currentForeground;
          Random random = new Random();
          int mancheVintegiocatore1 = 0;
-         int mancheVinteComputer = 0;  
-                            
-         Console.WriteLine($"{nome1}, quanto vuoi scommettere?");//per giocare si devono scommettere un quantitativo di soldi a piacimento. 
-         int scommessa = int.Parse(Console.ReadLine()!); //se vinci li raddoppi,se non vinci perdi i soldi della puntata
+         int mancheVinteComputer = 0;
+         Console.WriteLine("REGOLE DEL GIOCO:");
+         Console.WriteLine("Le manche si vincono in base ai punti che si totalizzano:");
+         Console.WriteLine("- semplice somma dei dadi");
+         Console.WriteLine("- quando escono due dadi dello stesso numero si applica un moltiplicatore x2");
+         Console.WriteLine("- quando escono un dado da 5 e un dado da 6 oppure un dado da 12 e un dado da 18 si vince automaticamente la partita");
+         Console.WriteLine("- quando escono due numeri la cui somma equivale a 9 o 23 si subisce una penalità, si perdono 5 punti");
+         Thread.Sleep(500);
+         Console.WriteLine("\n");
+
+         Console.WriteLine("quanto vuoi scommettere?");//per giocare si devono scommettere un quantitativo di soldi a piacimento. 
+         int scommessa = 0;
+         while (true)
+         {
+
+            try
+            {
+                scommessa = int.Parse(Console.ReadLine()!); //se vinci li raddoppi,se non vinci perdi i soldi della puntata
+               break;
+            }
+            catch
+            {
+               Console.WriteLine("Devi inserire un numero");
+
+            }
+         }
+         Console.Clear();
          Console.WriteLine($"Hai scommesso {scommessa} euro");
          Thread.Sleep(1000);
+         Console.WriteLine("Inizio del gioco!");
          while (manche != 5)
          {
 
@@ -180,9 +203,10 @@
                Console.ForegroundColor = currentForeground;
             }
             Thread.Sleep(3000);
+            Console.Clear();
 
          }
-         string risultato1 = $"Ha vinto {nome1}";
+         string risultato1 = $"Hai vinto tu";
          string risultato2 = "Ha vinto il computer";
          string risultato3 = "Pareggio";
          if (mancheVintegiocatore1 > mancheVinteComputer)
@@ -194,7 +218,7 @@
             File.WriteAllLines(path, lines);
             scommessa *= 2;
             Console.WriteLine($"Complimenti! Hai guadagnato {scommessa} euro ");
-            
+
          }
          else if (mancheVintegiocatore1 < mancheVinteComputer)
          {
@@ -205,7 +229,7 @@
             File.WriteAllLines(path, lines);
             scommessa -= scommessa;
             Console.WriteLine($"Mi spiace, hai perso i soldi. Sei a {scommessa} euro");
-            
+
          }
          else if (mancheVintegiocatore1 == mancheVinteComputer)
          {
@@ -215,7 +239,7 @@
             lines[1] = risultato3.ToString();
             File.WriteAllLines(path, lines);
             Console.WriteLine($"Riprenditi pure i tuoi {scommessa} euro");
-            
+
          }
 
          Console.WriteLine($"Vuoi fare un'altra partita? (s/n)");
@@ -233,6 +257,84 @@
             Console.WriteLine($"Addio...");
 
          }
+      }
+   }
+   static void DatiValidi(string nome, string cognome, string path1)
+   {
+      bool nomeValido = true;
+      bool cognomeValido = true;
+
+      while (nomeValido)
+      {
+
+         nome = Console.ReadLine()!;
+
+
+         if (string.IsNullOrWhiteSpace(nome))
+         {
+
+            Console.WriteLine("Nome non valido");
+            Console.WriteLine("Inserisci un nome valido:");
+
+         }
+         else
+         {
+            Console.WriteLine($"Ok! Inserisci cognome:");
+            File.AppendAllText(path1, nome + "\n");
+            nomeValido = false;
+         }
+
+      }
+
+      while (cognomeValido)
+      {
+         cognome = Console.ReadLine()!;
+         if (string.IsNullOrWhiteSpace(cognome))
+         {
+            Console.WriteLine("Cognome non valido");
+            Console.WriteLine("Inserisci un cognome valido");
+         }
+         else
+         {
+            Console.WriteLine("Ok! Inserisci l'età:");
+            File.AppendAllText(path1, cognome + "\n");
+            cognomeValido = false;
+
+         }
+
+      }
+
+   }
+   static void EtaValida(int eta, string path1)
+   {
+      bool etaValida = true;
+      while (etaValida)
+      {
+         try
+         {
+            eta = int.Parse(Console.ReadLine()!);
+            if (eta < 18)
+            {
+               Console.WriteLine("Mi dispiace non puoi giocare, sei troppo piccolo");
+               return;
+            }
+            else
+            {
+               Console.WriteLine("Ok, proseguiamo");
+               File.AppendAllText(path1, eta + "\n");
+               etaValida = false;
+            }
+
+
+
+         }
+         catch
+         {
+            Console.WriteLine("Non hai inserito un numero valido");
+            Console.WriteLine("Riprova");
+
+         }
+
       }
    }
 }

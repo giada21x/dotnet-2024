@@ -16,3 +16,21 @@ C:\Users\DOTNET\Documents\pinguino\dotnet-2024\DatabaseVideogiochi\obj\Debug\net
 C:\Users\DOTNET\Documents\pinguino\dotnet-2024\DatabaseVideogiochi\obj\Debug\net8.0\DatabaseVideogiochi.pdb
 C:\Users\DOTNET\Documents\pinguino\dotnet-2024\DatabaseVideogiochi\obj\Debug\net8.0\DatabaseVideogiochi.genruntimeconfig.cache
 C:\Users\DOTNET\Documents\pinguino\dotnet-2024\DatabaseVideogiochi\obj\Debug\net8.0\ref\DatabaseVideogiochi.dll
+C:\Users\giada\.dotnet\C#\AREA DI LAVORO\dotnet-2024\DatabaseVideogiochi\bin\Debug\net8.0\DatabaseVideogiochi.exe
+C:\Users\giada\.dotnet\C#\AREA DI LAVORO\dotnet-2024\DatabaseVideogiochi\bin\Debug\net8.0\DatabaseVideogiochi.deps.json
+C:\Users\giada\.dotnet\C#\AREA DI LAVORO\dotnet-2024\DatabaseVideogiochi\bin\Debug\net8.0\DatabaseVideogiochi.runtimeconfig.json
+C:\Users\giada\.dotnet\C#\AREA DI LAVORO\dotnet-2024\DatabaseVideogiochi\bin\Debug\net8.0\DatabaseVideogiochi.dll
+C:\Users\giada\.dotnet\C#\AREA DI LAVORO\dotnet-2024\DatabaseVideogiochi\bin\Debug\net8.0\DatabaseVideogiochi.pdb
+C:\Users\giada\.dotnet\C#\AREA DI LAVORO\dotnet-2024\DatabaseVideogiochi\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\giada\.dotnet\C#\AREA DI LAVORO\dotnet-2024\DatabaseVideogiochi\obj\Debug\net8.0\DatabaseVideogiochi.csproj.AssemblyReference.cache
+C:\Users\giada\.dotnet\C#\AREA DI LAVORO\dotnet-2024\DatabaseVideogiochi\obj\Debug\net8.0\DatabaseVideogiochi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\giada\.dotnet\C#\AREA DI LAVORO\dotnet-2024\DatabaseVideogiochi\obj\Debug\net8.0\DatabaseVideogiochi.AssemblyInfoInputs.cache
+C:\Users\giada\.dotnet\C#\AREA DI LAVORO\dotnet-2024\DatabaseVideogiochi\obj\Debug\net8.0\DatabaseVideogiochi.AssemblyInfo.cs
+C:\Users\giada\.dotnet\C#\AREA DI LAVORO\dotnet-2024\DatabaseVideogiochi\obj\Debug\net8.0\DatabaseVideogiochi.csproj.CoreCompileInputs.cache
+C:\Users\giada\.dotnet\C#\AREA DI LAVORO\dotnet-2024\DatabaseVideogiochi\obj\Debug\net8.0\DatabaseVideogiochi.sourcelink.json
+C:\Users\giada\.dotnet\C#\AREA DI LAVORO\dotnet-2024\DatabaseVideogiochi\obj\Debug\net8.0\DatabaseVideogiochi.csproj.CopyComplete
+C:\Users\giada\.dotnet\C#\AREA DI LAVORO\dotnet-2024\DatabaseVideogiochi\obj\Debug\net8.0\DatabaseVideogiochi.dll
+C:\Users\giada\.dotnet\C#\AREA DI LAVORO\dotnet-2024\DatabaseVideogiochi\obj\Debug\net8.0\refint\DatabaseVideogiochi.dll
+C:\Users\giada\.dotnet\C#\AREA DI LAVORO\dotnet-2024\DatabaseVideogiochi\obj\Debug\net8.0\DatabaseVideogiochi.pdb
+C:\Users\giada\.dotnet\C#\AREA DI LAVORO\dotnet-2024\DatabaseVideogiochi\obj\Debug\net8.0\DatabaseVideogiochi.genruntimeconfig.cache
+C:\Users\giada\.dotnet\C#\AREA DI LAVORO\dotnet-2024\DatabaseVideogiochi\obj\Debug\net8.0\ref\DatabaseVideogiochi.dll
