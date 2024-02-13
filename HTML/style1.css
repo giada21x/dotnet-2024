@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:azure;
+}
+
+header {
+    background-color: #003049;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: auto;
+}
+
+#logo {
+    font-family: "Honk";
+    font-size: 100px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+}
+footer {
+    background-color:#333;
+    color:white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 520px){
+footer {
+    position: fixed;
+    bottom: 0;    
+    width: 100%;
+}
+}
+
+img section {
+    display: inline-block;
+    margin: 0 auto;
+
+}
+
+  
