@@ -9,7 +9,7 @@ Un documento HTML  è composto da due parti principali: il doctype e il body. Il
 ### TAG HTML
 
 I tag sono i seguenti:
--  <html> : indica l'inizio e la fin e del documento HTML
+- <html> : indica l'inizio e la fin e del documento HTML
 - <head>: contiene le informazioni sul documento HTML
 - <title>: contiene il titolo del documento HTML
 - <body>: contiene il documento del documento HTML
@@ -31,3 +31,15 @@ Gli attributi HTML sono i seguenti:
 
 - id: identifica un elemento 
 - class: identifica un gruppo 
+
+<b>: fa il grassetto
+### Layout responsivo
+
+layout che si adatta automaticamente alle dimensioni del dispositivo su cui viene visulizzato. Quando la finestra del browser è più piccola di 768px, il layout 
+
+Grid layout
+
+Flexbox layout: è un aproprietà 
+
+Font
+<link href= "https://fonts.googleapis.com/css2?family=Roboto>

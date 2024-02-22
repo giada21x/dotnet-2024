@@ -1,2 +1,2 @@
-Chi ha vinto la partita precedente? 
-Ha vinto il computer
+Chi ha vinto la partita precedente?
+Hai vinto tu

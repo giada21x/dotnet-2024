@@ -5,7 +5,7 @@ class Program
 {
    static void Main()
    {
-      string path = @"test.txt"; // il file deve essere nella stessa cartella del programma
+      string path = @"salvataggio.txt"; // il file deve essere nella stessa cartella del programma
       string[] lines = File.ReadAllLines(path); //legge tutte le righe del file
       string[] nomi = new string[lines.Length];
       

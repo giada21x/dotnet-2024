@@ -13,3 +13,18 @@ C:\Users\giada\.dotnet\C#\AREA DI LAVORO\dotnet-2024\GiocoDadi\obj\Debug\net8.0\
 C:\Users\giada\.dotnet\C#\AREA DI LAVORO\dotnet-2024\GiocoDadi\obj\Debug\net8.0\GiocoDadi.pdb
 C:\Users\giada\.dotnet\C#\AREA DI LAVORO\dotnet-2024\GiocoDadi\obj\Debug\net8.0\GiocoDadi.genruntimeconfig.cache
 C:\Users\giada\.dotnet\C#\AREA DI LAVORO\dotnet-2024\GiocoDadi\obj\Debug\net8.0\ref\GiocoDadi.dll
+C:\Users\DOTNET\Documents\pinguino\dotnet-2024\GiocoDadi\bin\Debug\net8.0\GiocoDadi.exe
+C:\Users\DOTNET\Documents\pinguino\dotnet-2024\GiocoDadi\bin\Debug\net8.0\GiocoDadi.deps.json
+C:\Users\DOTNET\Documents\pinguino\dotnet-2024\GiocoDadi\bin\Debug\net8.0\GiocoDadi.runtimeconfig.json
+C:\Users\DOTNET\Documents\pinguino\dotnet-2024\GiocoDadi\bin\Debug\net8.0\GiocoDadi.dll
+C:\Users\DOTNET\Documents\pinguino\dotnet-2024\GiocoDadi\bin\Debug\net8.0\GiocoDadi.pdb
+C:\Users\DOTNET\Documents\pinguino\dotnet-2024\GiocoDadi\obj\Debug\net8.0\GiocoDadi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DOTNET\Documents\pinguino\dotnet-2024\GiocoDadi\obj\Debug\net8.0\GiocoDadi.AssemblyInfoInputs.cache
+C:\Users\DOTNET\Documents\pinguino\dotnet-2024\GiocoDadi\obj\Debug\net8.0\GiocoDadi.AssemblyInfo.cs
+C:\Users\DOTNET\Documents\pinguino\dotnet-2024\GiocoDadi\obj\Debug\net8.0\GiocoDadi.csproj.CoreCompileInputs.cache
+C:\Users\DOTNET\Documents\pinguino\dotnet-2024\GiocoDadi\obj\Debug\net8.0\GiocoDadi.sourcelink.json
+C:\Users\DOTNET\Documents\pinguino\dotnet-2024\GiocoDadi\obj\Debug\net8.0\GiocoDadi.dll
+C:\Users\DOTNET\Documents\pinguino\dotnet-2024\GiocoDadi\obj\Debug\net8.0\refint\GiocoDadi.dll
+C:\Users\DOTNET\Documents\pinguino\dotnet-2024\GiocoDadi\obj\Debug\net8.0\GiocoDadi.pdb
+C:\Users\DOTNET\Documents\pinguino\dotnet-2024\GiocoDadi\obj\Debug\net8.0\GiocoDadi.genruntimeconfig.cache
+C:\Users\DOTNET\Documents\pinguino\dotnet-2024\GiocoDadi\obj\Debug\net8.0\ref\GiocoDadi.dll

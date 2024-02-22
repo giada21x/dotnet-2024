@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "IndovinaIlNumero/1.0.0": {
+        "runtime": {
+          "IndovinaIlNumero.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "IndovinaIlNumero/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
