@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DOTNET\\Documents\\pinguino\\dotnet-2024\\Esercitazioni\\Esercitazioni.csproj": {}
+    "C:\\Users\\DOTNET\\Documents\\pinguino\\dotnet-2024\\Sql_Lite\\Sql_Light.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DOTNET\\Documents\\pinguino\\dotnet-2024\\Esercitazioni\\Esercitazioni.csproj": {
+    "C:\\Users\\DOTNET\\Documents\\pinguino\\dotnet-2024\\Sql_Lite\\Sql_Light.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DOTNET\\Documents\\pinguino\\dotnet-2024\\Esercitazioni\\Esercitazioni.csproj",
-        "projectName": "Esercitazioni",
-        "projectPath": "C:\\Users\\DOTNET\\Documents\\pinguino\\dotnet-2024\\Esercitazioni\\Esercitazioni.csproj",
+        "projectUniqueName": "C:\\Users\\DOTNET\\Documents\\pinguino\\dotnet-2024\\Sql_Lite\\Sql_Light.csproj",
+        "projectName": "Sql_Light",
+        "projectPath": "C:\\Users\\DOTNET\\Documents\\pinguino\\dotnet-2024\\Sql_Lite\\Sql_Light.csproj",
         "packagesPath": "C:\\Users\\DOTNET\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DOTNET\\Documents\\pinguino\\dotnet-2024\\Esercitazioni\\obj\\",
+        "outputPath": "C:\\Users\\DOTNET\\Documents\\pinguino\\dotnet-2024\\Sql_Lite\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -45,9 +45,9 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
-            "Newtonsoft.Json": {
+            "System.data.SQLite": {
               "target": "Package",
-              "version": "[13.0.3, )"
+              "version": "[1.0.118, )"
             }
           },
           "imports": [

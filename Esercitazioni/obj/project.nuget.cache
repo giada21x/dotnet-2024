@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "4Qih20cSVIhw9unZOCLTbvtnaZCvXOUdIt3JtL30ZA2SoF8afMS2UvpP06juGNiV+01WWY0BkdeKgN3o1+jMcw==",
+  "dgSpecHash": "Jc8S0KmT4fg+d1Wq7GtwhdlHPRYYG7i3tRd/dqnxrgewEzXoDDn12oxbQKer7f/OlP1UB1jMgbIUqC1mWZnotg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Esercitazioni\\Esercitazioni.csproj",
+  "projectFilePath": "C:\\Users\\DOTNET\\Documents\\pinguino\\dotnet-2024\\Esercitazioni\\Esercitazioni.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\giada\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+    "C:\\Users\\DOTNET\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],
   "logs": []
 }

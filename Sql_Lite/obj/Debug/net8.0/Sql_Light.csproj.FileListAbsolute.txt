@@ -1,0 +1,6 @@
+C:\Users\DOTNET\Documents\pinguino\dotnet-2024\Sql_Lite\obj\Debug\net8.0\Sql_Light.csproj.AssemblyReference.cache
+C:\Users\DOTNET\Documents\pinguino\dotnet-2024\Sql_Lite\obj\Debug\net8.0\Sql_Light.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DOTNET\Documents\pinguino\dotnet-2024\Sql_Lite\obj\Debug\net8.0\Sql_Light.AssemblyInfoInputs.cache
+C:\Users\DOTNET\Documents\pinguino\dotnet-2024\Sql_Lite\obj\Debug\net8.0\Sql_Light.AssemblyInfo.cs
+C:\Users\DOTNET\Documents\pinguino\dotnet-2024\Sql_Lite\obj\Debug\net8.0\Sql_Light.csproj.CoreCompileInputs.cache
+C:\Users\DOTNET\Documents\pinguino\dotnet-2024\Sql_Lite\obj\Debug\net8.0\Sql_Light.sourcelink.json
