@@ -1,0 +1,17 @@
+C:\Users\giada\.dotnet\C#\AREA DI LAVORO\Esercitazioni\bin\Debug\net8.0\Esercitazioni.exe
+C:\Users\giada\.dotnet\C#\AREA DI LAVORO\Esercitazioni\bin\Debug\net8.0\Esercitazioni.deps.json
+C:\Users\giada\.dotnet\C#\AREA DI LAVORO\Esercitazioni\bin\Debug\net8.0\Esercitazioni.runtimeconfig.json
+C:\Users\giada\.dotnet\C#\AREA DI LAVORO\Esercitazioni\bin\Debug\net8.0\Esercitazioni.dll
+C:\Users\giada\.dotnet\C#\AREA DI LAVORO\Esercitazioni\bin\Debug\net8.0\Esercitazioni.pdb
+C:\Users\giada\.dotnet\C#\AREA DI LAVORO\Esercitazioni\obj\Debug\net8.0\Esercitazioni.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\giada\.dotnet\C#\AREA DI LAVORO\Esercitazioni\obj\Debug\net8.0\Esercitazioni.AssemblyInfoInputs.cache
+C:\Users\giada\.dotnet\C#\AREA DI LAVORO\Esercitazioni\obj\Debug\net8.0\Esercitazioni.AssemblyInfo.cs
+C:\Users\giada\.dotnet\C#\AREA DI LAVORO\Esercitazioni\obj\Debug\net8.0\Esercitazioni.csproj.CoreCompileInputs.cache
+C:\Users\giada\.dotnet\C#\AREA DI LAVORO\Esercitazioni\obj\Debug\net8.0\Esercitazioni.dll
+C:\Users\giada\.dotnet\C#\AREA DI LAVORO\Esercitazioni\obj\Debug\net8.0\refint\Esercitazioni.dll
+C:\Users\giada\.dotnet\C#\AREA DI LAVORO\Esercitazioni\obj\Debug\net8.0\Esercitazioni.pdb
+C:\Users\giada\.dotnet\C#\AREA DI LAVORO\Esercitazioni\obj\Debug\net8.0\Esercitazioni.genruntimeconfig.cache
+C:\Users\giada\.dotnet\C#\AREA DI LAVORO\Esercitazioni\obj\Debug\net8.0\ref\Esercitazioni.dll
+C:\Users\giada\.dotnet\C#\AREA DI LAVORO\Esercitazioni\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\giada\.dotnet\C#\AREA DI LAVORO\Esercitazioni\obj\Debug\net8.0\Esercitazioni.csproj.AssemblyReference.cache
+C:\Users\giada\.dotnet\C#\AREA DI LAVORO\Esercitazioni\obj\Debug\net8.0\Esercitazioni.csproj.CopyComplete
