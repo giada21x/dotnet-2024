@@ -1,5 +1,7 @@
 ﻿
 //crea il database dall'interno
+using System.Data.SQLite;
+
 class Program
 {
     static void Main(string[] args)
@@ -8,7 +10,7 @@ class Program
         if (!File.Exists(path)) //se il file del database non esiste 
         {
             SQLiteConnection.CreateFile(path); //crea il file del database
-            SQLiteConnection connection = new SQLiteConnection($"Data Source={path};Version=1.0.118;"); //crea la connessione al database la versione 3 è un un indicatore 
+            SQLiteConnection connection = new SQLiteConnection($"Data Source={path};Version=3;"); //crea la connessione al database la versione 3 è un un indicatore 
             connection.Open(); //apre la connessione al database
             string sql = @"
                         CREATE TABLE prodotti (id INTEGER PRIMARY KEY AUTOINCREMENT, nome TEXT UNIQUE, prezzo REAL, quantita INTEGER CHECK (quantita >= 0 ));
@@ -51,12 +53,12 @@ class Program
     static void InserisciProdotto()
     {
         Console.WriteLine("Inserisci il nome del prodotto");
-        string nome = Console.ReadLine();
+        string nome = Console.ReadLine()!;
         Console.WriteLine("Inserisci il prezzo del prodotto");
-        string prezzo = Console.ReadLine();
+        string prezzo = Console.ReadLine()!;
         Console.WriteLine("Inserisci la quantità del prodotto");
-        string quantita = Console.ReadLine();
-        SQLiteConnection connection = new SQLiteConnection($"Data Source = database.db; Version = 1.0.118;"); //crea la connessione al database
+        string quantita = Console.ReadLine()!;
+        SQLiteConnection connection = new SQLiteConnection($"Data Source = database.db; Version =3;"); //crea la connessione al database
         connection.Open(); //apre la connessione al database
         string sql = $"INSERT INTO prodotti (nome, prezzo, quantità) VALUES ('{nome}', {prezzo}, {quantita})";
         SQLiteCommand command = new SQLiteCommand(sql, connection); //crea il comando sql da eseguire sulla connessione
@@ -65,11 +67,11 @@ class Program
     }
     static void VisualizzaProdotto()
     {
-        SQLiteConnection connection = new SQLiteConnection($"Data Source=database.db;Version=1.0.118;"); // crea la connessione al database
+        SQLiteConnection connection = new SQLiteConnection($"Data Source=database.db;Version=3;"); // crea la connessione al database
         connection.Open(); //apre la connessione al dtatabase
         string sql = "SELECT * FROM prodotti";
         SQLiteCommand command = new SQLiteCommand(sql, connection); //crea il comando sql da eseguire sulla connessione al database
-        SQLiteReader reader = command.ExecuteReader(); //esegue il comando sql sulla connessione al database e salva i dati in reader
+        SQLiteDataReader reader = command.ExecuteReader(); //esegue il comando sql sulla connessione al database e salva i dati in reader
         while (reader.Read())
         {
             Console.WriteLine($"id: {reader["id"]}, nome:{reader["nome"]}, prezzo:{reader["prezzo"]}, quantita:{reader["quantita"]}");
@@ -79,8 +81,8 @@ class Program
     static void Eliminaprodotto()
     {
         Console.WriteLine("Inserisci il nome del prodotto");
-        string nome = Console.ReadLine();
-        SQLiteConnection connection = new SQLiteConnection($"Data Source=database.db;Version=1.0.118; ");
+        string nome = Console.ReadLine()!;
+        SQLiteConnection connection = new SQLiteConnection($"Data Source=database.db;Version=3; ");
         connection.Open(); //apre la connessione al dtatabase
         string sql = $"DELETE FROM prodotti WHERE nome = '{nome}';";
         SQLiteCommand command = new SQLiteCommand(sql, connection); //crea il comando sql da eseguire sulla connessione

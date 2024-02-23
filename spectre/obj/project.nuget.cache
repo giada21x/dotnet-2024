@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "8nwg4uqGBHVmbm9i0/Fvb+ko7oelahNKu8rWyUSeZ/7tG3QXbc9ClZF0oHt89NOmXntGzs0REFkKBRvqMb5hdg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\DOTNET\\Documents\\pinguino\\dotnet-2024\\spectre\\spectre.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\DOTNET\\.nuget\\packages\\spectre.console\\0.48.0\\spectre.console.0.48.0.nupkg.sha512",
+    "C:\\Users\\DOTNET\\.nuget\\packages\\spectre.console.cli\\0.48.0\\spectre.console.cli.0.48.0.nupkg.sha512",
+    "C:\\Users\\DOTNET\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512"
+  ],
+  "logs": []
+}
