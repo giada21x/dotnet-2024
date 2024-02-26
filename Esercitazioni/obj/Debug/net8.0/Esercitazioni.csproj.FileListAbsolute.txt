@@ -59,3 +59,8 @@ C:\Users\DOTNET\Documents\pinguino\dotnet-2024\Esercitazioni\obj\Debug\net8.0\re
 C:\Users\DOTNET\Documents\pinguino\dotnet-2024\Esercitazioni\obj\Debug\net8.0\Esercitazioni.pdb
 C:\Users\DOTNET\Documents\pinguino\dotnet-2024\Esercitazioni\obj\Debug\net8.0\Esercitazioni.genruntimeconfig.cache
 C:\Users\DOTNET\Documents\pinguino\dotnet-2024\Esercitazioni\obj\Debug\net8.0\ref\Esercitazioni.dll
+C:\Users\DOTNET\Documents\pinguino\dotnet-2024\Esercitazioni\bin\Debug\net8.0\Spectre.Console.dll
+C:\Users\DOTNET\Documents\pinguino\dotnet-2024\Esercitazioni\bin\Debug\net8.0\Spectre.Console.Cli.dll
+C:\Users\DOTNET\Documents\pinguino\dotnet-2024\Esercitazioni\bin\Debug\net8.0\de\Spectre.Console.Cli.resources.dll
+C:\Users\DOTNET\Documents\pinguino\dotnet-2024\Esercitazioni\bin\Debug\net8.0\fr\Spectre.Console.Cli.resources.dll
+C:\Users\DOTNET\Documents\pinguino\dotnet-2024\Esercitazioni\bin\Debug\net8.0\sv\Spectre.Console.Cli.resources.dll

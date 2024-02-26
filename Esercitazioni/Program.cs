@@ -1,13 +1,13 @@
-﻿using Spectre.Console;
+﻿
+using System.Data.SQLite;
 
 class Prog
 {
    public static void Main(string[] args)
    {
-      AnsiConsole.Markup("[underline red]Hello[/] World!");
-   }
-}
-      /*string path = @"database.db"; // la rotta del file del database
+      
+
+      string path = @"database.db"; // la rotta del file del database
       if (!File.Exists(path)) // se il file del database non esiste
       {
          SQLiteConnection.CreateFile(path); // crea il file del database
@@ -17,7 +17,8 @@ class Prog
                         CREATE TABLE generi (id INTEGER PRIMARY KEY AUTOINCREMENT, nome TEXT UNIQUE);
                         CREATE TABLE console (id INTEGER PRIMARY KEY AUTOINCREMENT, nome TEXT UNIQUE);
 
-                        CREATE TABLE videogiochi (id INTEGER PRIMARY KEY AUTOINCREMENT, nome TEXT UNIQUE, anno INTEGER, voto INTEGER CHECK (voto >= 0), id_genere INTEGER,id_console INTEGER, FOREIGN KEY (id_genere) REFERENCES generi(id),  FOREIGN KEY (id_console) REFERENCES console(id));
+                        CREATE TABLE utenti (id_utente INTEGER PRIMARY KEY, nome TEXT , cognome TEXT , eta INTEGER);
+                        CREATE TABLE videogiochi (id_videogioco INTEGER PRIMARY KEY, id_utente INTEGER, titolo TEXT, anno INTEGER, voto INTEGER CHECK (voto >= 0), id_genere INTEGER,id_console INTEGER, FOREIGN KEY (id_utente) REFERENCES utenti(id),  FOREIGN KEY (id_console) REFERENCES console(id) FOREIGN KEY (id_genere) REFERENCES generi(id),  FOREIGN KEY (id_console) REFERENCES console(id));
                         
 
                         INSERT INTO generi (nome) VALUES ('avventura');
@@ -35,9 +36,15 @@ class Prog
                         INSERT INTO console (nome) VALUES ('pc');
                         INSERT INTO console (nome) VALUES ('smartphone');
 
-                        INSERT INTO videogiochi (nome, anno, voto, id_genere, id_console) VALUES ('zelda tears of the kingdom', 2023, 10, 1, 2);
-                        INSERT INTO videogiochi (nome, anno, voto, id_genere, id_console) VALUES ('resident evil 4 remake', 2023, 9, 2, 3);
-                        
+                        INSERT INTO videogiochi (id_utente, titolo, anno, voto, id_genere, id_console) VALUES (1,'zelda tears of the kingdom', 2023, 10, 1, 2);
+                        INSERT INTO videogiochi (id_utente, titolo, anno, voto, id_genere, id_console) VALUES (1,'resident evil 4 remake', 2023, 9, 2, 3);
+                        INSERT INTO videogiochi (id_utente, titolo, anno, voto, id_genere, id_console) VALUES (2,'resident evil 4 remake', 2023, 9, 2, 3);          
+                        INSERT INTO videogiochi (id_utente, titolo, anno, voto, id_genere, id_console) VALUES (2,'rainbow six', 2015, 8, 2, 3); 
+                        INSERT INTO videogiochi (id_utente, titolo, anno, voto, id_genere, id_console) VALUES (3,'fortnite', 2023, 7, 2, 3); 
+
+                        INSERT INTO utenti ( nome, cognome, eta) VALUES ( 'giada', 'adamo', 22);
+                        INSERT INTO utenti ( nome, cognome, eta) VALUES ( 'giorgio', 'adamo', 20);
+                        INSERT INTO utenti ( nome, cognome, eta) VALUES ( 'pinco', 'pallo', 15);
                         ";
 
          SQLiteCommand command = new SQLiteCommand(sql, connection); // crea il comando sql da eseguire sulla connessione al database
@@ -46,88 +53,124 @@ class Prog
       }
       while (true)
       {
-         Console.WriteLine("1 - Inserisci il videogioco");
-         Console.WriteLine("2 - Visualizza videogiochi");
-         Console.WriteLine("3 - Visualizza i videogiochi ordinati per anno di uscita");
-         Console.WriteLine("4 - Visualizza i videogiochi ordinati per voto");
-         Console.WriteLine("5 - Visualizza il videiogioco con il voto più alto");
-         Console.WriteLine("6 - Visualizza il videogioco con il voto più basso");
-         Console.WriteLine("7 - Visualizza un videogioco specifico");
-         Console.WriteLine("8 - Visualizza i videogiochi in base al genere");
-         Console.WriteLine("9 - Visualizza i videogiochi in base alla console");
-         Console.WriteLine("10 - Inserire una categoria");
-         Console.WriteLine("11 - Eliminare una categoria");
-         Console.WriteLine("12 - Modificare il voto di un videogioco");
+         Console.WriteLine("Cosa vuoi fare?");
          
-         Console.WriteLine("13 - Elimina videogico");
-         Console.WriteLine("14 - Esci");
+         Console.WriteLine("1 - Inserire");
+         Console.WriteLine("2 - Visualizare");
+         Console.WriteLine("3 - Modificare");
+         Console.WriteLine("4 - Eliminare");
+         Console.WriteLine("5 - Esci");
          Console.WriteLine("scegli un'opzione");
          string scelta = Console.ReadLine()!;
+         Console.Clear();
          if (scelta == "1")
          {
-            InserisciVideogioco();
+            Console.WriteLine("1 - Inserisci il videogioco");
+            Console.WriteLine("2 - Inserisci un utente");
+            Console.WriteLine("3 - Inserire una categoria");
+            if (scelta == "1")
+            {
+               InserisciVideogioco();
+            }
+            else if (scelta == "2")
+            {
+               InserisciUtente();
+            }
+            else if (scelta == "3")
+            {
+               InserisciCategoria();
+            }
          }
          else if (scelta == "2")
          {
-            VisualizzaVideogiochi();
+            Console.WriteLine("1 - Visualizza tutti videogiochi");
+            Console.WriteLine("2 - Visualizza i videogiochi ordinati per anno di uscita");
+            Console.WriteLine("3 - Visualizza i videogiochi ordinati per voto");
+            Console.WriteLine("4 - Visualizza il videogioco con il voto più alto");
+            Console.WriteLine("5 - Visualizza il videogioco con il voto più basso");
+            Console.WriteLine("6 - Visualizza un videogioco specifico");
+            Console.WriteLine("7 - Visualizza i videogiochi in base al genere");
+            Console.WriteLine("8 - Visualizza i videogiochi in base alla console");
+            Console.WriteLine("9 - Visualizza gli utenti");
+            Console.WriteLine("10 - Visualizza la tabella completa");
+            if (scelta == "1")
+            {
+               VisualizzaVideogiochi();
+            }
+            else if (scelta == "2")
+            {
+               VisualizzaVideogiochiOrdinatiPerAnno();
+            }
+            else if (scelta == "3")
+            {
+               VisualizzaVideogiochiOrdinatiPerVoto();
+            }
+            else if (scelta == "4")
+            {
+               VisualizzaVideogiocoConVotoPiuAlto();
+            }
+            else if (scelta == "5")
+            {
+               VisualizzaVideogiocoConVotoPiuBasso();
+            }
+            else if (scelta == "6")
+            {
+               VisualizzaVideogioco();
+            }
+            else if (scelta == "7")
+            {
+                VisualizzaVideogiochiGenere();
+            }
+            else if (scelta == "8")
+            {
+               VisualizzaVideogiochiConsole();
+            }
+            else if (scelta == "9")
+            {
+               VisualizzaUtenti();
+            }
+            else if (scelta == "10")
+            {
+               VisualizzaTabellaCompleta();
+            }
          }
          else if (scelta == "3")
          {
-            VisualizzaVideogiochiOrdinatiPerAnno();
+            Console.WriteLine("1 - Modificare il voto di un videogioco");
+            if (scelta == "1")
+            {
+               ModificaVotoVideogioco();
+            }
+            
          }
          else if (scelta == "4")
          {
-            VisualizzaVideogiochiOrdinatiPerVoto();
+            Console.WriteLine("1 - Elimina videogioco");
+            Console.WriteLine("2 - Elimina una categoria");
+            Console.WriteLine("3 - Elimina un utente");
+            if (scelta == "1")
+            {
+               EliminaVideogioco();
+            }
+            else if (scelta == "2")
+            {
+               EliminaCategoria();
+            }
+            else if (scelta == "3")
+            {
+               EliminaUtente();
+            }
          }
-         else if (scelta == "5")
-         {
-            VisualizzaVideogiocoConVotoPiuAlto();
-         }
-         else if (scelta == "6")
-         {
-            VisualizzaVideogiocoConVotoPiuBasso();
-         }
-         else if (scelta == "7")
-         {
-            VisualizzaVideogioco();
-         }
-         else if (scelta == "8")
-         {
-            VisualizzaVideogiochiGenere();
-         }
-         else if (scelta == "9")
-         {
-            VisualizzaVideogiochiConsole();
-         }
-         else if (scelta == "10")
-         {
-            InserisciCategoria();
-         }
-         else if (scelta == "11")
-         {
-            EliminaCategoria();
-         }
-         else if (scelta == "12")
-         {
-            ModificaVotoVideogioco();
-         }
-         else if (scelta == "13")
-         {
-            EliminaVideogioco();
-         }
-         else if (scelta == "14")
-         {
-            break;
-         }
-
       }
    }
    
 
    static void InserisciVideogioco()
    {
+      Console.WriteLine("inserisci l'id utente");
+      string id_utente = Console.ReadLine()!;
       Console.WriteLine("inserisci il nome del videogioco");
-      string nome = Console.ReadLine()!;
+      string titolo = Console.ReadLine()!;
       Console.WriteLine("inserisci l'anno di uscita del videogioco");
       string anno = Console.ReadLine()!;
       Console.WriteLine("inserisci il voto del videogioco");
@@ -139,7 +182,7 @@ class Prog
       
       SQLiteConnection connection = new SQLiteConnection($"Data Source=database.db;Version=3;"); // crea la connessione al database
       connection.Open(); // apre la connessione al database
-      string sql = $"INSERT INTO videogiochi (nome, anno, voto, id_genere, id_console) VALUES ('{nome}', {anno}, {voto}, {id_genere}, {id_console})";
+      string sql = $"INSERT INTO videogiochi (id_utente, titolo, anno, voto, id_genere, id_console) VALUES ({id_utente},'{titolo}', {anno}, {voto}, {id_genere}, {id_console})";
       SQLiteCommand command = new SQLiteCommand(sql, connection); // crea il comando sql da eseguire sulla connessione al database
       command.ExecuteNonQuery(); // esegue il comando sql sulla connessione al database
       connection.Close(); // chiude la connessione al database
@@ -154,7 +197,7 @@ class Prog
       SQLiteDataReader reader = command.ExecuteReader(); // esegue il comando sql sulla connessione al database e salva i dati in reader che è un oggetto di tipo SQLiteDataReader incaricato di leggere i dati
       while (reader.Read())
       {
-         Console.WriteLine($"id: {reader["id"]}, nome: {reader["nome"]}, anno: {reader["anno"]}, voto: {reader["voto"]}, id_genere: {reader["id_genere"]}. id_console: {reader["id_console"]}");
+         Console.WriteLine($"id_videogioco: {reader["id_videogioco"]}, titolo: {reader["titolo"]}, anno: {reader["anno"]}, voto: {reader["voto"]}, id_genere: {reader["id_genere"]}. id_console: {reader["id_console"]}");
       }
       connection.Close(); // chiude la connessione al database
    }
@@ -168,7 +211,7 @@ class Prog
         SQLiteDataReader reader = command.ExecuteReader();
         while (reader.Read())
         {
-            Console.WriteLine($"id: {reader["id"]}, nome: {reader["nome"]}, anno: {reader["anno"]}, voto: {reader["voto"]}, id_genere: {reader["id_genere"]}. id_console: {reader["id_console"]}");
+            Console.WriteLine($"id: {reader["id"]}, titolo: {reader["titolo"]}, anno: {reader["anno"]}, voto: {reader["voto"]}, id_genere: {reader["id_genere"]}. id_console: {reader["id_console"]}");
         }
         connection.Close();
     }
@@ -182,7 +225,7 @@ class Prog
         SQLiteDataReader reader = command.ExecuteReader();
         while (reader.Read())
         {
-            Console.WriteLine($"id: {reader["id"]}, nome: {reader["nome"]}, anno: {reader["anno"]}, voto: {reader["voto"]}, id_genere: {reader["id_genere"]}. id_console: {reader["id_console"]}");
+            Console.WriteLine($"id: {reader["id"]}, titolo: {reader["titolo"]}, anno: {reader["anno"]}, voto: {reader["voto"]}, id_genere: {reader["id_genere"]}. id_console: {reader["id_console"]}");
         }
         connection.Close();
     }
@@ -196,7 +239,7 @@ class Prog
         SQLiteDataReader reader = command.ExecuteReader();
         while (reader.Read())
         {
-            Console.WriteLine($"id: {reader["id"]}, nome: {reader["nome"]}, anno: {reader["anno"]}, voto: {reader["voto"]}, id_genere: {reader["id_genere"]}, id_console: {reader["id_console"]}");
+            Console.WriteLine($"id: {reader["id"]}, titolo: {reader["titolo"]}, anno: {reader["anno"]}, voto: {reader["voto"]}, id_genere: {reader["id_genere"]}, id_console: {reader["id_console"]}");
         }
         connection.Close();
     }
@@ -210,7 +253,7 @@ class Prog
         SQLiteDataReader reader = command.ExecuteReader();
         while (reader.Read())
         {
-            Console.WriteLine($"id: {reader["id"]}, nome: {reader["nome"]}, anno: {reader["anno"]}, voto: {reader["voto"]}, id_genere: {reader["id_genere"]}, id_console: {reader["id_console"]}");
+            Console.WriteLine($"id: {reader["id"]}, titolo: {reader["titolo"]}, anno: {reader["anno"]}, voto: {reader["voto"]}, id_genere: {reader["id_genere"]}, id_console: {reader["id_console"]}");
         }
         connection.Close();
     }
@@ -218,15 +261,15 @@ class Prog
    static void VisualizzaVideogioco()
     {
         Console.WriteLine("inserisci il nome del videogioco");
-        string nome = Console.ReadLine()!;
+        string titolo = Console.ReadLine()!;
         SQLiteConnection connection = new SQLiteConnection($"Data Source=database.db;Version=3;");
         connection.Open();
-        string sql = $"SELECT * FROM videogiochi WHERE nome = '{nome}'"; // crea il comando sql che seleziona tutti i dati dalla tabella prodotti con nome uguale a quello inserito
+        string sql = $"SELECT * FROM videogiochi WHERE nome = '{titolo}'"; // crea il comando sql che seleziona tutti i dati dalla tabella prodotti con nome uguale a quello inserito
         SQLiteCommand command = new SQLiteCommand(sql, connection);
         SQLiteDataReader reader = command.ExecuteReader();
         while (reader.Read())
         {
-            Console.WriteLine($"id: {reader["id"]}, nome: {reader["nome"]}, anno: {reader["anno"]}, voto: {reader["voto"]}, id_genere: {reader["id_genere"]}, id_console: {reader["id_console"]}");
+            Console.WriteLine($"id: {reader["id"]}, titolo: {reader["titolo"]}, anno: {reader["anno"]}, voto: {reader["voto"]}, id_genere: {reader["id_genere"]}, id_console: {reader["id_console"]}");
         }
         connection.Close();
     }
@@ -242,7 +285,7 @@ class Prog
         SQLiteDataReader reader = command.ExecuteReader();
         while (reader.Read())
         {
-            Console.WriteLine($"id: {reader["id"]}, nome: {reader["nome"]}, anno: {reader["anno"]}, voto: {reader["voto"]}, id_genere: {reader["id_genere"]}, id_console: {reader["id_console"]}");
+            Console.WriteLine($"id: {reader["id"]}, titolo: {reader["titolo"]}, anno: {reader["anno"]}, voto: {reader["voto"]}, id_genere: {reader["id_genere"]}, id_console: {reader["id_console"]}");
         
         }
         connection.Close();
@@ -259,12 +302,59 @@ class Prog
         SQLiteDataReader reader = command.ExecuteReader();
         while (reader.Read())
         {
-            Console.WriteLine($"id: {reader["id"]}, nome: {reader["nome"]}, anno: {reader["anno"]}, voto: {reader["voto"]}, id_genere: {reader["id_genere"]}, id_console: {reader["id_console"]}");
+            Console.WriteLine($"id: {reader["id"]}, titolo: {reader["titolo"]}, anno: {reader["anno"]}, voto: {reader["voto"]}, id_genere: {reader["id_genere"]}, id_console: {reader["id_console"]}");
         
         }
         connection.Close();
     }
 
+   static void InserisciUtente()
+   {
+      
+      Console.WriteLine("inserisci il nome dell'utente");
+      string nome = Console.ReadLine()!;
+      Console.WriteLine("inserisci il cognome dell'utente");
+      string cognome = Console.ReadLine()!;
+      Console.WriteLine("inserisci l'età dell'utente");
+      string eta = Console.ReadLine()!;
+      
+      
+      SQLiteConnection connection = new SQLiteConnection($"Data Source=database.db;Version=3;"); // crea la connessione al database
+      connection.Open(); // apre la connessione al database
+      string sql = $"INSERT INTO utenti (nome, cognome, eta) VALUES ('{nome}', '{cognome}', {eta})";
+      SQLiteCommand command = new SQLiteCommand(sql, connection); // crea il comando sql da eseguire sulla connessione al database
+      command.ExecuteNonQuery(); // esegue il comando sql sulla connessione al database
+      connection.Close(); // chiude la connessione al database
+   }
+
+   static void VisualizzaUtenti()
+   {
+      SQLiteConnection connection = new SQLiteConnection($"Data Source=database.db;Version=3;"); // crea la connessione al database
+      connection.Open(); // apre la connessione al database
+      string sql = "SELECT * FROM utenti";
+      SQLiteCommand command = new SQLiteCommand(sql, connection); // crea il comando sql da eseguire sulla connessione al database
+      SQLiteDataReader reader = command.ExecuteReader(); // esegue il comando sql sulla connessione al database e salva i dati in reader che è un oggetto di tipo SQLiteDataReader incaricato di leggere i dati
+      while (reader.Read())
+      {
+         Console.WriteLine($"id_utente: {reader["id_utente"]}, nome: {reader["nome"]}, cognome: {reader["cognome"]}, eta: {reader["eta"]}");
+      }
+      connection.Close(); // chiude la connessione al database
+   }
+
+   static void VisualizzaTabellaCompleta()
+   {
+      SQLiteConnection connection = new SQLiteConnection($"Data Source=database.db;Version=3;"); // crea la connessione al database
+      connection.Open(); // apre la connessione al database
+      string sql = "SELECT utenti.id_utente, utenti.nome, utenti.cognome, videogiochi.titolo, videogiochi.voto FROM utenti JOIN videogiochi ON utenti.id_utente = videogiochi.id_utente;";
+      SQLiteCommand command = new SQLiteCommand(sql, connection); // crea il comando sql da eseguire sulla connessione al database
+      SQLiteDataReader reader = command.ExecuteReader(); // esegue il comando sql sulla connessione al database e salva i dati in reader che è un oggetto di tipo SQLiteDataReader incaricato di leggere i dati
+      while (reader.Read())
+      {
+         Console.WriteLine($"id_utente: {reader["id_utente"]}, nome: {reader["nome"]}, cognome: {reader["cognome"]}, titolo: {reader["titolo"]}, voto: {reader["voto"]}");
+      }
+      connection.Close(); // chiude la connessione al database
+   }
+   
    static void InserisciCategoria()
     {
         Console.WriteLine("inserisci il nome della categoria");
@@ -304,13 +394,27 @@ class Prog
 
    static void EliminaVideogioco()
    {
-      Console.WriteLine("inserisci il nome del videogioco");
-      string nome = Console.ReadLine()!;
+      Console.WriteLine("inserisci il titolo del videogioco");
+      string titolo = Console.ReadLine()!;
       SQLiteConnection connection = new SQLiteConnection($"Data Source=database.db;Version=3;"); // crea la connessione al database
       connection.Open(); // apre la connessione al database
-      string sql = $"DELETE FROM videogiochi WHERE nome = '{nome}'";
+      string sql = $"DELETE FROM videogiochi WHERE titolo = '{titolo}'";
       SQLiteCommand command = new SQLiteCommand(sql, connection); // crea il comando sql da eseguire sulla connessione al database
       command.ExecuteNonQuery(); // esegue il comando sql sulla connessione al database
       connection.Close(); // chiude la connessione al database
    }
-}*/
+
+   static void EliminaUtente()
+   {
+      Console.WriteLine("inserisci il nome dell'utente");
+      string nome = Console.ReadLine()!;
+      SQLiteConnection connection = new SQLiteConnection($"Data Source=database.db;Version=3;"); // crea la connessione al database
+      connection.Open(); // apre la connessione al database
+      string sql = $"DELETE FROM utenti WHERE nome = '{nome}'";
+      SQLiteCommand command = new SQLiteCommand(sql, connection); // crea il comando sql da eseguire sulla connessione al database
+      command.ExecuteNonQuery(); // esegue il comando sql sulla connessione al database
+      connection.Close(); // chiude la connessione al database
+   }
+   
+   
+}

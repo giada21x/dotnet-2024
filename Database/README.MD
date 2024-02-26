@@ -33,3 +33,5 @@ INSERT INTO prodotti (nome, prezzo, quantita, id_categoria) VALUES ('p2', 2, 20,
 INSERT INTO prodotti (nome, prezzo, quantita, id_categoria) VALUES ('p3', 3, 30, 3);
 12. UPDATE prodotti SET nome = 'culetto'  WHERE nome = 'p1';
 13. SELECT videogiochi.nome, videogiochi.anno, videogiochi.voto, generi.nome AS genere, console.nome AS console FROM videogiochi JOIN generi ON id_genere = generi.id JOIN console ON id_console = console.id;
+
+SELECT utenti.id_utente, utenti.nome, utenti.cognome, videogiochi.nome, videogiochi.voto FROM utenti JOIN videogiochi ON utenti.id_utente = videogiochi.id_utente;

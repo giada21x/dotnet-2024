@@ -43,3 +43,12 @@ Flexbox layout: è un aproprietà
 
 Font
 <link href= "https://fonts.googleapis.com/css2?family=Roboto>
+
+elenco di due tipi:
+liste
+cards
+
+dettaglio prodotto 
+
+form: 
+filtra 

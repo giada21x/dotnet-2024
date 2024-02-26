@@ -9,6 +9,8 @@
       "Esercitazioni/1.0.0": {
         "dependencies": {
           "Newtonsoft.Json": "13.0.3",
+          "Spectre.Console": "0.48.0",
+          "Spectre.Console.Cli": "0.48.0",
           "System.Data.SQLite": "1.0.118"
         },
         "runtime": {
@@ -100,6 +102,39 @@
             "rid": "win-x86",
             "assetType": "native",
             "fileVersion": "4.6.25512.1"
+          }
+        }
+      },
+      "Spectre.Console/0.48.0": {
+        "dependencies": {
+          "System.Memory": "4.5.5"
+        },
+        "runtime": {
+          "lib/net8.0/Spectre.Console.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.48.0.0"
+          }
+        }
+      },
+      "Spectre.Console.Cli/0.48.0": {
+        "dependencies": {
+          "Spectre.Console": "0.48.0"
+        },
+        "runtime": {
+          "lib/net8.0/Spectre.Console.Cli.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.48.0.0"
+          }
+        },
+        "resources": {
+          "lib/net8.0/de/Spectre.Console.Cli.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net8.0/fr/Spectre.Console.Cli.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net8.0/sv/Spectre.Console.Cli.resources.dll": {
+            "locale": "sv"
           }
         }
       },
@@ -229,6 +264,7 @@
           }
         }
       },
+      "System.Memory/4.5.5": {},
       "System.Security.AccessControl/4.7.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "3.1.0",
@@ -361,6 +397,20 @@
       "path": "runtime.win-x86.runtime.native.system.data.sqlclient.sni/4.4.0",
       "hashPath": "runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512"
     },
+    "Spectre.Console/0.48.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-4Mc1UT7Azgtyb8FyNwK5FZmoZbKuT5PmY7ZwaKUytjD5kGFMNBACpOZTwYtkuY377YkYtZYBeDDTJUwTW86QXw==",
+      "path": "spectre.console/0.48.0",
+      "hashPath": "spectre.console.0.48.0.nupkg.sha512"
+    },
+    "Spectre.Console.Cli/0.48.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HNoDxAOTODQ9h+4K5Cs2caW8kIicRKw5SS4vgEEkJtnTp7/4XR8OIGvCjVi09w3m+xn4lTlkS0ENy2ktGz4HRw==",
+      "path": "spectre.console.cli/0.48.0",
+      "hashPath": "spectre.console.cli.0.48.0.nupkg.sha512"
+    },
     "Stub.System.Data.SQLite.Core.NetStandard/1.0.118": {
       "type": "package",
       "serviceable": true,
@@ -423,6 +473,13 @@
       "sha512": "sha512-v+XbyYHaZjDfn0ENmJEV1VYLgGgCTx1gnfOBcppowbpOAriglYgGCvFCPr2EEZyBvXlpxbEsTwkOlInl107ahA==",
       "path": "system.drawing.common/4.7.0",
       "hashPath": "system.drawing.common.4.7.0.nupkg.sha512"
+    },
+    "System.Memory/4.5.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XIWiDvKPXaTveaB7HVganDlOCRoj03l+jrwNvcge/t8vhGYKvqV+dMv6G4SAX2NoNmN0wZfVPTAlFwZcZvVOUw==",
+      "path": "system.memory/4.5.5",
+      "hashPath": "system.memory.4.5.5.nupkg.sha512"
     },
     "System.Security.AccessControl/4.7.0": {
       "type": "package",
