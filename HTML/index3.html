@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Registrazione/Accesso</title>
-    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style3.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,7 +38,7 @@
                             <li><a class="dropdown-item" href="#">Sparatutto</a></li>
                             <li><a class="dropdown-item" href="#">Picchiaduro</a></li>
                             <li><a class="dropdown-item" href="#">Giochi di ruolo</a></li>
-                            <li><a class="dropdown-item" href="ochi Platform</a></li>
+                            <li><a class="dropdown-item" href="#">Giochi Platform</a></li>
                             <li><a class="dropdown-item" href="#">Racing</a></li>
                             <li><a class="dropdown-item" href="#">Giochi sportivi</a></li>
                             <li>
@@ -78,84 +78,72 @@
             </div>
         </div>
     </nav>
-    <section class=" gradient-custom d-flex justify-content-center align-items-center" style="background-image: url(https://www.smartworld.it/wp-content/uploads/2020/10/videogiochi-final.jpg)">
-        <div class="container py-5">
-          <div class="row g-4">
-            <div class="col-lg-6">
-              <div class="card shadow-sm rounded">
-                <div class="card-body p-4">
-                  <h3 class="mb-4">Registrazione</h3>
-                  <form>
-                    <div class="mb-3">
-                      <label for="firstName" class="form-label">First Name</label>
-                      <input type="text" class="form-control" id="firstName">
-                    </div>
-                    <div class="mb-3">
-                      <label for="lastName" class="form-label">Last Name</label>
-                      <input type="text" class="form-control" id="lastName">
-                    </div>
-                    <div class="mb-3">
-                      <label for="birthdayDate" class="form-label">Birthday</label>
-                      <input type="text" class="form-control" id="birthdayDate">
-                    </div>
-                    <div class="mb-3">
-                      <label class="form-label">Gender:</label>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="gender" id="femaleGender" value="female">
-                        <label class="form-check-label" for="femaleGender">Female</label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="gender" id="maleGender" value="male">
-                        <label class="form-check-label" for="maleGender">Male</label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="gender" id="otherGender" value="other">
-                        <label class="form-check-label" for="otherGender">Other</label>
-                      </div>
-                    </div>
-                    <div class="mb-3">
-                      <label for="emailAddress" class="form-label">Email</label>
-                      <input type="email" class="form-control" id="emailAddress">
-                    </div>
-                    <div class="mb-3">
-                      <label for="phoneNumber" class="form-label">Phone Number</label>
-                      <input type="tel" class="form-control" id="phoneNumber">
-                    </div>
-                    <div class="d-grid">
-                      <button type="submit" class="btn btn-success btn-lg">Submit</button>
-                    </div>
-                  </form>
-                </div>
-              </div>
+
+    <div id="carouselExample" class="carousel slide w-100  ">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://th.bing.com/th/id/OIP.eJsV2K4CoJuzuGF68CcpWgHaEK?w=272&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                    class="d-block w-100" style="height: 500px;" alt="...">
             </div>
-            <div class="col-lg-6 mt-4">
-              <div class="card shadow-sm rounded">
-                <div class="card-body p-4">
-                  <h3 class="mb-4">Login</h3>
-                  <form>
-                    <div class="mb-3">
-                      <label for="loginEmail" class="form-label">Email Address</label>
-                      <input type="email" class="form-control" id="loginEmail">
-                    </div>
-                    <div class="mb-3">
-                      <label for="loginPassword" class="form-label">Password</label>
-                      <input type="password" class="form-control" id="loginPassword">
-                    </div>
-                    <div class="mb-3 form-check">
-                      <input type="checkbox" class="form-check-input" id="rememberMe">
-                      <label class="form-check-label" for="rememberMe">Remember me</label>
-                    </div>
-                    <div class="d-grid">
-                      <button type="submit" class="btn btn-success">Login</button>
-                    </div>
-                  </form>
-                </div>
-              </div>
+            <div class="carousel-item">
+                <img src="https://th.bing.com/th/id/OIP.Z7VICqtHSdVAsC3t8tMx6wAAAA?rs=1&pid=ImgDetMain"
+                    class="d-block w-100 " style="height: 500px;" alt="...">
             </div>
-          </div>
+            <div class="carousel-item">
+                <img src="https://th.bing.com/th/id/OIP.6T4DVzWqkQpV8rzeRG6fOwAAAA?rs=1&pid=ImgDetMain"
+                    class="d-block w-100 " style="height: 500px;" alt="...">
+            </div>
         </div>
-      </section>
-    
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="w-100 text-center ">
+        
+            <figure class="text-center">
+                <blockquote class="blockquote" style="font-size: 50px;">
+                    <p>Resident Evil 4-Recensione</p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                    di giada21x<cite title="Source Title"></cite>
+                </figcaption>
+            </figure>
+        
+
+        <div class="article-publish-date text-center pb-5 ">
+            <svg xmlns="http://www.w3.org/2000/svg" class="ign-icon icon-articles" width="24" height="24"
+                viewBox="8 3 16 26">
+                <g class="has-stroke" stroke="#838383" fill="none" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="2">
+                    <path
+                        d="M12 14h4m-4 4h7m-7 4h4m9-10.786V25a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h10.552a2 2 0 0 1 1.548.734l3.448 4.213A2 2 0 0 1 25 11.214z">
+                    </path>
+                    <path d="M19.5 5v4a2 2 0 0 0 2 2H25"></path>
+                </g>
+            </svg>
+            &nbsp;<span>Pubblicato: Venerdì 17 Marzo 2023 08:02</span>
+        </div>
+        <div class="w-100  d-flex justify-content-center  ">
+
+            
+                
+                    <h2 style="color: crimson;">UN REMAKE QUASI PERFETTO</h2>
+                    <p></p>
+                
+
+                <div>
+
+                </div>
+            
+        </div>
+    </div>
+    </div>
+
 
     <footer class="footer" style="background-color: #000;">
         <div class="container">

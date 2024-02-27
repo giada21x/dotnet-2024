@@ -1,0 +1,15 @@
+C:\Users\DOTNET\Documents\pinguino\dotnet-2024\LeClassi\obj\Debug\net8.0\LeClassi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DOTNET\Documents\pinguino\dotnet-2024\LeClassi\obj\Debug\net8.0\LeClassi.AssemblyInfoInputs.cache
+C:\Users\DOTNET\Documents\pinguino\dotnet-2024\LeClassi\obj\Debug\net8.0\LeClassi.AssemblyInfo.cs
+C:\Users\DOTNET\Documents\pinguino\dotnet-2024\LeClassi\obj\Debug\net8.0\LeClassi.csproj.CoreCompileInputs.cache
+C:\Users\DOTNET\Documents\pinguino\dotnet-2024\LeClassi\obj\Debug\net8.0\LeClassi.sourcelink.json
+C:\Users\DOTNET\Documents\pinguino\dotnet-2024\LeClassi\bin\Debug\net8.0\LeClassi.exe
+C:\Users\DOTNET\Documents\pinguino\dotnet-2024\LeClassi\bin\Debug\net8.0\LeClassi.deps.json
+C:\Users\DOTNET\Documents\pinguino\dotnet-2024\LeClassi\bin\Debug\net8.0\LeClassi.runtimeconfig.json
+C:\Users\DOTNET\Documents\pinguino\dotnet-2024\LeClassi\bin\Debug\net8.0\LeClassi.dll
+C:\Users\DOTNET\Documents\pinguino\dotnet-2024\LeClassi\bin\Debug\net8.0\LeClassi.pdb
+C:\Users\DOTNET\Documents\pinguino\dotnet-2024\LeClassi\obj\Debug\net8.0\LeClassi.dll
+C:\Users\DOTNET\Documents\pinguino\dotnet-2024\LeClassi\obj\Debug\net8.0\refint\LeClassi.dll
+C:\Users\DOTNET\Documents\pinguino\dotnet-2024\LeClassi\obj\Debug\net8.0\LeClassi.pdb
+C:\Users\DOTNET\Documents\pinguino\dotnet-2024\LeClassi\obj\Debug\net8.0\LeClassi.genruntimeconfig.cache
+C:\Users\DOTNET\Documents\pinguino\dotnet-2024\LeClassi\obj\Debug\net8.0\ref\LeClassi.dll
