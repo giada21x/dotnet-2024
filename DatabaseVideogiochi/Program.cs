@@ -1,7 +1,7 @@
 ﻿using System.Diagnostics.Tracing;
 using System.Runtime.CompilerServices;
 using Newtonsoft.Json;
-class Progr
+class Program
 {
     static void Main(string[] args)
     {

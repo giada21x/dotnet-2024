@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Sql_Light")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b9b08bb7fc912c68354b64987ca37582e2a5329f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+27be1412bd6fb02247fd97ac2f1432687730296e")]
 [assembly: System.Reflection.AssemblyProductAttribute("Sql_Light")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Sql_Light")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
