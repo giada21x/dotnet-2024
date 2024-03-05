@@ -45,6 +45,31 @@ class Database : DbContext
         }
         return lista;
     }
+
+    public void RemoveUsers(string name)
+    {
+        foreach (var user in Users)
+        {
+            if (user.Nome == name)
+            {
+                Users.Remove(user);
+            }
+        }
+        SaveChanges();
+    }
+
+    public void UpdateUsers(string name, string newName)
+    {
+        foreach (var user in Users)
+        {
+            if (user.Nome == name)
+            {
+                user.Nome = newName;
+            }
+           
+        }
+        SaveChanges();
+    }
 }
 
 class View
@@ -59,10 +84,9 @@ class View
     {
         Console.WriteLine("1. Aggiungi user");
         Console.WriteLine("2. Leggi user");
-        Console.WriteLine("3. Esci");
-        
-
-
+        Console.WriteLine("3. Elimina user");
+        Console.WriteLine("4. Modifica user");
+        Console.WriteLine("5. Esci");
     }
     public void ShowUsers(List<string> users)
     {
@@ -101,11 +125,19 @@ class Controller
             {
                 AddUser();
             }
-            else if (input =="2")
+            else if (input == "2")
             {
                 ShowUsers();
             }
             else if (input == "3")
+            {
+                RemoveUsers();
+            }
+            else if (input == "4")
+            {
+                UpdateUsers();
+            }
+            else if (input == "5")
             {
                 break;
             }
@@ -117,12 +149,33 @@ class Controller
         Console.WriteLine("Enter user name");
         var name = _view.GetInput();
         _db.AddUsers(name);
-        
+
     }
 
     private void ShowUsers()
     {
         var users = _db.GetUsers();
-        _view.ShowUsers(users);   
+        _view.ShowUsers(users);
+    }
+    private void RemoveUsers()
+    {
+        Console.WriteLine("Remove user");
+        var users = _db.GetUsers();
+        var name = _view.GetInput();
+        _view.ShowUsers(users);
+        _db.RemoveUsers(name);
+
+    }
+    private void UpdateUsers()
+    {
+        Console.WriteLine("Update user");
+        ShowUsers();
+        Console.WriteLine("Select name");
+        var name = _view.GetInput();
+        Console.WriteLine("Insert new name");
+        var newName = _view.GetInput();
+        _db.UpdateUsers(name, newName);
+        
+
     }
 }

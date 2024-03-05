@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DOTNET\\Documents\\pinguino\\dotnet-2024\\LeClassi\\Macchina\\Macchina.csproj": {}
+    "C:\\Users\\DOTNET\\Documents\\pinguino\\dotnet-2024\\Le_classi\\Dadi\\Dadi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DOTNET\\Documents\\pinguino\\dotnet-2024\\LeClassi\\Macchina\\Macchina.csproj": {
+    "C:\\Users\\DOTNET\\Documents\\pinguino\\dotnet-2024\\Le_classi\\Dadi\\Dadi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DOTNET\\Documents\\pinguino\\dotnet-2024\\LeClassi\\Macchina\\Macchina.csproj",
-        "projectName": "Macchina",
-        "projectPath": "C:\\Users\\DOTNET\\Documents\\pinguino\\dotnet-2024\\LeClassi\\Macchina\\Macchina.csproj",
+        "projectUniqueName": "C:\\Users\\DOTNET\\Documents\\pinguino\\dotnet-2024\\Le_classi\\Dadi\\Dadi.csproj",
+        "projectName": "Dadi",
+        "projectPath": "C:\\Users\\DOTNET\\Documents\\pinguino\\dotnet-2024\\Le_classi\\Dadi\\Dadi.csproj",
         "packagesPath": "C:\\Users\\DOTNET\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DOTNET\\Documents\\pinguino\\dotnet-2024\\LeClassi\\Macchina\\obj\\",
+        "outputPath": "C:\\Users\\DOTNET\\Documents\\pinguino\\dotnet-2024\\Le_classi\\Dadi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -31,6 +31,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MVC-entityFramework", "MVC-
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcConsole", "MVC-entityFramework\MvcConsole\MvcConsole.csproj", "{27889C6C-73DE-44C2-A1EF-21669DA0941A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Le_classi", "Le_classi", "{BB59A84A-E9BD-4446-AE28-5691F451F3FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dadi", "Le_classi\Dadi\Dadi.csproj", "{B2C3FDA6-3F9F-4441-86DB-6B9D386155CE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +85,10 @@ Global
 		{27889C6C-73DE-44C2-A1EF-21669DA0941A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{27889C6C-73DE-44C2-A1EF-21669DA0941A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{27889C6C-73DE-44C2-A1EF-21669DA0941A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2C3FDA6-3F9F-4441-86DB-6B9D386155CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2C3FDA6-3F9F-4441-86DB-6B9D386155CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2C3FDA6-3F9F-4441-86DB-6B9D386155CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2C3FDA6-3F9F-4441-86DB-6B9D386155CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -89,6 +97,7 @@ Global
 		{E7F20DEE-4F7A-4F23-857B-7FA43D6D72B4} = {C3D2A546-1E21-4A48-B9F5-BADEC18ADEF4}
 		{11FF3C42-C438-4D7B-8642-FD58673E220C} = {D9C983FF-0623-456D-B8BD-E25C804B0B5F}
 		{27889C6C-73DE-44C2-A1EF-21669DA0941A} = {E55C15FD-B0C7-41B2-BAD8-D10663B387E9}
+		{B2C3FDA6-3F9F-4441-86DB-6B9D386155CE} = {BB59A84A-E9BD-4446-AE28-5691F451F3FF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2188F491-A296-4181-95FB-3791937291E6}
