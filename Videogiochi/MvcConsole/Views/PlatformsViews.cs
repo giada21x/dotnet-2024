@@ -1,4 +1,4 @@
-class PlatformViews
+public class PlatformViews
 {
     public void ShowPlatforms(List<object> platforms)
     {

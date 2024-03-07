@@ -1,24 +1,16 @@
-class View
+public class View
 {
     public void ShowMainMenu()
     {
+        Console.WriteLine("Benvenuto!");
+        
         Console.WriteLine("Cosa vuoi fare?:");
-        Console.WriteLine("1. Aggiungere");
-        Console.WriteLine("2. Visualizzare");
-        Console.WriteLine("3. Modificare");
-        Console.WriteLine("4. Eliminare");
-        Console.WriteLine("5. Esci");
+        Console.WriteLine("1. Menu Utente");
+        Console.WriteLine("2. Menu Videogioco");
+        Console.WriteLine("3. Menu Voti");
+        Console.WriteLine("4. Menu Genere");
+        Console.WriteLine("5. Menu Platform");
     }
-
-    public void ShowAddMenu()
-    {
-        Console.WriteLine("1. Aggiungi un videogioco");
-        Console.WriteLine("2. Aggiungi un utente");
-        Console.WriteLine("3. Aggiungi un voto ");
-        Console.WriteLine("4. Aggiungi un genere");
-        Console.WriteLine("5. Aggiungi una console");
-    }
-
     public void ShowShowMenu()
     {
         Console.WriteLine("1. Visualizza la tabella videogioco");
@@ -51,7 +43,18 @@ class View
     public void ShowUpdateVoti()
     {
         Console.WriteLine("1. Modifica il voto");
-        
+        Console.WriteLine("2. Modifica il videogioco a cui hai assegnato il voto");
+        Console.WriteLine("3. Modifica l'utente che ha assegnato il voto");
+    }
+
+    public void ShowUpdateGenere()
+    {
+        Console.WriteLine("Modifica un genere");
+    }
+
+    public void ShowUpdatePlatform()
+    {
+        Console.WriteLine("Modifica una console");
         
     }
     public void ShowRemoveMenu()
@@ -62,9 +65,32 @@ class View
         Console.WriteLine("4. Rimuovi elementi della tabella genere");
         Console.WriteLine("5. Rimuovi elementi della tabella console");
     }
+
+    public void ShowRemoveUtente()
+    {
+        Console.WriteLine("Rimuovi un videogioco");
+    }
+    public void ShowRemoveVideogioco()
+    {
+        Console.WriteLine("Rimuovi un utente");
+    }
+
+    public void ShowRemoveVoto()
+    {
+        Console.WriteLine("Rimuovi un voto");
+    }
+
+    public void ShowRemoveGenere()
+    {
+        Console.WriteLine("Rimuovi un genere");
+    }
+
+    public void ShowRemovePlatform()
+    {
+        Console.WriteLine("Rimuovi una console");
+    } 
      public string GetInput()
     {
         return Console.ReadLine()!;
-        
     }
 }

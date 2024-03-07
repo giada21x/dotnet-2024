@@ -1,4 +1,4 @@
-class VotiViews
+public class VotiViews
 {
     public void ShowVoti(List<object> voti)
     {

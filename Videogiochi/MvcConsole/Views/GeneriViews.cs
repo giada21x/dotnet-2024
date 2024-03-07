@@ -1,4 +1,4 @@
-class GeneriViews
+public class GeneriViews
 {
     public void ShowGeneri(List<object> generi)
     {

@@ -1,18 +1,91 @@
-using Microsoft.EntityFrameworkCore.Metadata.Conventions;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
-using Microsoft.EntityFrameworkCore.Migrations.Operations;
-
-class Controller
+public class DatabaseController
 {
     private Database _db;
-    private View _view;
+   
 
-    public Controller(Database db, View view)
+    public DatabaseController(Database db)
     {
         _db = db;
-        _view = view;
+        
     }
-
+    //SEZIONE TABELLA UTENTE
+    public void AggiungiUtente(string nome, string cognome, int eta)
+    {
+        _db.Utenti.Add(new Utente { Nome = nome, Cognome = cognome, Eta = eta});
+        _db.SaveChanges();
+    }
+    public List<Utente> GetUtenti()
+    {
+        return _db.Utenti.ToList();
+    }
+    public void ModificaNomeUtente(string nome, string NewNome)
+    {
+        Utente utente = null;
+        foreach (var u in _db.Utenti)
+        {
+            if (u.Nome == nome)
+            {
+                utente = u;
+                break;
+            }
+        }
+        if (utente != null)
+        {
+            utente.Nome = NewNome;
+            _db.SaveChanges();
+        }
+    }
+    public void ModificaCognomeUtente(string cognome, string NewCognome)
+    {
+        Utente utente = null;
+        foreach (var u in _db.Utenti)
+        {
+            if (u.Cognome == cognome)
+            {
+                utente = u;
+                break;
+            }
+        }
+        if (utente != null)
+        {
+            utente.Cognome = NewCognome;
+            _db.SaveChanges();
+        }
+    }
+    public void ModificaEtaUtente(int eta, int NewEta)
+    {
+        Utente utente = null;
+        foreach (var u in _db.Utenti)
+        {
+            if (u.Eta == eta)
+            {
+                utente = u;
+                break;
+            }
+        }
+        if (utente != null)
+        {
+            utente.Eta = NewEta;
+            _db.SaveChanges();
+        }
+    }
+    public void RimuoviUtente(string nome)
+    {
+        Utente utenteDaEliminare = null;
+        foreach (var u in _db.Utenti)
+        {
+            if (u.Nome == nome)
+            {
+                utenteDaEliminare = u;
+                break;
+            }
+        }
+        if (utenteDaEliminare != null)
+        {
+            _db.Utenti.Remove(utenteDaEliminare);
+            _db.SaveChanges();
+        }
+    }
     /*public void MainMenu()
     {
         while (true)
@@ -21,7 +94,7 @@ class Controller
             var input = _view.GetInput();
             if (input == "1")
             {
-                AddVideogioco();
+                ShowAddMenu();
             }
             else if (input == "2")
             {

@@ -1,4 +1,4 @@
-class VideogiochiViews
+public class VideogiochiViews
 {
     public void ShowVideogiochi(List<object> videogiochi)
     {
