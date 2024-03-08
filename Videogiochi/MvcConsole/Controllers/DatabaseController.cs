@@ -86,6 +86,85 @@ public class DatabaseController
             _db.SaveChanges();
         }
     }
+    //SEZIONE TABELLA VIDEOGIOCO
+    /*public void AggiungiVideogioco(string titolo, int anno, Genere genere, Platform platform)
+    {
+        _db.Videogiochi.Add(new Videogioco { Titolo = titolo, Anno = anno, Genere = genere, Platform = platform});
+        _db.SaveChanges();
+    }
+
+    public List<Videogioco> GetVideogiochi()
+    {
+        return _db.Videogiochi.ToList();
+    }
+
+    public Genere GetGenereById(int id)
+    {
+        return _db.Generi.FirstOrDefault(g => g.Id == id);
+    }
+
+    public Platform GetPlatformById(int id)
+    {
+        return _db.Platforms.FirstOrDefault(p => p.Id == id);
+    }
+
+    public void ModificaTitoloVideogioco(string titolo, string NewTitolo)
+    {
+        Videogioco videogioco = null;
+        foreach (var v in _db.Videogiochi)
+        {
+            if (v.Titolo == titolo)
+            {
+                videogioco = v;
+                break;
+            }
+        }
+        if (videogioco != null)
+        {
+            videogioco.Titolo = NewTitolo;
+            _db.SaveChanges();
+        }
+    }
+
+    public void ModificaAnnoVideogioco(int anno, int NewAnno)
+    {
+        Videogioco videogioco = null;
+        foreach (var v in _db.Videogiochi)
+        {
+            if (v.Anno == anno)
+            {
+                videogioco = v;
+                break;
+            }
+        }
+        if (videogioco != null)
+        {
+            videogioco.Anno = NewAnno;
+            _db.SaveChanges();
+        }
+    }
+
+    public void ModificaGenereVideogioco(Genere genere, int NewGenere)
+    {
+        Videogioco videogioco = null;
+        foreach (var v in _db.Videogiochi)
+        {
+            if (v.Anno == anno)
+            {
+                videogioco = v;
+                break;
+            }
+        }
+        if (videogioco != null)
+        {
+            videogioco.Anno = NewAnno;
+            _db.SaveChanges();
+        }
+    }
+*/
+
+
+
     /*public void MainMenu()
     {
         while (true)

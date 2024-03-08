@@ -2,10 +2,11 @@ public class MenuController
 {
     //private DatabaseController _dbController;
     private View _view = new View();
-    
-    public MenuController(/*DatabaseController dbController,*/ View view)
+    private UtenteController _utenteController;
+    public MenuController(UtenteController utenteController, View view)
 
     {
+        _utenteController = utenteController;
         _view = view;
     }
 
@@ -17,10 +18,13 @@ public class MenuController
             var input = _view.GetInput();
             if (input == "1")
             {
-                UtenteView menuUtente = new UtenteView();
-                menuUtente.ShowMenuUtente();
+                _utenteController.MenuUtente();
+                
             }
-            //else if ()
+            else if (input == "2")
+            {
+                break;
+            }
 
             Console.ReadKey();
         }

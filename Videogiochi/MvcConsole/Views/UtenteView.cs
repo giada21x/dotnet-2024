@@ -3,6 +3,8 @@ public class UtenteView
    
    public void ShowMenuUtente()
     {
+        Console.WriteLine("Cosa desideri fare?");
+        
         Console.WriteLine("1. Aggiungi un utente");
         Console.WriteLine("2. Visualizza tutti gli utenti");
         Console.WriteLine("3. Modifica un utente");
@@ -20,7 +22,7 @@ public class UtenteView
     {
         foreach (var utente in utenti)
         {
-            Console.WriteLine(utente.Nome, utente.Cognome, utente.Eta);
+            Console.WriteLine($"Id: {utente.Id}, Nome: {utente.Nome}, Cognome: {utente.Cognome}, Età: {utente.Eta}");
 
         }
     }

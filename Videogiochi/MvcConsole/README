@@ -1,8 +1,0 @@
-### DATABASE VIDEOGIOCO
-
-## CREAZIONE CLASSI:
-
-- classe Utente: Id, Nome, Cognome, Età
-- classe Videogioco: Id, Id_utente, Titolo, Anno, Voto,      id_genere, id_console
-- classe Genere: Id, Nome
-- classe Console: Id, Nome

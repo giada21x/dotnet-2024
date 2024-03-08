@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Videogiochi", "Videogiochi", "{26705968-0A91-4B7A-BEC5-0C3757C4CE4B}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Videogiochi", "Videogiochi", "{CDFAB90B-4033-420D-8676-3096C4B620FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcConsole", "Videogiochi\MvcConsole\MvcConsole.csproj", "{17CFCCB9-DBBC-4718-8FB0-B848FD477617}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcConsole", "Videogiochi\MvcConsole\MvcConsole.csproj", "{CCB68AF7-849E-415B-9AB8-36980949762B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -16,12 +16,12 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{17CFCCB9-DBBC-4718-8FB0-B848FD477617}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{17CFCCB9-DBBC-4718-8FB0-B848FD477617}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{17CFCCB9-DBBC-4718-8FB0-B848FD477617}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{17CFCCB9-DBBC-4718-8FB0-B848FD477617}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCB68AF7-849E-415B-9AB8-36980949762B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCB68AF7-849E-415B-9AB8-36980949762B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCB68AF7-849E-415B-9AB8-36980949762B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCB68AF7-849E-415B-9AB8-36980949762B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{17CFCCB9-DBBC-4718-8FB0-B848FD477617} = {26705968-0A91-4B7A-BEC5-0C3757C4CE4B}
+		{CCB68AF7-849E-415B-9AB8-36980949762B} = {CDFAB90B-4033-420D-8676-3096C4B620FD}
 	EndGlobalSection
 EndGlobal

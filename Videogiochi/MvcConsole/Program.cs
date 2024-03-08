@@ -9,10 +9,11 @@ public class Program
         var viewUtente = new UtenteView();
 
         var dbController = new DatabaseController(db);
-        var controller = new MenuController(view);
         var controllerUtente = new UtenteController(dbController, viewUtente);
+        var controller = new MenuController(controllerUtente, view);
+        
         controller.MainMenu();
-        //controllerUtente.MenuUtente();
+        
         
     }
 }

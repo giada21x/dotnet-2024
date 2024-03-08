@@ -13,7 +13,7 @@ public class Database : DbContext
     {
         optionsBuilder.UseSqlite("Data Source=MyDatabase.sqlite");
     }
-
+}
     /*public void AddUtenti(string nome)
     {
         var utente = new Utente { Nome = nome};
@@ -63,4 +63,3 @@ public class Database : DbContext
     
     
 
-}
