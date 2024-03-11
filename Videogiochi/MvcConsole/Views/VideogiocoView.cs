@@ -1,8 +1,10 @@
-public class VideogiochiViews
+public class VideogiocoView
 {
     
     public void ShowMenuVideogioco()
     {
+        Console.WriteLine("Cosa vuoi fare?");
+        
         Console.WriteLine("1. Aggiungi un videogioco");
         Console.WriteLine("2. Visualizza tutti i videoigiochi");
         Console.WriteLine("3. Modifica un videogioco");
@@ -10,16 +12,32 @@ public class VideogiochiViews
         Console.WriteLine("5. Esci");
         
     }
+    public void ShowVisualizzaGeneri(List<Genere> generi)
+    {
+        foreach (var genere in generi)
+        {
+            Console.WriteLine($"Id: {genere.Id}, Nome: {genere.Nome}");
+        }
+    }
+    public void ShowVisualizzaPlatforms(List<Platform> platforms)
+    {
+        foreach (var platform in platforms)
+        {
+            Console.WriteLine($"Id: {platform.Id}, Nome: {platform.Nome}");
+        }
+    }
 
     public void ShowAggiungiVideogioco()
     {
+        
+        
         Console.WriteLine("Inserisci titolo, anno di uscita, id_genere e id_platform");
     }
     public void ShowVisualizzaVideogiochi(List<Videogioco> videogiochi)
     {
         foreach (var videogioco in videogiochi)
         {
-            Console.WriteLine(videogioco.Titolo, videogioco.Anno, videogioco.Genere, videogioco.Platform);
+            Console.WriteLine($"Titolo: {videogioco.Titolo}, Anno: {videogioco.Anno}, Genere: {videogioco.Genere}, Platform: {videogioco.Platform}");
             
         }
     }

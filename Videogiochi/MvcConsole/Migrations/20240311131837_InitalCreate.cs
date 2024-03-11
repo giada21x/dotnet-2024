@@ -42,6 +42,7 @@ namespace MvcConsole.Migrations
                 {
                     Id = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
+                    Nickname = table.Column<string>(type: "TEXT", nullable: true),
                     Nome = table.Column<string>(type: "TEXT", nullable: true),
                     Cognome = table.Column<string>(type: "TEXT", nullable: true),
                     Eta = table.Column<int>(type: "INTEGER", nullable: false)
@@ -78,7 +79,7 @@ namespace MvcConsole.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Voti",
+                name: "Valutazioni",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "INTEGER", nullable: false)
@@ -89,18 +90,28 @@ namespace MvcConsole.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Voti", x => x.Id);
+                    table.PrimaryKey("PK_Valutazioni", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Voti_Utenti_UtenteId",
+                        name: "FK_Valutazioni_Utenti_UtenteId",
                         column: x => x.UtenteId,
                         principalTable: "Utenti",
                         principalColumn: "Id");
                     table.ForeignKey(
-                        name: "FK_Voti_Videogiochi_VideogiocoId",
+                        name: "FK_Valutazioni_Videogiochi_VideogiocoId",
                         column: x => x.VideogiocoId,
                         principalTable: "Videogiochi",
                         principalColumn: "Id");
                 });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Valutazioni_UtenteId",
+                table: "Valutazioni",
+                column: "UtenteId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Valutazioni_VideogiocoId",
+                table: "Valutazioni",
+                column: "VideogiocoId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Videogiochi_GenereId",
@@ -111,23 +122,13 @@ namespace MvcConsole.Migrations
                 name: "IX_Videogiochi_PlatformId",
                 table: "Videogiochi",
                 column: "PlatformId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Voti_UtenteId",
-                table: "Voti",
-                column: "UtenteId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Voti_VideogiocoId",
-                table: "Voti",
-                column: "VideogiocoId");
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Voti");
+                name: "Valutazioni");
 
             migrationBuilder.DropTable(
                 name: "Utenti");

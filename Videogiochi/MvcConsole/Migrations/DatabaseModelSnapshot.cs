@@ -56,12 +56,39 @@ namespace MvcConsole.Migrations
                     b.Property<int>("Eta")
                         .HasColumnType("INTEGER");
 
+                    b.Property<string>("Nickname")
+                        .HasColumnType("TEXT");
+
                     b.Property<string>("Nome")
                         .HasColumnType("TEXT");
 
                     b.HasKey("Id");
 
                     b.ToTable("Utenti");
+                });
+
+            modelBuilder.Entity("Valutazione", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("UtenteId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("VideogiocoId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Voto")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UtenteId");
+
+                    b.HasIndex("VideogiocoId");
+
+                    b.ToTable("Valutazioni");
                 });
 
             modelBuilder.Entity("Videogioco", b =>
@@ -91,28 +118,19 @@ namespace MvcConsole.Migrations
                     b.ToTable("Videogiochi");
                 });
 
-            modelBuilder.Entity("Voti", b =>
+            modelBuilder.Entity("Valutazione", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
+                    b.HasOne("Utente", "Utente")
+                        .WithMany()
+                        .HasForeignKey("UtenteId");
 
-                    b.Property<int?>("UtenteId")
-                        .HasColumnType("INTEGER");
+                    b.HasOne("Videogioco", "Videogioco")
+                        .WithMany()
+                        .HasForeignKey("VideogiocoId");
 
-                    b.Property<int?>("VideogiocoId")
-                        .HasColumnType("INTEGER");
+                    b.Navigation("Utente");
 
-                    b.Property<int>("Voto")
-                        .HasColumnType("INTEGER");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("UtenteId");
-
-                    b.HasIndex("VideogiocoId");
-
-                    b.ToTable("Voti");
+                    b.Navigation("Videogioco");
                 });
 
             modelBuilder.Entity("Videogioco", b =>
@@ -128,21 +146,6 @@ namespace MvcConsole.Migrations
                     b.Navigation("Genere");
 
                     b.Navigation("Platform");
-                });
-
-            modelBuilder.Entity("Voti", b =>
-                {
-                    b.HasOne("Utente", "Utente")
-                        .WithMany()
-                        .HasForeignKey("UtenteId");
-
-                    b.HasOne("Videogioco", "Videogioco")
-                        .WithMany()
-                        .HasForeignKey("VideogiocoId");
-
-                    b.Navigation("Utente");
-
-                    b.Navigation("Videogioco");
                 });
 #pragma warning restore 612, 618
         }

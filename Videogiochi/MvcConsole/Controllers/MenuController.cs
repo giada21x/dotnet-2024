@@ -1,14 +1,19 @@
 public class MenuController
 {
-    //private DatabaseController _dbController;
+    
     private View _view = new View();
+    private VideogiocoView _videogiochiViews; 
     private UtenteController _utenteController;
-    public MenuController(UtenteController utenteController, View view)
+    private VideogiocoController _videogiocoController;
+    public MenuController(UtenteController utenteController, View view, VideogiocoController videogiocoController, VideogiocoView videogiochiViews)
 
     {
         _utenteController = utenteController;
         _view = view;
+        _videogiocoController = videogiocoController;
+        _videogiochiViews = videogiochiViews;
     }
+    
 
     public void MainMenu()
     {
@@ -23,10 +28,14 @@ public class MenuController
             }
             else if (input == "2")
             {
+                _videogiocoController.MenuVideogioco();
+            }
+            else if (input == "6")
+            {
                 break;
             }
 
-            Console.ReadKey();
+            
         }
     }
 }

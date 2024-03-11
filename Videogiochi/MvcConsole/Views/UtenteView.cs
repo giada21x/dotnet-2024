@@ -15,23 +15,25 @@ public class UtenteView
 
     public void ShowAggiungiUtente()
     {
-        Console.WriteLine("Inserisci nome, cognome ed età");
+        Console.WriteLine("Inserisci nickname, nome, cognome ed età");
     }
 
     public void ShowVisualizzaUtenti(List<Utente> utenti)
     {
         foreach (var utente in utenti)
         {
-            Console.WriteLine($"Id: {utente.Id}, Nome: {utente.Nome}, Cognome: {utente.Cognome}, Età: {utente.Eta}");
+            Console.WriteLine($"Nickname: {utente.Nickname}, Nome: {utente.Nome}, Cognome: {utente.Cognome}, Età: {utente.Eta}");
 
         }
     }
     
     public void ShowModificaUtente()
     {
-        Console.WriteLine("1. Modifica il nome");
-        Console.WriteLine("2. Modifica il cognome");
-        Console.WriteLine("3. Modifica l'età");
+        Console.WriteLine("Cosa desideri modificare?");
+        Console.WriteLine("1. Modifica il nickname");
+        Console.WriteLine("2. Modifica il nome");
+        Console.WriteLine("3. Modifica il cognome");
+        Console.WriteLine("4. Modifica l'età");
     }
 
     

@@ -1,4 +1,4 @@
-public class Voti
+public class Valutazione
 {
     public int Id { get; set; }
     
