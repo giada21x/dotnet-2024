@@ -90,10 +90,10 @@ public class VideogiocoController
             
             _view.ShowVisualizzaVideogiochi(videogiochi);
             Console.WriteLine("Inserisci l'id del genere del videogioco che vuoi modificare");
-            var id_genere = _view.GetInputInt();
+            var titolo = _view.GetInput();
             Console.WriteLine("Inserisci l'id genere nuovo");
             var NewId_genere = _view.GetInputInt();
-            _dbController.ModificaGenereVideogioco(id_genere, NewId_genere);
+            _dbController.ModificaGenereVideogioco(titolo, NewId_genere);
             
             
         }
@@ -103,24 +103,14 @@ public class VideogiocoController
             
             _view.ShowVisualizzaVideogiochi(videogiochi);
             Console.WriteLine("Inserisci l'id della console del videogioco che vuoi modificare");
-            var id_platform = _view.GetInputInt();
+            var titolo = _view.GetInput();
             Console.WriteLine("Inserisci l'id console nuovo");
             var NewId_platform = _view.GetInputInt();
-            _dbController.ModificaPlatformVideogioco(id_platform, NewId_platform);
+            _dbController.ModificaPlatformVideogioco(titolo, NewId_platform);
             
             
         }
     }
     
 }
-    /*
     
-    private void RimuoviUtente()
-    {
-        var utenti = _dbController.GetUtenti();
-        _view.ShowVisualizzaUtenti(utenti);
-        _view.ShowRimuoviUtente();
-        var nome = _view.GetInput();
-        _dbController.RimuoviUtente(nome);
-    }
-}*/

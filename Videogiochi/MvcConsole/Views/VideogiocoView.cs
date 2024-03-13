@@ -37,7 +37,7 @@ public class VideogiocoView
     {
         foreach (var videogioco in videogiochi)
         {
-            Console.WriteLine($"Titolo: {videogioco.Titolo}, Anno: {videogioco.Anno}, Genere: {videogioco.Genere}, Platform: {videogioco.Platform}");
+            Console.WriteLine($"Titolo: {videogioco.Titolo}, Anno: {videogioco.Anno}, Genere: {videogioco.Genere.Nome}, Platform: {videogioco.Platform.Nome}");
             
         }
     }

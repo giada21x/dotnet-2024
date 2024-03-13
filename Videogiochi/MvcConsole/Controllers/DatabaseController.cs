@@ -317,62 +317,47 @@ public class DatabaseController
             _db.SaveChanges();
         }
     }
-    public void ModificaGenereVideogioco(int id_genere, int NewId_genere)
+    public void ModificaGenereVideogioco(string titolo, int NewId_genere)
     {
-        Genere genere = _db.Generi.FirstOrDefault(g => g.Id == id_genere);
-        if (genere != null)
-        {
-            Videogioco videogioco = _db.Videogiochi.FirstOrDefault(v => v.Genere.Id == id_genere);
+         Videogioco videogioco = _db.Videogiochi.FirstOrDefault(v => v.Titolo == titolo);
             if (videogioco != null)
-            {
-                Genere newGenere = _db.Generi.FirstOrDefault(g => g.Id == NewId_genere);
-                if (newGenere != null)
+        if (videogioco != null)
+        {
+            
+                Genere genere = _db.Generi.FirstOrDefault(g => g.Id == NewId_genere);
+                if (genere != null)
                 {
-                    videogioco.Genere = newGenere;
+                    videogioco.Genere = genere;
                     _db.SaveChanges();
                 }
-                else
-                {
-                    Console.WriteLine("Nuovo genere non trovato.");
-                }
-            }
+                
+            
             else
             {
-                Console.WriteLine("Videogioco con l'ID del genere specificato non trovato.");
+                Console.WriteLine("Videogioco  non trovato.");
             }
         }
-        else
-        {
-            Console.WriteLine("Genere non trovato.");
-        }
+        
     }
-    public void ModificaPlatformVideogioco(int id_platform, int NewId_platform)
+    public void ModificaPlatformVideogioco(string titolo, int NewId_platform)
     {
-        Platform platform = _db.Platforms.FirstOrDefault(p => p.Id == id_platform);
-        if (platform != null)
+       Videogioco videogioco = _db.Videogiochi.FirstOrDefault(v => v.Titolo == titolo);
+        
+        if (videogioco != null)
         {
-            Videogioco videogioco = _db.Videogiochi.FirstOrDefault(v => v.Platform.Id == id_platform);
-            if (videogioco != null)
-            {
-                Platform newPlatform = _db.Platforms.FirstOrDefault(p => p.Id == NewId_platform);
-                if (newPlatform != null)
+            
+                Platform platform = _db.Platforms.FirstOrDefault(p => p.Id == NewId_platform);
+                if (platform != null)
                 {
-                    videogioco.Platform = newPlatform;
+                    videogioco.Platform = platform;
                     _db.SaveChanges();
                 }
-                else
-                {
-                    Console.WriteLine("Nuova conosle non trovata.");
-                }
-            }
+                
+            
             else
             {
-                Console.WriteLine("Videogioco con l'ID della console specificata non trovato.");
+                Console.WriteLine("Videogioco  non trovato.");
             }
-        }
-        else
-        {
-            Console.WriteLine("Consol non trovata.");
         }
     }
     public void RimuoviVideogioco(string titolo)
