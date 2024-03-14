@@ -1,0 +1,100 @@
+@page
+@model ProdottiModel
+@{
+    ViewData["Title"] = "Prodotti";
+}
+<h1>@ViewData["Title"]</h1>
+
+<form method="get">
+    <div class="form-group">
+        <label for="minPrezzo">Min Prezzo</label>
+        <input type="text" class="form-control" name="minPrezzo"/>
+    </div>
+    <div class="for-group">
+        <label for="maxPrezzo">Max Prezzo</label>
+        <input type="text" class="form-control" name="maxPrezzo"/>
+    </div>
+    <br>  
+    <button type="submit" class="btn btn-primary">Filtra</button>
+</form>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Prezzo</th>
+            <th>Dettaglio</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var prodotto in Model.Prodotti)
+        {
+            <tr>
+                <td>@prodotto.Nome</td>
+                <td>@prodotto.Prezzo</td>
+                <td><a asp-page="ProdottoDettaglio" asp-route-nome="@prodotto.Nome" asp-route-prezzo="@prodotto.Prezzo"
+                        asp-route-dettaglio="@prodotto.Dettaglio">Dettaglio</a></td>
+            </tr>
+        }
+    </tbody>
+</table>
+<form method="get"> 
+  <input type="hidden" name="minPrezzo" value="@Request.Query["minPrezzo"]" /> 
+  <input type="hidden" name="maxPrezzo" value="@Request.Query["maxPrezzo"]" /> 
+  <button type="submit" class="btn btn-primary" name="pageIndex" value="1">1</button> 
+  <button type="submit" class="btn btn-primary" name="pageIndex" value="2">2</button> 
+  <button type="submit" class="btn btn-primary" name="pageIndex" value="3">3</button> 
+</form>
+<br>
+<div class="row g-0">
+    @foreach (var item in Model.Prodotti)
+    {
+        <div class="card col-md-4">
+            <div class="card-header ">
+                <h5 class="card-title">@item.Nome</h5>
+
+                @{
+                    if (item.Prezzo < 300)
+                    {
+                        <p class="card-text text-success">@item.Prezzo</p>
+                        <a asp-page="ProdottoDettaglio" asp-route-nome="@item.Nome" asp-route-prezzo="@item.Prezzo" asp-route-Dettaglio ="@item.Dettaglio" class="btn btn-primary">Dettaglio</a>
+                    }
+                    else if (item.Prezzo < 500)
+                    {
+                        <p  class="card-text text-success">@item.Prezzo</p>
+                        <a asp-page="ProdottoDettaglio" asp-route-nome="@item.Nome" asp-route-prezzo="@item.Prezzo" asp-route-Dettaglio ="@item.Dettaglio" class="btn btn-success">Dettaglio</a>
+
+                    }
+                    else if (item.Prezzo < 700)
+                    {
+                        <p  class="card-text text-success">@item.Prezzo</p>
+                        <a asp-page="ProdottoDettaglio" asp-route-nome="@item.Nome" asp-route-prezzo="@item.Prezzo" asp-route-Dettaglio ="@item.Dettaglio" class="btn btn-success">Dettaglio</a>
+                    }
+                    else 
+                    {
+                        <p class="card-text text-danger">@item.Prezzo</p>
+                        <a asp-page="ProdottoDettaglio" asp-route-nome="@item.Nome" asp-route-prezzo="@item.Prezzo" asp-route-Dettaglio ="@item.Dettaglio" class="btn btn-primary">Dettaglio</a>
+
+                    }
+                }
+            </div>
+            
+        </div>
+    }
+</div>
+<br>
+<div style="height: 100px;">
+    <form method = "get">
+        <input type= "hidden" name = "minPrezzo" value = "@Request.Query["minPrezzo"]">
+        <input type= "hidden" name = "maxPrezzo" value = "@Request.Query["manPrezzo"]">
+        @for (int i = 1; i <= Model.numeroPagine; i++)
+        {
+            <button type="submit" class="btn btn-primary" name="pageIndex" value="@i">@i</button>
+        }
+    </form>
+</div>
+<div class="progress">
+  <div class="progress-bar" role="progressbar" aria-valuenow="70"
+  aria-valuemin="0" aria-valuemax="100" style="width:70%">
+    <span class="sr-only">70% Complete</span>
+  </div>
+</div>
