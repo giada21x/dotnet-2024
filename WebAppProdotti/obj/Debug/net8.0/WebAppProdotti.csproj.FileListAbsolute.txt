@@ -60,3 +60,6 @@ C:\Users\DOTNET\Documents\pinguino\dotnet-2024\WebAppProdotti\obj\Debug\net8.0\r
 C:\Users\DOTNET\Documents\pinguino\dotnet-2024\WebAppProdotti\obj\Debug\net8.0\WebAppProdotti.pdb
 C:\Users\DOTNET\Documents\pinguino\dotnet-2024\WebAppProdotti\obj\Debug\net8.0\WebAppProdotti.genruntimeconfig.cache
 C:\Users\DOTNET\Documents\pinguino\dotnet-2024\WebAppProdotti\obj\Debug\net8.0\ref\WebAppProdotti.dll
+C:\Users\DOTNET\Documents\pinguino\dotnet-2024\WebAppProdotti\obj\Debug\net8.0\WebAppProdotti.csproj.AssemblyReference.cache
+C:\Users\DOTNET\Documents\pinguino\dotnet-2024\WebAppProdotti\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\DOTNET\Documents\pinguino\dotnet-2024\WebAppProdotti\obj\Debug\net8.0\WebAppProdotti.csproj.CopyComplete

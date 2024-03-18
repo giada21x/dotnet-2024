@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "xbyW2xynHfE64mJU1+Shat7v55UE6o2bXkrE9+RIN3HsZ/z8+5dpPP2YYeOglY/+QNmHELzQd0+GNC5NDI5LfQ==",
+  "dgSpecHash": "OT2Npsun19qpO76Rs1w5kS/SNs8KaEicTYUeVo9Xe49vbixP8UozCwwSyc5txt00b/nrnFvlijlH2vGNtmWTOQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\DOTNET\\Documents\\pinguino\\dotnet-2024\\WebAppProdotti\\WebAppProdotti.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\DOTNET\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

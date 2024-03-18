@@ -17,6 +17,14 @@
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
+      "Id": "C:\\Users\\DOTNET\\Documents\\pinguino\\dotnet-2024\\WebAppProdotti\\wwwroot\\json\\persone.json",
+      "PackagePath": "staticwebassets\\json\\persone.json"
+    },
+    {
+      "Id": "C:\\Users\\DOTNET\\Documents\\pinguino\\dotnet-2024\\WebAppProdotti\\wwwroot\\json\\prodotti.json",
+      "PackagePath": "staticwebassets\\json\\prodotti.json"
+    },
+    {
       "Id": "C:\\Users\\DOTNET\\Documents\\pinguino\\dotnet-2024\\WebAppProdotti\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },

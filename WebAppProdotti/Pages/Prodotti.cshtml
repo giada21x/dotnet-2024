@@ -29,10 +29,10 @@
         @foreach (var prodotto in Model.Prodotti)
         {
             <tr>
+                
                 <td>@prodotto.Nome</td>
                 <td>@prodotto.Prezzo</td>
-                <td><a asp-page="ProdottoDettaglio" asp-route-nome="@prodotto.Nome" asp-route-prezzo="@prodotto.Prezzo"
-                        asp-route-dettaglio="@prodotto.Dettaglio">Dettaglio</a></td>
+                <td><a asp-page="ProdottoDettaglio" asp-route-nome="@prodotto.Nome" asp-route-prezzo="@prodotto.Prezzo" asp-route-dettaglio="@prodotto.Dettaglio" asp-route-Immagine="@prodotto.Immagine" class="btn btn-primary">Dettaglio</a></td>
             </tr>
         }
     </tbody>
@@ -46,38 +46,34 @@
 </form>
 <br>
 <div class="row g-0">
-    @foreach (var item in Model.Prodotti)
+    @foreach (var prodotto in Model.Prodotti)
     {
-        <div class="card col-md-4">
-            <div class="card-header ">
-                <h5 class="card-title">@item.Nome</h5>
-
-                @{
-                    if (item.Prezzo < 300)
-                    {
-                        <p class="card-text text-success">@item.Prezzo</p>
-                        <a asp-page="ProdottoDettaglio" asp-route-nome="@item.Nome" asp-route-prezzo="@item.Prezzo" asp-route-Dettaglio ="@item.Dettaglio" class="btn btn-primary">Dettaglio</a>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="@prodotto.Immagine" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">@prodotto.Nome</h5>
+                    @{
+                        switch (prodotto.Prezzo)
+                        {
+                            case < 300:
+                                <p class="card-text text-success">@prodotto.Prezzo</p>
+                                <a asp-page="ProdottoDettaglio" asp-route-nome="@prodotto.Nome" asp-route-prezzo="@prodotto.Prezzo" asp-route-Dettaglio="@prodotto.Dettaglio" asp-route-Immagine="@prodotto.Immagine" class="btn btn-primary">Dettaglio</a>
+                                break;
+                            case < 600:
+                                <p class="card-text text-warning">@prodotto.Prezzo</p>
+                                <a asp-page="ProdottoDettaglio" asp-route-nome="@prodotto.Nome" asp-route-prezzo="@prodotto.Prezzo" asp-route-Dettaglio="@prodotto.Dettaglio" asp-route-Immagine="@prodotto.Immagine" class="btn btn-warning">Dettaglio</a>
+                                break;
+                            default:
+                                <p class="card-text text-danger">@prodotto.Prezzo</p>
+                                <a asp-page="ProdottoDettaglio" asp-route-nome="@prodotto.Nome" asp-route-prezzo="@prodotto.Prezzo" asp-route-Dettaglio="@prodotto.Dettaglio" asp-route-Immagine="@prodotto.Immagine" class="btn btn-danger">Dettaglio</a>
+                                break;
+                        }
                     }
-                    else if (item.Prezzo < 500)
-                    {
-                        <p  class="card-text text-success">@item.Prezzo</p>
-                        <a asp-page="ProdottoDettaglio" asp-route-nome="@item.Nome" asp-route-prezzo="@item.Prezzo" asp-route-Dettaglio ="@item.Dettaglio" class="btn btn-success">Dettaglio</a>
-
-                    }
-                    else if (item.Prezzo < 700)
-                    {
-                        <p  class="card-text text-success">@item.Prezzo</p>
-                        <a asp-page="ProdottoDettaglio" asp-route-nome="@item.Nome" asp-route-prezzo="@item.Prezzo" asp-route-Dettaglio ="@item.Dettaglio" class="btn btn-success">Dettaglio</a>
-                    }
-                    else 
-                    {
-                        <p class="card-text text-danger">@item.Prezzo</p>
-                        <a asp-page="ProdottoDettaglio" asp-route-nome="@item.Nome" asp-route-prezzo="@item.Prezzo" asp-route-Dettaglio ="@item.Dettaglio" class="btn btn-primary">Dettaglio</a>
-
-                    }
-                }
+                </div>
             </div>
-            
+            <br>
+
         </div>
     }
 </div>

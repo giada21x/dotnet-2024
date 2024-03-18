@@ -6,10 +6,10 @@ namespace WebAppProdotti.Pages
 {
     public class ProdottoDettaglioModel : PageModel
     {
-        public required Prodotto Prodotto { get; set; }
-        public void OnGet(string nome, string dettaglio, decimal prezzo)
+        public  Prodotto Prodotto { get; set; }
+        public void OnGet(string nome, string dettaglio, decimal prezzo, string immagine)
         {
-            Prodotto = new Prodotto { Nome = nome, Prezzo = prezzo, Dettaglio = dettaglio };
+            Prodotto = new Prodotto { Nome = nome, Prezzo = prezzo, Dettaglio = dettaglio, Immagine = immagine};
         }
     }
 }
