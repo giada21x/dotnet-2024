@@ -10,6 +10,6 @@ namespace WebAppProdotti.Pages
         public void OnGet(string nome, string dettaglio, decimal prezzo, string immagine)
         {
             Prodotto = new Prodotto { Nome = nome, Prezzo = prezzo, Dettaglio = dettaglio, Immagine = immagine};
-        }
+        }//creiamo un nuovo oggetto di tipo prodotto 
     }
 }

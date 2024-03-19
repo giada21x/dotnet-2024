@@ -1,0 +1,48 @@
+@page 
+@model VideogiochiModel 
+@{ 
+  ViewData["Title"] = "Videogiochi"; 
+ 
+} 
+<h1>@ViewData["Title"]</h1> 
+ 
+<div class="container my-5 "> 
+  <div class="row p-2" style="border-bottom: 2px solid"> 
+ 
+    <div class="col-md-2"> 
+      <b> 
+        Id 
+      </b> 
+    </div> 
+    <div class="col-md-2"> 
+      <b> 
+        Titolo 
+      </b> 
+    </div> 
+    <div class="col-md-2"> 
+      <b> 
+        Anno
+      </b> 
+    </div> 
+    
+    
+    
+ 
+  </div> 
+  @foreach (var videogioco in Model.Videogiochi) 
+  { 
+    <div class="row border-bottom p-2"> 
+      <div class="col-md-2"> 
+        <a asp-page="VideogiocoDettaglio" asp-route-id="@videogioco.Id"> 
+          @videogioco.Id 
+        </a> 
+      </div> 
+      <div class="col-md-2">@videogioco.Titolo</div> 
+      <div class="col-md-2">@videogioco.Anno</div> 
+       
+      
+    </div> 
+  } 
+ 
+</div>
+<a asp-page="/Index">Torna alla Home</a>
