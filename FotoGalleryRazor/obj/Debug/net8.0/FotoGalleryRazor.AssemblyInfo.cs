@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FotoGalleryRazor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9e279ea0f00ab8ec9b1b9703dabd581baec6f9db")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("FotoGalleryRazor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FotoGalleryRazor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

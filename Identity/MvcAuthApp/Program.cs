@@ -51,6 +51,7 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
+app.UseStatusCodePagesWithReExecute("/Home/Error");
 
 app.MapControllerRoute(
     name: "default",

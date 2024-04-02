@@ -5,10 +5,17 @@ namespace MvcAuthApp.Controllers
 {
     public class ReservedController : Controller
     {
-        [Authorize]
-        public IActionResult Index()
+        
+        [Authorize (Roles = "Admin")]
+        public IActionResult Admin()
         {
             return View();
         }
+        [Authorize (Roles = "User")]
+        public IActionResult User()
+        {
+            return View();
+        }
+
     }
 }

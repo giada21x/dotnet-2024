@@ -55,24 +55,32 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\DOTNET\\.nuget\\packages\\": {}
+    "C:\\Users\\DOTNET\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\DOTNET\\Documents\\Corso-Dotnet-2024\\esercitazioni-dotnet-2024\\ProgettiDiGruppo\\FotoGalleryRazor\\FotoGalleryRazor.csproj",
+      "projectUniqueName": "C:\\Users\\DOTNET\\Documents\\pinguino\\dotnet-2024\\FotoGalleryRazor\\FotoGalleryRazor.csproj",
       "projectName": "FotoGalleryRazor",
-      "projectPath": "C:\\Users\\DOTNET\\Documents\\Corso-Dotnet-2024\\esercitazioni-dotnet-2024\\ProgettiDiGruppo\\FotoGalleryRazor\\FotoGalleryRazor.csproj",
+      "projectPath": "C:\\Users\\DOTNET\\Documents\\pinguino\\dotnet-2024\\FotoGalleryRazor\\FotoGalleryRazor.csproj",
       "packagesPath": "C:\\Users\\DOTNET\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\DOTNET\\Documents\\Corso-Dotnet-2024\\esercitazioni-dotnet-2024\\ProgettiDiGruppo\\FotoGalleryRazor\\obj\\",
+      "outputPath": "C:\\Users\\DOTNET\\Documents\\pinguino\\dotnet-2024\\FotoGalleryRazor\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\DOTNET\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\DOTNET\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UMPO97yvSLhlPwK0Wcb4klxnxt0IpCDwX8yklMRJkbeT1ObhZ52mZOorDArvthX+tF9M/+hl/Hv52QixSVhqoQ==",
+  "dgSpecHash": "Y737V1sX7T/Uh+RSU/IqPjBx/trHKt0QoMkXwg4RHwi9I+pBCoMnDP9ZGDfTA+BfeOn1HdJfd6Ls1ghNqZZjqg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\DOTNET\\Documents\\dotnet-2024\\Identity\\MvcAuthApp\\MvcAuthApp.csproj",
+  "projectFilePath": "C:\\Users\\DOTNET\\Documents\\pinguino\\dotnet-2024\\Identity\\MvcAuthApp\\MvcAuthApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DOTNET\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\DOTNET\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\7.0.4\\microsoft.aspnetcore.cryptography.internal.7.0.4.nupkg.sha512",
@@ -41,7 +41,11 @@
     "C:\\Users\\DOTNET\\.nuget\\packages\\system.codedom\\4.4.0\\system.codedom.4.4.0.nupkg.sha512",
     "C:\\Users\\DOTNET\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
     "C:\\Users\\DOTNET\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
-    "C:\\Users\\DOTNET\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512"
+    "C:\\Users\\DOTNET\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512",
+    "C:\\Users\\DOTNET\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.14\\microsoft.netcore.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\DOTNET\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.14\\microsoft.windowsdesktop.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\DOTNET\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.14\\microsoft.aspnetcore.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\DOTNET\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.14\\microsoft.netcore.app.host.win-x64.7.0.14.nupkg.sha512"
   ],
   "logs": []
 }
