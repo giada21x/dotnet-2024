@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "abJKENtBTj4hgSvUvuaaPOaXO8JUIN7TKaHM2KZpoMVO8M0CGvR+c8C1FiXokAmn86BEm4Cj1WQeWDjaKHL1oA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\DOTNET\\Documents\\Corso-Dotnet-2024\\esercitazioni-dotnet-2024\\ProgettiDiGruppo\\FotoGalleryRazor\\FotoGalleryRazor.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\DOTNET\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
