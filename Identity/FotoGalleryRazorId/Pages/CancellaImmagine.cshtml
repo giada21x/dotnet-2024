@@ -1,0 +1,20 @@
+@page
+@model CancellaImmagineModel
+@{
+    ViewData["Title"] = "Cancella Immagine";
+}
+
+
+<div class="container">
+    <div class="text-center">
+        <h1 class="display-4">@ViewData["Title"]</h1>
+        <h3>Vuoi eliminare l'immagine? </h3>
+        <form method="post">
+        <button type="submit" class="btn btn-danger">Cancella</button>
+        <a asp-page="/DettaglioImmagine" class="btn btn-dark">Annulla</a>
+    </form>
+    </div>
+    
+    
+</div>
+

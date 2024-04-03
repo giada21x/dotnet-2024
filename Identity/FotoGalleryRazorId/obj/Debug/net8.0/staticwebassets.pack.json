@@ -1,0 +1,361 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\FotoGalleryRazorId.bundle.scp.css",
+      "PackagePath": "staticwebassets\\FotoGalleryRazorId.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\img\\img_01.jpg",
+      "PackagePath": "staticwebassets\\img\\img_01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\img\\img_02.jpg",
+      "PackagePath": "staticwebassets\\img\\img_02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\img\\img_03.jpg",
+      "PackagePath": "staticwebassets\\img\\img_03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\img\\img_04.jpg",
+      "PackagePath": "staticwebassets\\img\\img_04.jpg"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\img\\img_05.jpg",
+      "PackagePath": "staticwebassets\\img\\img_05.jpg"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\img\\img_06.jpg",
+      "PackagePath": "staticwebassets\\img\\img_06.jpg"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\img\\img_07.jpg",
+      "PackagePath": "staticwebassets\\img\\img_07.jpg"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\img\\img_08.jpg",
+      "PackagePath": "staticwebassets\\img\\img_08.jpg"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\img\\img_09.jpg",
+      "PackagePath": "staticwebassets\\img\\img_09.jpg"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\img\\img_10.jpg",
+      "PackagePath": "staticwebassets\\img\\img_10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\img\\img_11.jpg",
+      "PackagePath": "staticwebassets\\img\\img_11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\img\\img_12.jpg",
+      "PackagePath": "staticwebassets\\img\\img_12.jpg"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\img\\img_13.jpg",
+      "PackagePath": "staticwebassets\\img\\img_13.jpg"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\img\\img_14.jpg",
+      "PackagePath": "staticwebassets\\img\\img_14.jpg"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\img\\img_15.jpg",
+      "PackagePath": "staticwebassets\\img\\img_15.jpg"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\img\\img_16.jpg",
+      "PackagePath": "staticwebassets\\img\\img_16.jpg"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\json\\categorie.json",
+      "PackagePath": "staticwebassets\\json\\categorie.json"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\json\\immagini.json",
+      "PackagePath": "staticwebassets\\json\\immagini.json"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\json\\utenti\\1.json",
+      "PackagePath": "staticwebassets\\json\\utenti\\1.json"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\json\\utenti\\2.json",
+      "PackagePath": "staticwebassets\\json\\utenti\\2.json"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\json\\utenti\\3.json",
+      "PackagePath": "staticwebassets\\json\\utenti\\3.json"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\json\\utenti\\4.json",
+      "PackagePath": "staticwebassets\\json\\utenti\\4.json"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\json\\utenti\\5.json",
+      "PackagePath": "staticwebassets\\json\\utenti\\5.json"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\json\\voti.json",
+      "PackagePath": "staticwebassets\\json\\voti.json"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\giada\\.dotnet\\C#\\AREA DI LAVORO\\Identity\\FotoGalleryRazorId\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.FotoGalleryRazorId.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.FotoGalleryRazorId.props",
+      "PackagePath": "build\\FotoGalleryRazorId.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.FotoGalleryRazorId.props",
+      "PackagePath": "buildMultiTargeting\\FotoGalleryRazorId.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.FotoGalleryRazorId.props",
+      "PackagePath": "buildTransitive\\FotoGalleryRazorId.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
