@@ -1,0 +1,15 @@
+C:\Users\DOTNET\Documents\pinguino\dotnet-2024\IndovinaIlNumero\bin\Debug\net8.0\IndovinaIlNumero.exe
+C:\Users\DOTNET\Documents\pinguino\dotnet-2024\IndovinaIlNumero\bin\Debug\net8.0\IndovinaIlNumero.deps.json
+C:\Users\DOTNET\Documents\pinguino\dotnet-2024\IndovinaIlNumero\bin\Debug\net8.0\IndovinaIlNumero.runtimeconfig.json
+C:\Users\DOTNET\Documents\pinguino\dotnet-2024\IndovinaIlNumero\bin\Debug\net8.0\IndovinaIlNumero.dll
+C:\Users\DOTNET\Documents\pinguino\dotnet-2024\IndovinaIlNumero\bin\Debug\net8.0\IndovinaIlNumero.pdb
+C:\Users\DOTNET\Documents\pinguino\dotnet-2024\IndovinaIlNumero\obj\Debug\net8.0\IndovinaIlNumero.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DOTNET\Documents\pinguino\dotnet-2024\IndovinaIlNumero\obj\Debug\net8.0\IndovinaIlNumero.AssemblyInfoInputs.cache
+C:\Users\DOTNET\Documents\pinguino\dotnet-2024\IndovinaIlNumero\obj\Debug\net8.0\IndovinaIlNumero.AssemblyInfo.cs
+C:\Users\DOTNET\Documents\pinguino\dotnet-2024\IndovinaIlNumero\obj\Debug\net8.0\IndovinaIlNumero.csproj.CoreCompileInputs.cache
+C:\Users\DOTNET\Documents\pinguino\dotnet-2024\IndovinaIlNumero\obj\Debug\net8.0\IndovinaIlNumero.sourcelink.json
+C:\Users\DOTNET\Documents\pinguino\dotnet-2024\IndovinaIlNumero\obj\Debug\net8.0\IndovinaIlNumero.dll
+C:\Users\DOTNET\Documents\pinguino\dotnet-2024\IndovinaIlNumero\obj\Debug\net8.0\refint\IndovinaIlNumero.dll
+C:\Users\DOTNET\Documents\pinguino\dotnet-2024\IndovinaIlNumero\obj\Debug\net8.0\IndovinaIlNumero.pdb
+C:\Users\DOTNET\Documents\pinguino\dotnet-2024\IndovinaIlNumero\obj\Debug\net8.0\IndovinaIlNumero.genruntimeconfig.cache
+C:\Users\DOTNET\Documents\pinguino\dotnet-2024\IndovinaIlNumero\obj\Debug\net8.0\ref\IndovinaIlNumero.dll
