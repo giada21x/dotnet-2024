@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FotoGalleryRazorId")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5786035d773824c61ed711ee9de35848cdb41224")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("FotoGalleryRazorId")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FotoGalleryRazorId")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

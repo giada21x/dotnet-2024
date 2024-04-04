@@ -1,4 +1,5 @@
 ﻿@page
+@using FotoGalleryRazorId.Pages
 @model IndexModel
 @{
     ViewData["Title"] = "Home page";
@@ -11,7 +12,16 @@
 
         @if (string.IsNullOrEmpty(categoria))
         {
-            <h1 class="display-4">Benvenuti</h1>
+            @if (User.IsInRole("User"))
+            {
+                var user = User.Identity?.Name!.Split("@");
+                <h1 class="display-4">Ciao @user![0]</h1>
+            }
+            else 
+            {
+                <h1 class="display-4">Benvenuti</h1>
+            }
+            
         }
         else
         {

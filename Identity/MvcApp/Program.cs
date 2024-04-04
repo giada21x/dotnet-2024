@@ -1,5 +1,4 @@
 using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.Data;
 using Microsoft.EntityFrameworkCore;
 using MvcApp.Data;
 
@@ -12,10 +11,31 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+.AddRoles<IdentityRole>() // Assicurati di avere questo per abilitare il supporto ai ruoli
     .AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
+
+// Crea un ambito di servizio
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+
+    try
+    {
+        // Risolvi il RoleManager dal provider di servizi
+        var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
+
+        // Chiamata al metodo per assicurare che i ruoli esistano
+        await ApplicationDbInitializer.EnsureRolesAsync(roleManager);
+    }
+    catch (Exception ex)
+    {
+        var logger = services.GetRequiredService<ILogger<Program>>();
+        logger.LogError(ex, "Un errore è avvenuto durante la creazione dei ruoli");
+    }
+}
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -29,6 +49,7 @@ else
     app.UseHsts();
 }
 
+// Aggiungi qui lo script di seed
 using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
@@ -36,8 +57,6 @@ using (var scope = app.Services.CreateScope())
     var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
     await SeedAdminUser(userManager, roleManager);
 }
-
-
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
@@ -53,13 +72,16 @@ app.MapRazorPages();
 
 app.Run();
 
+// Definizione del metodo SeedAdminUser
 async Task SeedAdminUser(UserManager<IdentityUser> userManager, RoleManager<IdentityRole> roleManager)
 {
+    // Assicurati che il ruolo Admin esista
     if (!await roleManager.RoleExistsAsync("Admin"))
     {
         await roleManager.CreateAsync(new IdentityRole("Admin"));
-        
     }
+
+    // Crea l'utente admin se non esiste
     if (await userManager.FindByEmailAsync("info@admin.com") == null)
     {
         var user = new IdentityUser
@@ -68,6 +90,7 @@ async Task SeedAdminUser(UserManager<IdentityUser> userManager, RoleManager<Iden
             Email = "info@admin.com",
             EmailConfirmed = true,
         };
+
         var result = await userManager.CreateAsync(user, "Admin123!");
         if (result.Succeeded)
         {
@@ -75,17 +98,18 @@ async Task SeedAdminUser(UserManager<IdentityUser> userManager, RoleManager<Iden
         }
     }
 }
-public static class ApplicationDbInitializer 
-{ 
-    public static async Task EnsureRolesAsync(RoleManager<IdentityRole> roleManager) 
-    { 
-        var roles = new List<string> {"Admin", "User"}; 
-        foreach(var role in roles) 
-        { 
-            if(!await roleManager.RoleExistsAsync(role)) 
-            { 
-                await roleManager.CreateAsync(new IdentityRole(role)); 
-            } 
-        } 
-    } 
+
+public static class ApplicationDbInitializer
+{
+    public static async Task EnsureRolesAsync(RoleManager<IdentityRole> roleManager)
+    {
+        var roles = new List<string> { "Admin", "User" };
+        foreach (var role in roles)
+        {
+            if (!await roleManager.RoleExistsAsync(role))
+            {
+                await roleManager.CreateAsync(new IdentityRole(role));
+            }
+        }
+    }
 }

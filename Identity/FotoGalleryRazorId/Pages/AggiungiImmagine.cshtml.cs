@@ -1,10 +1,12 @@
-using FotoGalleryRazor.Models;
+using FotoGalleryRazorId.Models;
+using Microsoft.AspNetCore.Authorization;
+
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Newtonsoft.Json;
 
-namespace FotoGalleryRazor.Pages;
-
+namespace FotoGalleryRazorId.Pages;
+[Authorize]
 public class AggiungiImmagineModel : PageModel
 {
     [BindProperty]

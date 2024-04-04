@@ -1,4 +1,4 @@
-namespace FotoGalleryRazor.Models;
+namespace FotoGalleryRazorId.Models;
 
 public class Voto
 {
@@ -9,5 +9,5 @@ public class Voto
     public DateTime Data { get; set; }
     public string? Commento { get; set; }
     public bool Visibile { get; set; }
-
+    public bool Moderato { get; internal set; }
 }

@@ -1,10 +1,16 @@
+//Questo codice configura e avvia un'applicazione web ASP.NET Core 
+//che utilizza Identity Framework per la gestione degli utenti e dei ruoli.
+
+
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using FotoGalleryRazorId.Data;
 
-var builder = WebApplication.CreateBuilder(args);
+// Creazione del Web Host Builder: viene creato un WebApplication builder che contiene le configurazioni iniziali per l'applicazione web
+var builder = WebApplication.CreateBuilder(args); 
 
-// Add services to the container.
+// Aggiunta dei servizi al container. 
+//Viene configurato il il servizio per l'accesso al database utilizzando SQLite. Viene aggiunto il supporto per Identity Framework e i servizi necessari per gestire l'autenticazione e l'autorizzazione degli utenti.
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlite(connectionString));
@@ -17,7 +23,10 @@ builder.Services.AddRazorPages();
 
 var app = builder.Build();
 
-//!!! crea un ambito di servizio    (2/5)
+//!!! crea un ambito di servizio    (2/5). 
+// Viene creato uno scope di servizio per risolvere le dipendenze. 
+// Viene ottenuto il "Rolemanager" per gestire i ruoli dell'utente. 
+// Viene chiamato un metodo per assicurarsi che i ruoli predefiniti esistano nel database
 using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
@@ -37,7 +46,10 @@ using (var scope = app.Services.CreateScope())
     }
 }
 
-// Configure the HTTP request pipeline.
+// Configurazione della pipeline delle richieste HTTP.
+// Viene configurata la pipeline per gestirele richieste HTTP.
+// In ambiente di sviluppo, viene aggiunto un endpoint per visualizare le migrazioni del databse. 
+// In ambiente di produzione, viene gestito l'errore e viene impostato HSTS (HTTP Strict Transport Security) per aumentare la sicurezza
 if (app.Environment.IsDevelopment())
 {
     app.UseMigrationsEndPoint();
@@ -50,6 +62,9 @@ else
 }
 
 //!!! script di seed per la creazione admin (3/5)
+// Viene creato un nuovo scope di servizio. 
+// Viene ottenuto il "UserManager" e il "RoleManager".
+// Viene chiamato un metodo per creare un utente amministratore predefinito e assegnargli il ruolo "Admin" 
 using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
@@ -58,6 +73,8 @@ using (var scope = app.Services.CreateScope())
     await SeedAdminUser(userManager, roleManager);
 }
 
+// Configurazione degli altri middleware:
+// Vine configurato il middleware per reindirizzare le richieste HTTP su HTTPS, servire i file statici, gestire il routing e l'autorizzazione
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
@@ -67,26 +84,34 @@ app.UseAuthorization();
 
 app.MapRazorPages();
 
+// Avvio dell'applicazione
 app.Run();
 
 //!!! classe che crea l'admin (4/5)
 async Task SeedAdminUser(UserManager<IdentityUser> userManager, RoleManager<IdentityRole> roleManager)
 {
-    //controllo che il ruolo admin esiste
+    //controllo che il ruolo admin esiste e se non esiste lo crea 
     if (!await roleManager.RoleExistsAsync("Admin"))
     {
         await roleManager.CreateAsync(new IdentityRole("Admin"));
     }
 
-    var user = await userManager.FindByEmailAsync("s.ussi@yahoo.it");
+    //controlla se esite un utente con l'email specificata e, se esiste, gli assegna il ruolo di amministratore.
+    var user = await userManager.FindByEmailAsync("giada01.adamo@gmail.com");
 
     if (user != null)
     {
         await userManager.AddToRoleAsync(user, "Admin");
     }
+    else
+    {
+        await userManager.AddToRoleAsync(user, "User");
+    }
+    
 }
 
 //!!! classe che crea i ruoli nel dbContext (5/5)
+//Definisce un metodo che assicura che i ruoli specificati esistano nel database. Se un ruolo non esiste, lo crea.
 public static class ApplicationDbInitializer
 {
     public static async Task EnsureRolesAsync(RoleManager<IdentityRole> roleManager)

@@ -15,6 +15,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EntityFramework", "EntityFr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ordini", "dotnet-2024\EntityFramework\Ordini\Ordini.csproj", "{8C4AFC78-D2BE-4C0C-91DB-DD9CB33F2968}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Identity", "Identity", "{1FD08F6E-8E8F-433B-A467-50DC20D6E8BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FotoGalleryRazorId", "Identity\FotoGalleryRazorId\FotoGalleryRazorId.csproj", "{D4527D63-6C99-4FFE-8EA5-9A746B62A0D1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,10 @@ Global
 		{8C4AFC78-D2BE-4C0C-91DB-DD9CB33F2968}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C4AFC78-D2BE-4C0C-91DB-DD9CB33F2968}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C4AFC78-D2BE-4C0C-91DB-DD9CB33F2968}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4527D63-6C99-4FFE-8EA5-9A746B62A0D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4527D63-6C99-4FFE-8EA5-9A746B62A0D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4527D63-6C99-4FFE-8EA5-9A746B62A0D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4527D63-6C99-4FFE-8EA5-9A746B62A0D1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -42,6 +50,7 @@ Global
 		{B277F43D-CFE8-488B-96DC-F30474F16967} = {A8AA8FB4-698E-4FE2-B288-71194C203606}
 		{78060808-9EE5-4398-B3C2-A01BC1D95CB7} = {A8AA8FB4-698E-4FE2-B288-71194C203606}
 		{8C4AFC78-D2BE-4C0C-91DB-DD9CB33F2968} = {78060808-9EE5-4398-B3C2-A01BC1D95CB7}
+		{D4527D63-6C99-4FFE-8EA5-9A746B62A0D1} = {1FD08F6E-8E8F-433B-A467-50DC20D6E8BB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7583BCB3-805F-47A4-8D9E-11112190C3C6}

@@ -1,9 +1,9 @@
-using FotoGalleryRazor.Models;
+using FotoGalleryRazorId.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Newtonsoft.Json;
 
-namespace FotoGalleryRazor.Pages;
+namespace FotoGalleryRazorid.Pages;
 
 public class ModificaImmagineModel : PageModel
 {

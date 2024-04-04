@@ -1,4 +1,4 @@
-namespace FotoGalleryRazor.Models;
+namespace FotoGalleryRazorId.Models;
 
 public class Immagine
 {
