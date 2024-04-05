@@ -89,26 +89,6 @@
       "PackagePath": "staticwebassets\\json\\immagini.json"
     },
     {
-      "Id": "C:\\Users\\DOTNET\\Documents\\pinguino\\dotnet-2024\\Identity\\FotoGalleryRazorId\\wwwroot\\json\\utenti\\1.json",
-      "PackagePath": "staticwebassets\\json\\utenti\\1.json"
-    },
-    {
-      "Id": "C:\\Users\\DOTNET\\Documents\\pinguino\\dotnet-2024\\Identity\\FotoGalleryRazorId\\wwwroot\\json\\utenti\\2.json",
-      "PackagePath": "staticwebassets\\json\\utenti\\2.json"
-    },
-    {
-      "Id": "C:\\Users\\DOTNET\\Documents\\pinguino\\dotnet-2024\\Identity\\FotoGalleryRazorId\\wwwroot\\json\\utenti\\3.json",
-      "PackagePath": "staticwebassets\\json\\utenti\\3.json"
-    },
-    {
-      "Id": "C:\\Users\\DOTNET\\Documents\\pinguino\\dotnet-2024\\Identity\\FotoGalleryRazorId\\wwwroot\\json\\utenti\\4.json",
-      "PackagePath": "staticwebassets\\json\\utenti\\4.json"
-    },
-    {
-      "Id": "C:\\Users\\DOTNET\\Documents\\pinguino\\dotnet-2024\\Identity\\FotoGalleryRazorId\\wwwroot\\json\\utenti\\5.json",
-      "PackagePath": "staticwebassets\\json\\utenti\\5.json"
-    },
-    {
       "Id": "C:\\Users\\DOTNET\\Documents\\pinguino\\dotnet-2024\\Identity\\FotoGalleryRazorId\\wwwroot\\json\\voti.json",
       "PackagePath": "staticwebassets\\json\\voti.json"
     },

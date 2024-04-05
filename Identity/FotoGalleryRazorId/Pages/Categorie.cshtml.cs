@@ -5,11 +5,14 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Newtonsoft.Json;
 
 namespace FotoGalleryRazorId.Pages;
-[Authorize]
+
+//GET: /Reserved/User
+[Authorize(Roles = "User")]
 public class CategorieModel : PageModel
 {
     public required IEnumerable<Immagine> Immagini { get; set; }
     public required IEnumerable<string> Categorie { get; set; }
+    public string? Categoria { get; set; }
     public string jsonPath = @"wwwroot/json/immagini.json";
     public string jsonPath3 = @"wwwroot/json/categorie.json";
 

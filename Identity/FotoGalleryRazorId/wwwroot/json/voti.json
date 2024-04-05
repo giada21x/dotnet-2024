@@ -46,7 +46,7 @@
     "Stelle": 1.0,
     "Data": "2024-03-22T00:00:00+01:00",
     "Commento": "buco del culo",
-    "Visibile": true,
+    "Visibile": false,
     "Moderato": false
   },
   {
@@ -55,8 +55,8 @@
     "ImmagineId": 1,
     "Stelle": 5.0,
     "Data": "2024-03-22T00:00:00+01:00",
-    "Commento": "w la figa",
-    "Visibile": true,
+    "Commento": "w la figaaaaaaaaaaa",
+    "Visibile": false,
     "Moderato": false
   },
   {
@@ -75,7 +75,7 @@
     "ImmagineId": 12,
     "Stelle": 2.0,
     "Data": "2024-03-22T00:00:00+01:00",
-    "Commento": "djkpsghzkgbsr",
+    "Commento": "djkpsghzkgbsrdfnsdfbsdobfsobfafa fsugfsuoagfosa fioagfoisagf soufg sofgso fsaoufg sof sofg soufg soaufg suofg sofgsofg saofgs fosa ",
     "Visibile": true,
     "Moderato": false
   },
@@ -186,7 +186,7 @@
     "Stelle": 3.0,
     "Data": "2024-03-24T00:00:00+01:00",
     "Commento": "cdcdscd",
-    "Visibile": true,
+    "Visibile": false,
     "Moderato": false
   },
   {
@@ -196,7 +196,7 @@
     "Stelle": 3.0,
     "Data": "2024-03-24T00:00:00+01:00",
     "Commento": "cdcdscd",
-    "Visibile": true,
+    "Visibile": false,
     "Moderato": false
   },
   {
@@ -236,7 +236,7 @@
     "Stelle": 3.0,
     "Data": "2024-03-24T00:00:00+01:00",
     "Commento": "cdcdscd",
-    "Visibile": true,
+    "Visibile": false,
     "Moderato": false
   },
   {
@@ -286,7 +286,7 @@
     "Stelle": 5.0,
     "Data": "2024-03-24T00:00:00+01:00",
     "Commento": "vdscdscs",
-    "Visibile": true,
+    "Visibile": false,
     "Moderato": false
   },
   {
@@ -296,7 +296,7 @@
     "Stelle": 5.0,
     "Data": "2024-03-24T00:00:00+01:00",
     "Commento": "ccsaca",
-    "Visibile": true,
+    "Visibile": false,
     "Moderato": false
   },
   {
@@ -316,7 +316,7 @@
     "Stelle": 5.0,
     "Data": "2024-03-25T00:00:00+01:00",
     "Commento": "cane",
-    "Visibile": true,
+    "Visibile": false,
     "Moderato": false
   },
   {
@@ -356,8 +356,8 @@
     "Stelle": 5.0,
     "Data": "2024-03-25T00:00:00+01:00",
     "Commento": "sdfsadsa",
-    "Visibile": false,
-    "Moderato": true
+    "Visibile": true,
+    "Moderato": false
   },
   {
     "Id": 37,
@@ -366,14 +366,14 @@
     "Stelle": 5.0,
     "Data": "2024-03-25T00:00:00+01:00",
     "Commento": "bello",
-    "Visibile": false,
-    "Moderato": true
+    "Visibile": true,
+    "Moderato": false
   },
   {
     "Id": 38,
-    "Nome": null,
-    "ImmagineId": 1,
-    "Stelle": 0.0,
+    "Nome": "chch",
+    "ImmagineId": 59,
+    "Stelle": 5.0,
     "Data": "2024-03-25T00:00:00+01:00",
     "Commento": null,
     "Visibile": true,
@@ -381,10 +381,320 @@
   },
   {
     "Id": 39,
-    "Nome": null,
+    "Nome": "simo",
+    "ImmagineId": 58,
+    "Stelle": 5.0,
+    "Data": "2024-03-27T00:00:00+01:00",
+    "Commento": "bellissimo",
+    "Visibile": true,
+    "Moderato": false
+  },
+  {
+    "Id": 40,
+    "Nome": "dfsdf",
+    "ImmagineId": 56,
+    "Stelle": 4.0,
+    "Data": "2024-03-27T00:00:00+01:00",
+    "Commento": "dfsdfsd",
+    "Visibile": true,
+    "Moderato": false
+  },
+  {
+    "Id": 41,
+    "Nome": "dffdsfd",
+    "ImmagineId": 56,
+    "Stelle": 5.0,
+    "Data": "2024-03-27T00:00:00+01:00",
+    "Commento": "dfsfsd",
+    "Visibile": true,
+    "Moderato": false
+  },
+  {
+    "Id": 42,
+    "Nome": "dsdfsdf",
+    "ImmagineId": 5,
+    "Stelle": 4.0,
+    "Data": "2024-03-27T00:00:00+01:00",
+    "Commento": "dfsdfsd",
+    "Visibile": true,
+    "Moderato": false
+  },
+  {
+    "Id": 43,
+    "Nome": "ssadsa",
+    "ImmagineId": 58,
+    "Stelle": 5.0,
+    "Data": "2024-03-27T00:00:00+01:00",
+    "Commento": "sccdac",
+    "Visibile": true,
+    "Moderato": false
+  },
+  {
+    "Id": 44,
+    "Nome": "fdgdfgdf",
+    "ImmagineId": 58,
+    "Stelle": 4.0,
+    "Data": "2024-03-27T00:00:00+01:00",
+    "Commento": "fgdfgdf",
+    "Visibile": true,
+    "Moderato": false
+  },
+  {
+    "Id": 45,
+    "Nome": "dfdfdfd",
+    "ImmagineId": 45,
+    "Stelle": 5.0,
+    "Data": "2024-03-27T00:00:00+01:00",
+    "Commento": "fdsdfsdf",
+    "Visibile": true,
+    "Moderato": false
+  },
+  {
+    "Id": 46,
+    "Nome": "dfsdfsd",
+    "ImmagineId": 50,
+    "Stelle": 4.0,
+    "Data": "2024-03-27T00:00:00+01:00",
+    "Commento": "fdds",
+    "Visibile": true,
+    "Moderato": false
+  },
+  {
+    "Id": 47,
+    "Nome": "dfdsfds",
+    "ImmagineId": 50,
+    "Stelle": 3.0,
+    "Data": "2024-03-27T00:00:00+01:00",
+    "Commento": "ddfdsfdsf",
+    "Visibile": true,
+    "Moderato": false
+  },
+  {
+    "Id": 48,
+    "Nome": "12121",
+    "ImmagineId": 2,
+    "Stelle": 5.0,
+    "Data": "2024-03-27T00:00:00+01:00",
+    "Commento": "fdfffffff",
+    "Visibile": true,
+    "Moderato": false
+  },
+  {
+    "Id": 49,
+    "Nome": "4343",
+    "ImmagineId": 59,
+    "Stelle": 5.0,
+    "Data": "2024-03-27T00:00:00+01:00",
+    "Commento": "dsadsadsd",
+    "Visibile": true,
+    "Moderato": false
+  },
+  {
+    "Id": 50,
+    "Nome": "4343434",
+    "ImmagineId": 59,
+    "Stelle": 5.0,
+    "Data": "2024-03-27T00:00:00+01:00",
+    "Commento": "dsadsadsd",
+    "Visibile": true,
+    "Moderato": false
+  },
+  {
+    "Id": 51,
+    "Nome": "1111",
+    "ImmagineId": 58,
+    "Stelle": 5.0,
+    "Data": "2024-03-27T00:00:00+01:00",
+    "Commento": "ddsdsadsa",
+    "Visibile": true,
+    "Moderato": false
+  },
+  {
+    "Id": 52,
+    "Nome": "dgdgsdg",
+    "ImmagineId": 2,
+    "Stelle": 4.0,
+    "Data": "2024-03-27T00:00:00+01:00",
+    "Commento": "dfdfd",
+    "Visibile": true,
+    "Moderato": false
+  },
+  {
+    "Id": 53,
+    "Nome": "alex",
+    "ImmagineId": 18,
+    "Stelle": 4.0,
+    "Data": "2024-03-27T00:00:00+01:00",
+    "Commento": "esdreererweew  gregret òfhòo fehfòeo fweof ",
+    "Visibile": true,
+    "Moderato": false
+  },
+  {
+    "Id": 54,
+    "Nome": "ererer",
+    "ImmagineId": 18,
+    "Stelle": 1.0,
+    "Data": "2024-03-27T00:00:00+01:00",
+    "Commento": "wetwerewrwe",
+    "Visibile": true,
+    "Moderato": false
+  },
+  {
+    "Id": 55,
+    "Nome": "12",
+    "ImmagineId": 3,
+    "Stelle": 5.0,
+    "Data": "2024-03-27T00:00:00+01:00",
+    "Commento": "ee",
+    "Visibile": true,
+    "Moderato": false
+  },
+  {
+    "Id": 56,
+    "Nome": "222",
+    "ImmagineId": 3,
+    "Stelle": 5.0,
+    "Data": "2024-03-27T00:00:00+01:00",
+    "Commento": null,
+    "Visibile": true,
+    "Moderato": false
+  },
+  {
+    "Id": 57,
+    "Nome": "21",
+    "ImmagineId": 79,
+    "Stelle": 4.0,
+    "Data": "2024-03-27T00:00:00+01:00",
+    "Commento": null,
+    "Visibile": true,
+    "Moderato": false
+  },
+  {
+    "Id": 58,
+    "Nome": "cxcx",
+    "ImmagineId": 55,
+    "Stelle": 5.0,
+    "Data": "2024-03-27T00:00:00+01:00",
+    "Commento": null,
+    "Visibile": true,
+    "Moderato": false
+  },
+  {
+    "Id": 59,
+    "Nome": "Emy",
+    "ImmagineId": 81,
+    "Stelle": 5.0,
+    "Data": "2024-03-28T00:00:00+01:00",
+    "Commento": "Ma che belloooo!!!!",
+    "Visibile": true,
+    "Moderato": false
+  },
+  {
+    "Id": 60,
+    "Nome": "Simo",
+    "ImmagineId": 81,
+    "Stelle": 5.0,
+    "Data": "2024-03-28T00:00:00+01:00",
+    "Commento": null,
+    "Visibile": true,
+    "Moderato": false
+  },
+  {
+    "Id": 61,
+    "Nome": "erer",
+    "ImmagineId": 2,
+    "Stelle": 4.0,
+    "Data": "2024-03-28T00:00:00+01:00",
+    "Commento": "ere",
+    "Visibile": true,
+    "Moderato": false
+  },
+  {
+    "Id": 62,
+    "Nome": "dd",
     "ImmagineId": 1,
-    "Stelle": 0.0,
-    "Data": "2024-03-25T00:00:00+01:00",
+    "Stelle": 4.0,
+    "Data": "2024-03-28T00:00:00+01:00",
+    "Commento": "ds",
+    "Visibile": true,
+    "Moderato": false
+  },
+  {
+    "Id": 63,
+    "Nome": "ewew",
+    "ImmagineId": 81,
+    "Stelle": 4.0,
+    "Data": "2024-03-28T00:00:00+01:00",
+    "Commento": null,
+    "Visibile": true,
+    "Moderato": false
+  },
+  {
+    "Id": 64,
+    "Nome": "ssfsd",
+    "ImmagineId": 53,
+    "Stelle": 4.0,
+    "Data": "2024-03-28T00:00:00+01:00",
+    "Commento": null,
+    "Visibile": true,
+    "Moderato": false
+  },
+  {
+    "Id": 65,
+    "Nome": "simo",
+    "ImmagineId": 19,
+    "Stelle": 5.0,
+    "Data": "2024-04-03T00:00:00+02:00",
+    "Commento": null,
+    "Visibile": true,
+    "Moderato": false
+  },
+  {
+    "Id": 66,
+    "Nome": null,
+    "ImmagineId": 8,
+    "Stelle": 4.0,
+    "Data": "2024-04-03T00:00:00+02:00",
+    "Commento": "che bello",
+    "Visibile": true,
+    "Moderato": false
+  },
+  {
+    "Id": 67,
+    "Nome": "s.ussi",
+    "ImmagineId": 8,
+    "Stelle": 4.0,
+    "Data": "2024-04-03T00:00:00+02:00",
+    "Commento": "che bello",
+    "Visibile": true,
+    "Moderato": false
+  },
+  {
+    "Id": 68,
+    "Nome": "2s.ussi",
+    "ImmagineId": 4,
+    "Stelle": 4.0,
+    "Data": "2024-04-03T00:00:00+02:00",
+    "Commento": "sdsadsadas",
+    "Visibile": true,
+    "Moderato": false
+  },
+  {
+    "Id": 69,
+    "Nome": "s.ussi",
+    "ImmagineId": 45,
+    "Stelle": 4.0,
+    "Data": "2024-04-03T00:00:00+02:00",
+    "Commento": "fgfdgfdgd",
+    "Visibile": false,
+    "Moderato": true
+  },
+  {
+    "Id": 70,
+    "Nome": "s.ussi",
+    "ImmagineId": 11,
+    "Stelle": 4.0,
+    "Data": "2024-04-04T00:00:00+02:00",
     "Commento": null,
     "Visibile": true,
     "Moderato": false

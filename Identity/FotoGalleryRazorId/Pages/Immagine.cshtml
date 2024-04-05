@@ -8,6 +8,7 @@
     {
         stelleImmagine = Model.Immagine.Voto;
     }
+    string url = HttpContext.Request.Path + HttpContext.Request.QueryString; //memorizzo url
 }
 
 <div class="container">
@@ -23,7 +24,7 @@
             <img src="@Model.Immagine!.Path" class="card-img-top" alt="@Model.Immagine.Titolo">
         </div>
         <div class="col-2 card-body p-2 mt-2">
-            <h5 class="card-text">@Model.Immagine.Titolo</h5>
+            <h5 class="card-text">@Model.Immagine!.Titolo</h5>
             <p class="card-text">Autore: @Model.Immagine.Autore</p>
             <p class="card-text">Data pubblicazione: @Model.Immagine.Data.ToString("d")</p>
             <p class="card-text">
@@ -54,38 +55,42 @@
 <!--------------- sezione inserimento voto collapse -------------------------->
 <div class="container mt-4 ps-4">
     <p class="d-inline-flex gap-1">
-        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseCommenta" role="button"
-            aria-expanded="false" aria-controls="collapseCommenta">
-            Vota
-        </a>
+        @if (User!.IsInRole("User"))
+        {
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseCommenta" role="button"
+                aria-expanded="false" aria-controls="collapseCommenta">
+                Vota
+            </a>
+        }
+        else
+        {
+            <a class="btn btn-danger" asp-area="Identity" asp-page="/Account/Login" asp-route-urlback="@url">Login</a>
+
+        }
+
         <a href="@Model.UrlBack" class="btn btn-primary" type="button">
             Torna indietro
         </a>
     </p>
     <div class="collapse" id="collapseCommenta">
         <div class="card card-body w-75">
+
             <form method="post">
-                <div class="row">
-                    <div class="form-group col-6">
-                        <label for="nome">Nome</label>
-                        <input type="text" class="form-control" name="Nome" placeholder="Nome" required>
-                    </div>
-                </div>
                 <div class="form-group">
-                    <label for="commento">Commento</label>
-                    <textarea class="form-control" name="Commento" rows="3"></textarea>
+                    <label for="campoCommento">Commento</label>
+                    <textarea id="campoCommento" class="form-control" name="Commento" rows="3"></textarea>
                 </div>
                 <!---------------- input stars ------------------->
                 <div class="stars">
-                    <input class="star star-5" id="star-5" type="radio" name="Stars" value="5" />
+                    <input type="radio" class="star star-5" id="star-5" name="Stars" value="5" />
                     <label class="star star-5" for="star-5"></label>
-                    <input class="star star-4" id="star-4" type="radio" name="Stars" value="4" />
+                    <input type="radio" class="star star-4" id="star-4" name="Stars" value="4" />
                     <label class="star star-4" for="star-4"></label>
-                    <input class="star star-3" id="star-3" type="radio" name="Stars" value="3" />
+                    <input type="radio" class="star star-3" id="star-3" name="Stars" value="3" />
                     <label class="star star-3" for="star-3"></label>
-                    <input class="star star-2" id="star-2" type="radio" name="Stars" value="2" />
+                    <input type="radio" class="star star-2" id="star-2" name="Stars" value="2" />
                     <label class="star star-2" for="star-2"></label>
-                    <input class="star star-1" id="star-1" type="radio" name="Stars" value="1" />
+                    <input type="radio" class="star star-1" id="star-1" name="Stars" value="1" required />
                     <label class="star star-1" for="star-1"></label>
                 </div>
                 <div>

@@ -1,31 +1,51 @@
 [
   {
+    "Id": 1,
+    "Path": "/img/img_01.jpg",
+    "Titolo": "Immagine 1",
+    "Voto": 2.4,
+    "NumeroVoti": 21,
+    "Autore": "Autore 1",
+    "Data": "2024-02-23T00:00:00",
+    "Categoria": "Paesaggi"
+  },
+  {
     "Id": 2,
     "Path": "/img/img_02.jpg",
     "Titolo": "Immagine 2",
     "Voto": 4.6,
-    "NumeroVoti": 20,
+    "NumeroVoti": 23,
     "Autore": "Autore 2",
     "Data": "2024-02-23T00:00:00",
     "Categoria": "Paesaggi"
   },
   {
-    "Id": 5,
-    "Path": "/img/img_05.jpg",
-    "Titolo": "Immagine 5",
-    "Voto": 4.8,
-    "NumeroVoti": 21,
-    "Autore": "Autore 5",
+    "Id": 3,
+    "Path": "/img/img_03.jpg",
+    "Titolo": "Immagine 3",
+    "Voto": 1.6,
+    "NumeroVoti": 23,
+    "Autore": "Autore 3",
     "Data": "2024-02-23T00:00:00",
     "Categoria": "Paesaggi"
   },
   {
-    "Id": 6,
-    "Path": "/img/img_06.jpg",
-    "Titolo": "Immagine 6",
-    "Voto": 4.6,
-    "NumeroVoti": 20,
-    "Autore": "Autore 6",
+    "Id": 4,
+    "Path": "/img/img_05.jpg",
+    "Titolo": "Immagine 4",
+    "Voto": 1.4,
+    "NumeroVoti": 21,
+    "Autore": "Autore 4",
+    "Data": "2024-02-23T00:00:00",
+    "Categoria": "Paesaggi"
+  },
+  {
+    "Id": 5,
+    "Path": "https://thumbs.dreamstime.com/b/superficie-praticante-il-surfing-dell-acqua-onda-di-oceano-mare-124362369.jpg",
+    "Titolo": "Immagine 5",
+    "Voto": 4.8,
+    "NumeroVoti": 22,
+    "Autore": "Autore 5",
     "Data": "2024-02-23T00:00:00",
     "Categoria": "Paesaggi"
   },
@@ -43,8 +63,8 @@
     "Id": 8,
     "Path": "/img/img_08.jpg",
     "Titolo": "Immagine 8",
-    "Voto": 1.4,
-    "NumeroVoti": 21,
+    "Voto": 1.6,
+    "NumeroVoti": 23,
     "Autore": "Autore 8",
     "Data": "2024-02-23T00:00:00",
     "Categoria": "Paesaggi"
@@ -60,21 +80,11 @@
     "Categoria": "Paesaggi"
   },
   {
-    "Id": 10,
-    "Path": "/img/img_10.jpg",
-    "Titolo": "Immagine 10",
-    "Voto": 4.8,
-    "NumeroVoti": 20,
-    "Autore": "Autore 10",
-    "Data": "2024-02-23T00:00:00",
-    "Categoria": "Paesaggi"
-  },
-  {
     "Id": 11,
     "Path": "/img/img_11.jpg",
     "Titolo": "Immagine 11",
-    "Voto": 1.9,
-    "NumeroVoti": 20,
+    "Voto": 2.0,
+    "NumeroVoti": 21,
     "Autore": "Autore 11",
     "Data": "2024-02-23T00:00:00",
     "Categoria": "Paesaggi"
@@ -143,8 +153,8 @@
     "Id": 18,
     "Path": "https://www.pwc.com/it/it/industries/sport/img/pwc-sport-anteprima.jpg",
     "Titolo": "Titolo 18",
-    "Voto": 0.0,
-    "NumeroVoti": 0,
+    "Voto": 2.5,
+    "NumeroVoti": 2,
     "Autore": "Autore 18",
     "Data": "2024-03-24T00:00:00+01:00",
     "Categoria": "Sport"
@@ -154,7 +164,7 @@
     "Path": "https://www.ansa.it/webimages/img_547x547/2024/3/17/3c511501b9171105f4a7423d630c38ca.jpg",
     "Titolo": "Titolo 19",
     "Voto": 5.0,
-    "NumeroVoti": 1,
+    "NumeroVoti": 2,
     "Autore": "Autore 19",
     "Data": "2024-03-24T00:00:00+01:00",
     "Categoria": "Sport"
@@ -190,16 +200,6 @@
     "Categoria": "Cibo"
   },
   {
-    "Id": 23,
-    "Path": "https://www.triesteprima.it/~media/horizontal-hi/10057634608377/cibo-spazzatura-2.jpg",
-    "Titolo": "Titolo 23",
-    "Voto": 0.0,
-    "NumeroVoti": 0,
-    "Autore": "Autore 23",
-    "Data": "2024-03-24T00:00:00+01:00",
-    "Categoria": "Cibo"
-  },
-  {
     "Id": 24,
     "Path": "https://www.fondazioneveronesi.it/uploads/thumbs/2017/01/13/dieta%20ernia%20iatale_1_thumb_720_480.jpg",
     "Titolo": "Titolo 24",
@@ -216,16 +216,6 @@
     "Voto": 0.0,
     "NumeroVoti": 0,
     "Autore": "Autore 25",
-    "Data": "2024-03-24T00:00:00+01:00",
-    "Categoria": "Cibo"
-  },
-  {
-    "Id": 26,
-    "Path": "https://www.curarsiconilcibo.com/wp-content/uploads/2020/11/curarsi-con-il-cibo-copertina-alimentazione-prima-dei-farmaci.jpeg",
-    "Titolo": "Titolo 26",
-    "Voto": 0.0,
-    "NumeroVoti": 0,
-    "Autore": "Autore 26",
     "Data": "2024-03-24T00:00:00+01:00",
     "Categoria": "Cibo"
   },
@@ -340,16 +330,6 @@
     "Categoria": "Persone"
   },
   {
-    "Id": 38,
-    "Path": "https://www.focus.it/site_stored/imgs/0006/049/shutterstock_1029061423.1020x680.jpg",
-    "Titolo": "Titolo 38",
-    "Voto": 0.0,
-    "NumeroVoti": 0,
-    "Autore": "Autore 38",
-    "Data": "2024-03-24T00:00:00+01:00",
-    "Categoria": null
-  },
-  {
     "Id": 39,
     "Path": "https://www.psicologionline.net/uploads/article/cover/personeaffascinanti20210628095844.jpg",
     "Titolo": "Titolo 39",
@@ -413,8 +393,8 @@
     "Id": 45,
     "Path": "https://images2.corriereobjects.it/methode_image/2014/08/20/Tecnologia/Foto%20Gallery/01_uncomfortable_MGZOOM.jpg",
     "Titolo": "Titolo 45",
-    "Voto": 5.0,
-    "NumeroVoti": 1,
+    "Voto": 4.7,
+    "NumeroVoti": 3,
     "Autore": "Autore 45",
     "Data": "2024-03-24T00:00:00+01:00",
     "Categoria": "Oggetti"
@@ -463,8 +443,8 @@
     "Id": 50,
     "Path": "https://hips.hearstapps.com/hmg-prod/images/17-lma-lick-my-ass-a-chair-by-pettersen-and-hein-ph-mindcraftanders-sune-berg-1584710330.jpg",
     "Titolo": "Titolo 50",
-    "Voto": 5.0,
-    "NumeroVoti": 2,
+    "Voto": 4.3,
+    "NumeroVoti": 4,
     "Autore": "Autore 50",
     "Data": "2024-03-24T00:00:00+01:00",
     "Categoria": "Oggetti"
@@ -493,8 +473,8 @@
     "Id": 53,
     "Path": "https://aircs3.imgix.net/uploads/rischio-morte-mondo-animale-paradosso-di-Peto.jpg",
     "Titolo": "Titolo 53",
-    "Voto": 0.0,
-    "NumeroVoti": 0,
+    "Voto": 4.0,
+    "NumeroVoti": 1,
     "Autore": "Autore 53",
     "Data": "2024-03-24T00:00:00+01:00",
     "Categoria": "Animali"
@@ -513,8 +493,8 @@
     "Id": 55,
     "Path": "https://amicidicasa.it/wp-content/uploads/2023/08/quokka-curiosita-1024x670.jpg",
     "Titolo": "Titolo 55",
-    "Voto": 0.0,
-    "NumeroVoti": 0,
+    "Voto": 5.0,
+    "NumeroVoti": 1,
     "Autore": "Autore 55",
     "Data": "2024-03-24T00:00:00+01:00",
     "Categoria": "Animali"
@@ -523,8 +503,8 @@
     "Id": 56,
     "Path": "https://staticfanpage.akamaized.net/wp-content/uploads/sites/34/2023/10/ruggitoleone-1200x675.jpg",
     "Titolo": "Titolo 56",
-    "Voto": 0.0,
-    "NumeroVoti": 0,
+    "Voto": 4.5,
+    "NumeroVoti": 2,
     "Autore": "Autore 56",
     "Data": "2024-03-24T00:00:00+01:00",
     "Categoria": "Animali"
@@ -543,8 +523,8 @@
     "Id": 58,
     "Path": "https://www.tempi.it/wp-content/uploads/2021/04/cane-unsplash-1-1024x840.jpg",
     "Titolo": "Titolo 58",
-    "Voto": 0.0,
-    "NumeroVoti": 0,
+    "Voto": 4.8,
+    "NumeroVoti": 4,
     "Autore": "Autore 58",
     "Data": "2024-03-24T00:00:00+01:00",
     "Categoria": "Animali"
@@ -553,19 +533,9 @@
     "Id": 59,
     "Path": "https://www.legambiente.it/wp-content/uploads/2022/12/animali-in-citta-report.jpg",
     "Titolo": "Titolo 59",
-    "Voto": 0.0,
-    "NumeroVoti": 0,
+    "Voto": 5.0,
+    "NumeroVoti": 3,
     "Autore": "Autore 59",
-    "Data": "2024-03-24T00:00:00+01:00",
-    "Categoria": "Animali"
-  },
-  {
-    "Id": 60,
-    "Path": "https://www.chimicifisici.it/wp-content/uploads/2019/04/animali-da-reddito.jpg",
-    "Titolo": "Titolo 60",
-    "Voto": 0.0,
-    "NumeroVoti": 0,
-    "Autore": "Autore 60",
     "Data": "2024-03-24T00:00:00+01:00",
     "Categoria": "Animali"
   },
@@ -590,16 +560,6 @@
     "Categoria": "Animali"
   },
   {
-    "Id": 63,
-    "Path": "https://citynews-today.stgy.ovh/~media/horizontal-hi/13934925314473/san-valentino-animali-2.jpg",
-    "Titolo": "Titolo 63",
-    "Voto": 0.0,
-    "NumeroVoti": 0,
-    "Autore": "Autore 63",
-    "Data": "2024-03-24T00:00:00+01:00",
-    "Categoria": "Animali"
-  },
-  {
     "Id": 64,
     "Path": "https://naturopet.it/wp-content/uploads/2023/08/jack-russell.jpg",
     "Titolo": "Titolo 64",
@@ -611,62 +571,152 @@
   },
   {
     "Id": 65,
-    "Path": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7NHjfUm6YuvJd21HUNx_ds5m2oHp_DLYhAVwRZ8YiCQ&s",
-    "Titolo": "dasdsadsad",
+    "Path": "https://media.cnn.com/api/v1/images/stellar/prod/191006152638-01-pets-and-our-health.jpg?q=w_2000,h_1125,x_0,y_0,c_fill/h_618",
+    "Titolo": "Cane brutto",
     "Voto": 0.0,
     "NumeroVoti": 0,
-    "Autore": "cscsasaa",
-    "Data": "2024-03-25T00:00:00+01:00",
-    "Categoria": "Sport"
+    "Autore": "Bau",
+    "Data": "2024-03-26T00:00:00+01:00",
+    "Categoria": "Animali"
+  },
+  {
+    "Id": 66,
+    "Path": "https://mypetmall.net/pub/media/resized/450x450/beagle-min.webp",
+    "Titolo": "Titolo 66",
+    "Voto": 0.0,
+    "NumeroVoti": 0,
+    "Autore": "Autore 66",
+    "Data": "2024-03-26T00:00:00+01:00",
+    "Categoria": "Animali"
   },
   {
     "Id": 67,
-    "Path": "https://www.energybasketball.it/img/sport.jpg",
+    "Path": "https://www.my-personaltrainer.it/2023/11/10/razze-di-cani-che-soffrono-meno-la-solitudine_900x760.jpeg",
     "Titolo": "Titolo 67",
     "Voto": 0.0,
     "NumeroVoti": 0,
     "Autore": "Autore 67",
-    "Data": "2024-03-25T00:00:00+01:00",
-    "Categoria": "Sport"
+    "Data": "2024-03-26T00:00:00+01:00",
+    "Categoria": "Animali"
   },
   {
     "Id": 68,
-    "Path": "https://www.ancilazio.it/wp-content/uploads/2021/04/Sport.jpg",
+    "Path": "https://www.focusjunior.it/content/uploads/2018/10/giraffe-2222908_960_720-e1548405712185.jpg",
     "Titolo": "Titolo 68",
     "Voto": 0.0,
     "NumeroVoti": 0,
     "Autore": "Autore 68",
-    "Data": "2024-03-25T00:00:00+01:00",
-    "Categoria": "Sport"
+    "Data": "2024-03-26T00:00:00+01:00",
+    "Categoria": "Animali"
   },
   {
     "Id": 69,
-    "Path": "https://www.istitutopsicoterapie.com/wp-content/uploads/2021/12/sport2.jpeg",
+    "Path": "https://www.my-personaltrainer.it/2023/09/19/come-scegliere-animale-domestico-orig.jpeg",
     "Titolo": "Titolo 69",
     "Voto": 0.0,
     "NumeroVoti": 0,
     "Autore": "Autore 69",
-    "Data": "2024-03-25T00:00:00+01:00",
-    "Categoria": "Sport"
+    "Data": "2024-03-26T00:00:00+01:00",
+    "Categoria": "Animali"
   },
   {
     "Id": 70,
-    "Path": "https://cdn.skuola.net/news_foto/2021/11/cibo-spazzatura.jpg",
+    "Path": "https://www.changethefuture.it/assets/uploads/2020/05/animali-selvatici.jpg",
     "Titolo": "Titolo 70",
     "Voto": 0.0,
     "NumeroVoti": 0,
     "Autore": "Autore 70",
-    "Data": "2024-03-25T00:00:00+01:00",
+    "Data": "2024-03-26T00:00:00+01:00",
+    "Categoria": "Animali"
+  },
+  {
+    "Id": 71,
+    "Path": "https://statickodami.akamaized.net/wp-content/uploads/sites/31/2022/03/iStock-90851578.jpg?im=AspectCrop=(16,9);",
+    "Titolo": "Titolo 71",
+    "Voto": 0.0,
+    "NumeroVoti": 0,
+    "Autore": "Autore 71",
+    "Data": "2024-03-26T00:00:00+01:00",
+    "Categoria": "Animali"
+  },
+  {
+    "Id": 72,
+    "Path": "https://www.focus.it/images/2022/08/18/-1131346997-orig.jpeg",
+    "Titolo": "Titolo 72",
+    "Voto": 0.0,
+    "NumeroVoti": 0,
+    "Autore": "Autore 72",
+    "Data": "2024-03-26T00:00:00+01:00",
+    "Categoria": "Animali"
+  },
+  {
+    "Id": 73,
+    "Path": "https://www.pandaclub.ch/wp-content/uploads/2019/06/skeeze-auf-Pixabay.jpg",
+    "Titolo": "Titolo 73",
+    "Voto": 0.0,
+    "NumeroVoti": 0,
+    "Autore": "Autore 73",
+    "Data": "2024-03-26T00:00:00+01:00",
+    "Categoria": "Animali"
+  },
+  {
+    "Id": 79,
+    "Path": "https://cdn-italiani-media.italiani.it/site-italiani/2021/08/Gianmarco-Tamberi-marcell-jacobs.jpeg",
+    "Titolo": "rtret",
+    "Voto": 4.0,
+    "NumeroVoti": 1,
+    "Autore": "rtrt",
+    "Data": "2024-03-26T00:00:00+01:00",
+    "Categoria": "Sport"
+  },
+  {
+    "Id": 81,
+    "Path": "https://t4.ftcdn.net/jpg/05/54/52/13/360_F_554521329_ngmDQSjSrUSRnbK2xK0bkcprsinG9Xdv.jpg",
+    "Titolo": "Panda coccoloso",
+    "Voto": 4.7,
+    "NumeroVoti": 3,
+    "Autore": "Panda 1",
+    "Data": "2024-03-27T00:00:00+01:00",
+    "Categoria": "Animali"
+  },
+  {
+    "Id": 82,
+    "Path": "https://res.cloudinary.com/lastminute-contenthub/s--zba-tI0n--/c_crop,h_1333,w_2000,x_0,y_0/c_limit,h_999999,w_1920/f_auto/q_auto:eco/v1/Hub-Live/VolaGratis/blog/images/EE3QG3_pizza",
+    "Titolo": "Pizza",
+    "Voto": 0.0,
+    "NumeroVoti": 0,
+    "Autore": "Autore 82",
+    "Data": "2024-03-28T00:00:00+01:00",
     "Categoria": "Cibo"
   },
   {
-    "Id": 74,
-    "Path": "https://i0.wp.com/www.giacomocusano.com/wp-content/uploads/2016/07/coastal-wash-web.jpg?resize=1024%2C675&ssl=1",
-    "Titolo": "viola",
+    "Id": 84,
+    "Path": "https://www.gazzettadelgusto.it/wp-content/uploads/2020/12/Cucina-italiana-all-estero-amata-ma-sconosciuta-e-contraffatta.jpg",
+    "Titolo": "Pasta ",
     "Voto": 0.0,
     "NumeroVoti": 0,
-    "Autore": "viola",
-    "Data": "2024-03-25T00:00:00+01:00",
-    "Categoria": "Paesaggi"
+    "Autore": "Autore 84",
+    "Data": "2024-03-28T00:00:00+01:00",
+    "Categoria": "Cibo"
+  },
+  {
+    "Id": 85,
+    "Path": "https://media.gettyimages.com/id/555907555/it/foto/jack-russel-dog.jpg?s=612x612&w=gi&k=20&c=qxg__E9fXGbH-1j7PK2SJjAlui9pX8itGhpWZ7BCHco=",
+    "Titolo": "Pongo",
+    "Voto": 0.0,
+    "NumeroVoti": 0,
+    "Autore": "Boh",
+    "Data": "2024-04-03T00:00:00+02:00",
+    "Categoria": "Animali"
+  },
+  {
+    "Id": 86,
+    "Path": "https://www.nuovosportgiovani.it/images/2021/la-formulazione-degli-obiettivi.jpg",
+    "Titolo": "atletica",
+    "Voto": 0.0,
+    "NumeroVoti": 0,
+    "Autore": "io",
+    "Data": "2024-04-04T09:27:31.352798+02:00",
+    "Categoria": "Sport"
   }
 ]
