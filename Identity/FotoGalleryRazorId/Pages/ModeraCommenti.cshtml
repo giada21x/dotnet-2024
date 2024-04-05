@@ -1,5 +1,5 @@
 @page
-@using FotoGalleryRazorId.Pages
+@using FotoGalleryRazorId.Pages;
 @model ModeraCommentiModel
 @{
     ViewData["Title"] = "Moderatore";
@@ -18,10 +18,58 @@
         <table class="table text-center table-striped align-middle mt-5">
             <thead>
                 <tr>
-                    <th>Id</th>
-                    <th>Nome</th>
-                    <th>Commento</th>
-                    <th>Data inserimento</th>
+                    <th>Id
+                        @if (Model.Reverse != "idOn")
+                        {
+                            <a class="voto" asp-page="/ModeraCommenti" asp-route-reverse="idOn">
+                                <i class="bi bi-caret-up"></i></a>
+                        }
+                        else
+                        {
+                            <a class="voto" asp-page="/ModeraCommenti" asp-route-reverse="idOff">
+                                <i class="bi bi-caret-down"></i></a>
+                        }
+                    </th>
+
+                    <th>Utente
+                        @if (Model.Reverse != "utenteOn")
+                        {
+                            <a class="voto" asp-page="/ModeraCommenti" asp-route-reverse="utenteOn">
+                                <i class="bi bi-caret-down"></i></a>
+                        }
+                        else
+                        {
+                            <a class="voto" asp-page="/ModeraCommenti" asp-route-reverse="utenteOff">
+                                <i class="bi bi-caret-up"></i></a>
+                        }
+                    </th>
+
+                    <th>Commento
+                        @if (Model.Reverse != "commentoOn")
+                        {
+                            <a class="voto" asp-page="/ModeraCommenti" asp-route-reverse="commentoOn">
+                                <i class="bi bi-caret-down"></i></a>
+                        }
+                        else
+                        {
+                            <a class="voto" asp-page="/ModeraCommenti" asp-route-reverse="commentoOff">
+                                <i class="bi bi-caret-up"></i></a>
+                        }
+                    </th>
+
+                    <th>Data inserimento
+                        @if (Model.Reverse != "dataOn")
+                        {
+                            <a class="voto" asp-page="/ModeraCommenti" asp-route-reverse="dataOn">
+                                <i class="bi bi-caret-down"></i></a>
+                        }
+                        else
+                        {
+                            <a class="voto" asp-page="/ModeraCommenti" asp-route-reverse="dataOff">
+                                <i class="bi bi-caret-up"></i></a>
+                        }
+                    </th>
+
                     <th>
                         <div class="dropdown text-center">
                             <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
@@ -120,7 +168,7 @@
     </form>
 
     <!---------------------------- tasti paginazione -------------------------->
-    <nav class="mt-4" aria-label="Page navigation">
+    <nav class="mt-5" aria-label="Page navigation">
         <ul class="pagination justify-content-center">
             <li class="page-item">
                 <a class="page-link" aria-label="Previous" asp-page="/ModeraCommenti" asp-route-pageindex="1">

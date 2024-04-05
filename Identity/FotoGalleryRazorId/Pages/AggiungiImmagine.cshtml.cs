@@ -1,4 +1,3 @@
-using System.ComponentModel.DataAnnotations;
 using FotoGalleryRazorId.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
