@@ -19,6 +19,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Identity", "Identity", "{1F
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FotoGalleryRazorId", "Identity\FotoGalleryRazorId\FotoGalleryRazorId.csproj", "{0DF294CE-D949-4A1C-B46B-0C63548A5163}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FotoGalleryMvcId", "Identity\FotoGalleryMvcId\FotoGalleryMvcId.csproj", "{6442E664-9B99-4E43-97A8-00A71FCD7294}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +43,10 @@ Global
 		{0DF294CE-D949-4A1C-B46B-0C63548A5163}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0DF294CE-D949-4A1C-B46B-0C63548A5163}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0DF294CE-D949-4A1C-B46B-0C63548A5163}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6442E664-9B99-4E43-97A8-00A71FCD7294}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6442E664-9B99-4E43-97A8-00A71FCD7294}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6442E664-9B99-4E43-97A8-00A71FCD7294}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6442E664-9B99-4E43-97A8-00A71FCD7294}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -51,6 +57,7 @@ Global
 		{78060808-9EE5-4398-B3C2-A01BC1D95CB7} = {A8AA8FB4-698E-4FE2-B288-71194C203606}
 		{8C4AFC78-D2BE-4C0C-91DB-DD9CB33F2968} = {78060808-9EE5-4398-B3C2-A01BC1D95CB7}
 		{0DF294CE-D949-4A1C-B46B-0C63548A5163} = {1FD08F6E-8E8F-433B-A467-50DC20D6E8BB}
+		{6442E664-9B99-4E43-97A8-00A71FCD7294} = {1FD08F6E-8E8F-433B-A467-50DC20D6E8BB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7583BCB3-805F-47A4-8D9E-11112190C3C6}
