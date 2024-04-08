@@ -1,0 +1,64 @@
+@page
+@using FotoGalleryRazorId.Pages
+@model AggiungiImmagineModel
+@{
+    ViewData["Title"] = "Aggiungi Immagine";
+}
+
+<!--Info (*) 
+    verifica il ModelState che contiene gli errori, cerca quello relativo all'oggetto che sto controllando
+    se ci sono errori, restituisce true, quindi seleziona l'opzione ternaria A = box-danger, nel caso 
+    invece l'errore non è esiste è null quindi il risultato dell'if ternario è false e scelgo l'opzione
+    B = "" cioè nessuna classe 
+-->
+
+<div class="container">
+    <!-------------------------- titolo della pagina ---------------------------->
+    <div class="text-center">
+    using FotoGalleryRazorId.Pages;
+    using FotoGalleryRazorId.Pages;
+    
+        <h1 class="display-4">@ViewData["Title"]</h1>
+    </div>
+
+    <!-------------------------- form aggiungi immagine ------------------------>
+    <div class="d-flex justify-content-center mt-5">
+        <form method="post">
+
+            <!-- Titolo -->
+            <div class="form-group">
+                <label asp-for="Input.Titolo"></label>
+                <input asp-for="Input.Titolo " type="text" class="form-control" />
+            </div>
+
+            <!-- Autore -->
+            <div class="form-group">
+                <label asp-for="Input.Autore"></label>
+                <input asp-for="Input.Autore " type="text" class="form-control" />
+            </div>
+
+            <!-- Select Categoria -->
+            <label asp-for="Input.Categoria"></label> <!-------------- leggi sopra (*)---------->
+            <select asp-for="Input.Categoria" asp-items="Model.Categorie"
+                class="form-control @(ViewData.ModelState["Input.Categoria"]?.Errors.Any() ?? false ? "box-danger" : "")">
+                <option value="">Scegli categoria</option>
+            </select>
+            <span asp-validation-for="Input.Categoria" class="text-danger"></span>
+
+            <!-- Path -->
+            <div class="form-group">
+                <label asp-for="Input.Path"></label> <!--------------- leggi sopra (*)---------->
+                <input asp-for="Input.Path" type="text"
+                    class="form-control @(ViewData.ModelState["Input.Path"]?.Errors.Any() ?? false ? "box-danger" : "")" />
+            </div>
+            <span asp-validation-for="Input.Path" class="text-danger"></span>
+            <br>
+
+            <!-- Submit Aggiungi -->
+            <button type="submit" class="btn btn-primary">Aggiungi</button>
+            <a asp-page="/Index" class="btn btn-primary" type="button">
+                Torna alle immagini
+            </a>
+        </form>
+    </div>
+</div>

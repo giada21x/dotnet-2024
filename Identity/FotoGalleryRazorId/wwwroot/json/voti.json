@@ -617,7 +617,7 @@
     "Data": "2024-03-28T00:00:00+01:00",
     "Commento": "ds",
     "Visibile": true,
-    "Moderato": true
+    "Moderato": false
   },
   {
     "Id": 63,
@@ -657,7 +657,7 @@
     "Data": "2024-04-03T00:00:00+02:00",
     "Commento": "che bello",
     "Visibile": true,
-    "Moderato": true
+    "Moderato": false
   },
   {
     "Id": 67,
@@ -667,7 +667,7 @@
     "Data": "2024-04-03T00:00:00+02:00",
     "Commento": "che bello",
     "Visibile": true,
-    "Moderato": true
+    "Moderato": false
   },
   {
     "Id": 68,
@@ -677,7 +677,7 @@
     "Data": "2024-04-03T00:00:00+02:00",
     "Commento": "sdsadsadas",
     "Visibile": false,
-    "Moderato": true
+    "Moderato": false
   },
   {
     "Id": 69,
@@ -687,7 +687,7 @@
     "Data": "2024-04-03T00:00:00+02:00",
     "Commento": "fgfdgfdgd",
     "Visibile": false,
-    "Moderato": true
+    "Moderato": false
   },
   {
     "Id": 70,
