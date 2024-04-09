@@ -2,7 +2,7 @@ using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using MvcApp.Models;
 
-namespace MvcAuthApp.Controllers;
+namespace MvcApp.Controllers;
 
 public class HomeController : Controller
 {
