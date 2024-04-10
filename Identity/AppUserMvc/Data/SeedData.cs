@@ -4,7 +4,7 @@ public class SeedData
     public static async Task InitializeAsync(UserManager<AppUser> userManager, RoleManager<IdentityRole> roleManager)
     {
         //creazione dei ruoli se non esistono
-        string[] roleNames = { "Admin", "Fornitore", "Cliente"};
+        string[] roleNames = { "Admin", "User", "Moderatore"};
         foreach (var roleName in roleNames)
         {
             if (!await roleManager.RoleExistsAsync(roleName))
