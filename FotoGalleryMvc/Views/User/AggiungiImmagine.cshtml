@@ -1,0 +1,62 @@
+
+@model AggiungiImmagineViewModel
+@{
+    ViewData["Title"] = "Aggiungi Immagine";
+}
+
+<!--Info (*) 
+    verifica il ModelState che contiene gli errori, cerca quello relativo all'oggetto che sto controllando
+    se ci sono errori, restituisce true, quindi seleziona l'opzione ternaria A = box-danger, nel caso 
+    invece l'errore non è esiste è null quindi il risultato dell'if ternario è false e scelgo l'opzione
+    B = "" cioè nessuna classe 
+-->
+
+<div class="container">
+    <!-------------------------- titolo della pagina ---------------------------->
+    <div class="text-center">
+    
+    
+        <h1 class="display-4">@ViewData["Title"]</h1>
+    </div>
+
+    <!-------------------------- form aggiungi immagine ------------------------>
+    <div class="d-flex justify-content-center mt-5">
+        <form method="post">
+
+            <!-- Titolo -->
+            <div class="form-group">
+                <label asp-for="Titolo"></label>
+                <input asp-for="Titolo " type="text" class="form-control" />
+            </div>
+
+            <!-- Autore -->
+            <div class="form-group">
+                <label asp-for="Autore"></label>
+                <input asp-for="Autore " type="text" class="form-control" />
+            </div>
+
+            <!-- Select Categoria -->
+            <div class="form-group">
+    <label asp-for="Categoria"></label>
+    <select asp-for="Categoria" class="form-control" asp-items="Model.Categorie">
+        <option value="">Seleziona una categoria</option>
+    </select>
+    <span asp-validation-for="Categoria" class="text-danger"></span>
+</div>
+
+            <!-- Path -->
+            <div class="form-group">
+    <label asp-for="Path"></label>
+    <input asp-for="Path" type="text" class="form-control" />
+    <span asp-validation-for="Path" class="text-danger"></span>
+</div>
+            <br>
+
+            <!-- Submit Aggiungi -->
+            <button type="submit" class="btn btn-primary">Aggiungi</button>
+            <a asp-controller="User" asp-action="Immagini" class="btn btn-primary" type="button">
+                Torna alle immagini
+            </a>
+        </form>
+    </div>
+</div>
