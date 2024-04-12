@@ -46,6 +46,26 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/DOTNET/Documents/pinguino/dotnet-2024/FotoGalleryMvc/Views/Admin/EliminaImmagine.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWxpbWluYUltbWFnaW5lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DOTNET/Documents/pinguino/dotnet-2024/FotoGalleryMvc/Views/Admin/GestioneImmagini.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cR2VzdGlvbmVJbW1hZ2luaS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DOTNET/Documents/pinguino/dotnet-2024/FotoGalleryMvc/Views/Admin/GestioneUtenti.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cR2VzdGlvbmVVdGVudGkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DOTNET/Documents/pinguino/dotnet-2024/FotoGalleryMvc/Views/Admin/ModificaImmagine.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTW9kaWZpY2FJbW1hZ2luZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DOTNET/Documents/pinguino/dotnet-2024/FotoGalleryMvc/Views/Admin/_DropdownModifica.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cX0Ryb3Bkb3duTW9kaWZpY2EuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/DOTNET/Documents/pinguino/dotnet-2024/FotoGalleryMvc/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -72,6 +92,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/DOTNET/Documents/pinguino/dotnet-2024/FotoGalleryMvc/Views/User/Categorie.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxDYXRlZ29yaWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DOTNET/Documents/pinguino/dotnet-2024/FotoGalleryMvc/Views/User/Classifica.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxDbGFzc2lmaWNhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/DOTNET/Documents/pinguino/dotnet-2024/FotoGalleryMvc/Views/User/Immagine.cshtml]

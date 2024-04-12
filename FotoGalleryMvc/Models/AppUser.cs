@@ -5,5 +5,7 @@ public class AppUser : IdentityUser
    
     public string Nome { get; set; }
     public string Cognome { get; set; }
+    public string Ruolo { get; set; }
+
     public bool Stato { get; set; }
 }

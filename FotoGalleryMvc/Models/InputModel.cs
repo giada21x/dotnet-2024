@@ -19,4 +19,5 @@ public class InputModel
     [Required(ErrorMessage = "Devi inserire un link")]
     [Display(Name = "Link immagine")]
     public string? Path { get; set; }
+    public string? Id { get; internal set; }
 }

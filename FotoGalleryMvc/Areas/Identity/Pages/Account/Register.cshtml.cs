@@ -125,7 +125,7 @@ namespace FotoGalleryMvc.Areas.Identity.Pages.Account
 			ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
 			if (ModelState.IsValid)
 			{
-				var user = new AppUser { UserName = Input.Email, Email = Input.Email, Nome = Input.Nome,  Cognome = Input.Cognome, Stato = Input.Stato };
+				var user = new AppUser { UserName = Input.Email, Email = Input.Email, Nome = Input.Nome,  Cognome = Input.Cognome, Stato = Input.Stato};
 				var result = await _userManager.CreateAsync(user, Input.Password);
 				if (result.Succeeded)
 				{

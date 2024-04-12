@@ -1,0 +1,77 @@
+@model GestioneUtentiViewModel
+@{
+    ViewData["Title"] = "Gestione utenti";
+}
+<div class="mx-5">
+    <!-------------------------- titolo della pagina ---------------------------->
+    <div class="text-center">
+        <h1 class="display-5">@ViewData["Title"]</h1>
+    </div>
+
+    <!------------------- tabella utenti ----------------------->
+    <table class="table text-center table-striped align-middle mt-5">
+        <thead>
+            <tr>
+                <th>Id
+                   
+                </th>
+
+                <th>Nome
+                   
+                </th>
+                <th>Cognome
+                   
+                </th>
+
+                <th>Ruolo
+                   
+                </th>
+
+                <th>Email
+                   
+                </th>
+
+                
+                
+            </tr>
+        </thead>
+        <tbody>
+
+            @foreach (var u in Model.Utenti!)
+            {
+               
+
+                <tr>
+                    <td>@u.Id</td>
+
+
+                    <td>@u.Nome</td>
+                    <td>@u.Cognome</td>
+                    <td>@u.Ruolo</td>
+                    <td>@u.Email</td>
+                    <td>
+                    
+                        <!-- Pulsante Modifica -->
+                        <a href="@Url.Action("Modifica", "Utenti", new { id = u.Id })" class="btn btn-primary">Modifica</a>
+                        
+                     <!-- Pulsante Elimina -->  
+    <a class="btn btn-danger" asp-controller="Admin" asp-action="EliminaUtente" asp-route-id="@u.Id">
+            Elimina
+        </a>
+           
+
+        
+                
+              
+          
+                    </td>
+                   
+
+                    
+
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</div>

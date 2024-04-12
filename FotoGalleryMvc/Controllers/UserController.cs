@@ -13,7 +13,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace FotoGalleryMvc.Controllers
 {
-    [Authorize(Roles = "User")]
+    [Authorize]
     public class UserController : Controller
     {
         private readonly UserManager<AppUser> _userManager; private readonly ILogger<UserController> _logger;
@@ -224,6 +224,35 @@ namespace FotoGalleryMvc.Controllers
                 });
             }
         }
+        public ActionResult Classifica(int? pageIndex, bool reverse)
+        {
+            var jsonPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "json", "immagini.json");
+            int pageNumber = pageIndex ?? 1;
+            var model = new ClassificaViewModel
+            {
+                ElementiPerPagina = 10,
+                PageIndex = pageIndex,
+                Reverse = reverse
+            };
+            var jsonFile = System.IO.File.ReadAllText(jsonPath);
+            model.Immagini = JsonConvert.DeserializeObject<List<Immagine>>(jsonFile);
+            model.TotaleImmagini = model.Immagini.Count();
+
+            if (reverse)
+            {
+                model.Immagini = model.Immagini.OrderByDescending(i => i.Voto);
+
+            }
+            else
+            {
+                model.Immagini = model.Immagini.OrderBy(i => i.Voto);
+            }
+
+            model.NumeroPagine = (int)Math.Ceiling((double)model.TotaleImmagini / model.ElementiPerPagina);
+            model.Immagini = model.Immagini.Skip(((pageIndex ?? 1) -1) * model.ElementiPerPagina).Take(model.ElementiPerPagina).ToList();
+            return View(model);
+        }
+        
 
 
 
