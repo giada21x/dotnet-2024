@@ -30,7 +30,7 @@
                 <th>Email
                    
                 </th>
-
+                <th><i class="bi bi-tools" /></i></th>
                 
                 
             </tr>
@@ -52,11 +52,14 @@
                     <td>
                     
                         <!-- Pulsante Modifica -->
-                        <a href="@Url.Action("Modifica", "Utenti", new { id = u.Id })" class="btn btn-primary">Modifica</a>
                         
+                        <a class="btn btn-primary" href="@Url.Action("ModificaRuolo", "Admin", new { id = u.Id })">
+    Modifica Utente
+</a>
+
                      <!-- Pulsante Elimina -->  
     <a class="btn btn-danger" asp-controller="Admin" asp-action="EliminaUtente" asp-route-id="@u.Id">
-            Elimina
+            Elimina Utente
         </a>
            
 
@@ -73,5 +76,9 @@
             }
         </tbody>
     </table>
+    
+        
+
+
 
 </div>

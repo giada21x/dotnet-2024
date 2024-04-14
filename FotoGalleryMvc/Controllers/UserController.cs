@@ -50,7 +50,7 @@ namespace FotoGalleryMvc.Controllers
 
             //filtro le immagini per categoria
             if (!string.IsNullOrEmpty(model.Categoria))
-            {
+            {var jsonPath2 = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "json", "voti.json");
                 model.Immagini = model.Immagini.Where(i => i.Categoria == model.Categoria);
             }
 
@@ -118,42 +118,40 @@ namespace FotoGalleryMvc.Controllers
 
             return View(model);
         }
-
-        public IActionResult AggiungiImmagine(AggiungiImmagineViewModel model)
+        [HttpGet]
+        public IActionResult AggiungiImmagine()
         {
-            var jsonPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "json", "immagini.json");
-            var jsonPath3 = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "json", "categorie.json");
-            
-            var jsonFile3 = System.IO.File.ReadAllText(jsonPath3);
+            var model = new AggiungiImmagineViewModel();
+            var jsonPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "json", "categorie.json");
+            var jsonFile3 = System.IO.File.ReadAllText(jsonPath);
             var categorie = JsonConvert.DeserializeObject<List<string>>(jsonFile3) ?? new List<string>();
 
-            model.Categorie = categorie.Select(c => new SelectListItem { Value = c, Text = c }).ToList();
+            // Costruisci oggetti SelectListItem e assegnali a Categorie
+            foreach (var c in categorie)
+            {
+                model.Categorie.Add(new SelectListItem { Value = c, Text = c });
+            }
 
+            return View(model);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> AggiungiImmagine(AggiungiImmagineViewModel model)
+        {
+            // Assicura che i dati inviati siano validi, altrimenti ricarica la pagina
             if (!ModelState.IsValid)
             {
+                // Log dell'errore di validazione
                 _logger.LogInformation("Errore validazione modulo - " + DateTime.Now.ToString("T"));
-                foreach (var modelStateEntry in ModelState.Values)
-{
-    foreach (var error in modelStateEntry.Errors)
-    {
-        _logger.LogError(error.ErrorMessage);
-    }
-}
-
-      
-        return View(model);
+                return View(model);
             }
             else
             {
                 _logger.LogInformation("Categoria: {0}", model.Categoria);
-                
-                 
 
-                
-
+                var jsonPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "json", "immagini.json");
                 var jsonFile = System.IO.File.ReadAllText(jsonPath);
                 var immagini = JsonConvert.DeserializeObject<List<Immagine>>(jsonFile) ?? new List<Immagine>();
-                
 
                 int id = immagini.Max(i => i.Id) + 1;
 
@@ -165,13 +163,6 @@ namespace FotoGalleryMvc.Controllers
                 {
                     model.Titolo = $"Titolo {id}";
                 }
-
-                
-      
-        
-
-        // Costruisci oggetti SelectListItem e assegnali a Categorie
-        
 
                 Immagine img = new()
                 {
@@ -190,7 +181,7 @@ namespace FotoGalleryMvc.Controllers
                 System.IO.File.WriteAllText(jsonPath, JsonConvert.SerializeObject(immagini, Formatting.Indented));
 
                 _logger.LogInformation("Immagine aggiunta Id: {0}", id);
-                return RedirectToAction("AggiungiImmagine", "User");
+                return RedirectToAction(nameof(Immagini));
             }
         }
 
@@ -240,12 +231,13 @@ namespace FotoGalleryMvc.Controllers
 
             if (reverse)
             {
-                model.Immagini = model.Immagini.OrderByDescending(i => i.Voto);
-
+                
+                model.Immagini = model.Immagini.OrderBy(i => i.Voto);
             }
             else
             {
-                model.Immagini = model.Immagini.OrderBy(i => i.Voto);
+                
+                model.Immagini = model.Immagini.OrderByDescending(i => i.Voto);
             }
 
             model.NumeroPagine = (int)Math.Ceiling((double)model.TotaleImmagini / model.ElementiPerPagina);

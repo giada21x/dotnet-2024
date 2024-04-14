@@ -1,0 +1,21 @@
+@model ModificaRuoloViewModel
+
+@{
+    ViewData["Title"] = "Modifica Ruolo ";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<form method="post" asp-action="ModificaRuolo" asp-route-id="@Model.UserId">
+    <div>
+        <label for="nuovoRuolo">Nuovo Ruolo:</label>
+        <select id="nuovoRuolo" name="nuovoRuolo">
+    @foreach (var role in Model.Roles)
+    {
+        <option value="@role">@role</option>
+    }
+</select>
+
+    </div>
+    <button type="submit">Salva Modifiche</button>
+</form>

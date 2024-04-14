@@ -24,6 +24,7 @@ namespace FotoGalleryMvc.Areas.Identity.Pages.Account
 {
 	public class RegisterModel : PageModel
 	{
+		private readonly RoleManager<IdentityRole> _roleManager;
 		private readonly SignInManager<AppUser> _signInManager;
 		private readonly UserManager<AppUser> _userManager;
 		private readonly IUserStore<IdentityUser> _userStore;
@@ -32,11 +33,13 @@ namespace FotoGalleryMvc.Areas.Identity.Pages.Account
 		private readonly IEmailSender _emailSender;
 
 		public RegisterModel(
+			RoleManager<IdentityRole> roleManager,
 			UserManager<AppUser> userManager,
 	SignInManager<AppUser> signInManager,
 	ILogger<RegisterModel> logger,
 	IEmailSender emailSender)
 		{
+			_roleManager = roleManager;
 			_userManager = userManager;
 			_signInManager = signInManager;
 			_logger = logger;
@@ -126,6 +129,15 @@ namespace FotoGalleryMvc.Areas.Identity.Pages.Account
 			if (ModelState.IsValid)
 			{
 				var user = new AppUser { UserName = Input.Email, Email = Input.Email, Nome = Input.Nome,  Cognome = Input.Cognome, Stato = Input.Stato};
+				if (await _roleManager.RoleExistsAsync("User"))
+                {
+                    user.Ruolo = "User";
+                }
+                else
+                {
+                    user.Ruolo = "error";
+                }
+				
 				var result = await _userManager.CreateAsync(user, Input.Password);
 				if (result.Succeeded)
 				{

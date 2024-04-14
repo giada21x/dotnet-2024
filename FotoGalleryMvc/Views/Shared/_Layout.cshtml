@@ -40,24 +40,30 @@
                             </li>
 
                         }
-                        @if (User.IsInRole("Admin"))
+                        @if (User.IsInRole("Admin") || User.IsInRole("Moderatore"))
                         {
                             <div class="dropdown">
                             <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
-                                Gestisci
+                                Moderatore
                             </button>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" asp-area="" asp-controller="Admin" asp-action="GestioneUtenti">
-                            Gestione Utenti</a>
-                                <li><a class="dropdown-item" asp-area="" asp-controller="Admin" asp-action="GestioneImmagini">
+                                
+                                <li><a class="dropdown-item" asp-area="" asp-controller="Moderatore" asp-action="GestioneImmagini">
                             Gestione Immagini</a>
-                            <li><a class="dropdown-item" asp-area="" asp-controller="Admin" asp-action="GestioneCommenti">
+                            <li><a class="dropdown-item" asp-area="" asp-controller="Moderatore" asp-action="GestioneCommenti">
                             Gestione Commenti</a>
 
                             </ul>
                             </div>
                     
+                        }
+                        @if (User.IsInRole("Admin"))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Admin"
+                                    asp-action="GestioneUtenti">Gestione Utenti</a>
+                            </li>
                         }
                 </ul>
                 <partial name="_LoginPartial" />

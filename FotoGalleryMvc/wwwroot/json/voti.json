@@ -6,8 +6,8 @@
     "Stelle": 4.0,
     "Data": "2024-03-21T00:00:00",
     "Commento": "belin che bella",
-    "Visibile": false,
-    "Moderato": false
+    "Visibile": true,
+    "Moderato": true
   },
   {
     "Id": 2,
@@ -17,7 +17,7 @@
     "Data": "2024-03-21T00:00:00+01:00",
     "Commento": "sfdgdagegr",
     "Visibile": true,
-    "Moderato": false
+    "Moderato": true
   },
   {
     "Id": 3,
@@ -26,8 +26,8 @@
     "Stelle": 2.0,
     "Data": "2024-03-21T00:00:00+01:00",
     "Commento": "gdgdfsdfd",
-    "Visibile": true,
-    "Moderato": false
+    "Visibile": false,
+    "Moderato": true
   },
   {
     "Id": 4,
@@ -37,7 +37,7 @@
     "Data": "2024-03-22T00:00:00+01:00",
     "Commento": "lsbdvuilbvakfbkhkab",
     "Visibile": false,
-    "Moderato": false
+    "Moderato": true
   },
   {
     "Id": 5,
@@ -47,7 +47,7 @@
     "Data": "2024-03-22T00:00:00+01:00",
     "Commento": "buco del culo",
     "Visibile": false,
-    "Moderato": false
+    "Moderato": true
   },
   {
     "Id": 6,
@@ -57,7 +57,7 @@
     "Data": "2024-03-22T00:00:00+01:00",
     "Commento": "w la figaaaaaaaaaaa",
     "Visibile": false,
-    "Moderato": false
+    "Moderato": true
   },
   {
     "Id": 7,
@@ -67,7 +67,7 @@
     "Data": "2024-03-22T00:00:00+01:00",
     "Commento": "bell'albero",
     "Visibile": true,
-    "Moderato": false
+    "Moderato": true
   },
   {
     "Id": 8,
@@ -77,7 +77,7 @@
     "Data": "2024-03-22T00:00:00+01:00",
     "Commento": "djkpsghzkgbsrdfnsdfbsdobfsobfafa fsugfsuoagfosa fioagfoisagf soufg sofgso fsaoufg sof sofg soufg soaufg suofg sofgsofg saofgs fosa ",
     "Visibile": true,
-    "Moderato": false
+    "Moderato": true
   },
   {
     "Id": 9,
@@ -127,7 +127,7 @@
     "Data": "2024-03-24T00:00:00+01:00",
     "Commento": "bella bella",
     "Visibile": true,
-    "Moderato": false
+    "Moderato": true
   },
   {
     "Id": 14,
@@ -157,7 +157,7 @@
     "Data": "2024-03-24T00:00:00+01:00",
     "Commento": "axz<xz<",
     "Visibile": true,
-    "Moderato": false
+    "Moderato": true
   },
   {
     "Id": 17,
@@ -186,7 +186,7 @@
     "Stelle": 3.0,
     "Data": "2024-03-24T00:00:00+01:00",
     "Commento": "cdcdscd",
-    "Visibile": false,
+    "Visibile": true,
     "Moderato": false
   },
   {
@@ -196,7 +196,7 @@
     "Stelle": 3.0,
     "Data": "2024-03-24T00:00:00+01:00",
     "Commento": "cdcdscd",
-    "Visibile": false,
+    "Visibile": true,
     "Moderato": false
   },
   {
@@ -217,7 +217,7 @@
     "Data": "2024-03-24T00:00:00+01:00",
     "Commento": "cdcdscd",
     "Visibile": true,
-    "Moderato": false
+    "Moderato": true
   },
   {
     "Id": 23,
@@ -227,7 +227,7 @@
     "Data": "2024-03-24T00:00:00+01:00",
     "Commento": "cdcdscd",
     "Visibile": true,
-    "Moderato": false
+    "Moderato": true
   },
   {
     "Id": 24,
@@ -237,7 +237,7 @@
     "Data": "2024-03-24T00:00:00+01:00",
     "Commento": "cdcdscd",
     "Visibile": false,
-    "Moderato": false
+    "Moderato": true
   },
   {
     "Id": 25,
@@ -287,426 +287,346 @@
     "Data": "2024-03-24T00:00:00+01:00",
     "Commento": "vdscdscs",
     "Visibile": false,
-    "Moderato": false
+    "Moderato": true
   },
   {
     "Id": 30,
-    "Nome": "cssxas",
-    "ImmagineId": 62,
-    "Stelle": 5.0,
-    "Data": "2024-03-24T00:00:00+01:00",
-    "Commento": "ccsaca",
-    "Visibile": false,
+    "Nome": "s.ussi@yahoo.it",
+    "ImmagineId": 3,
+    "Stelle": 4.0,
+    "Data": "2024-04-09T00:00:00+02:00",
+    "Commento": null,
+    "Visibile": true,
     "Moderato": false
   },
   {
     "Id": 31,
-    "Nome": "dfwfwfwe",
-    "ImmagineId": 5,
-    "Stelle": 1.0,
-    "Data": "2024-03-25T00:00:00+01:00",
+    "Nome": "s.ussi@yahoo.it",
+    "ImmagineId": 3,
+    "Stelle": 4.0,
+    "Data": "2024-04-09T00:00:00+02:00",
     "Commento": null,
     "Visibile": true,
     "Moderato": false
   },
   {
     "Id": 32,
-    "Nome": "cane",
-    "ImmagineId": 61,
-    "Stelle": 5.0,
-    "Data": "2024-03-25T00:00:00+01:00",
-    "Commento": "cane",
-    "Visibile": false,
+    "Nome": "s.ussi@yahoo.it",
+    "ImmagineId": 3,
+    "Stelle": 4.0,
+    "Data": "2024-04-09T00:00:00+02:00",
+    "Commento": null,
+    "Visibile": true,
     "Moderato": false
   },
   {
     "Id": 33,
-    "Nome": "dihsodgn",
-    "ImmagineId": 61,
-    "Stelle": 1.0,
-    "Data": "2024-03-25T00:00:00+01:00",
-    "Commento": "bello",
+    "Nome": "s.ussi@yahoo.it",
+    "ImmagineId": 3,
+    "Stelle": 4.0,
+    "Data": "2024-04-09T00:00:00+02:00",
+    "Commento": null,
     "Visibile": true,
     "Moderato": false
   },
   {
     "Id": 34,
-    "Nome": "dihsodgn",
-    "ImmagineId": 61,
-    "Stelle": 1.0,
-    "Data": "2024-03-25T00:00:00+01:00",
-    "Commento": "bello",
+    "Nome": "s.ussi@yahoo.it",
+    "ImmagineId": 2,
+    "Stelle": 4.0,
+    "Data": "2024-04-09T00:00:00+02:00",
+    "Commento": null,
     "Visibile": true,
     "Moderato": false
   },
   {
     "Id": 35,
-    "Nome": "dihsodgn",
-    "ImmagineId": 61,
-    "Stelle": 1.0,
-    "Data": "2024-03-25T00:00:00+01:00",
-    "Commento": "bello",
+    "Nome": "s.ussi@yahoo.it",
+    "ImmagineId": 4,
+    "Stelle": 5.0,
+    "Data": "2024-04-09T00:00:00+02:00",
+    "Commento": "bellla!!!",
     "Visibile": true,
     "Moderato": false
   },
   {
     "Id": 36,
-    "Nome": "dfsdfsd",
-    "ImmagineId": 19,
+    "Nome": "s.ussi@yahoo.it",
+    "ImmagineId": 52,
     "Stelle": 5.0,
-    "Data": "2024-03-25T00:00:00+01:00",
-    "Commento": "sdfsadsa",
+    "Data": "2024-04-09T00:00:00+02:00",
+    "Commento": "che cariniiii!!!",
     "Visibile": true,
     "Moderato": false
   },
   {
     "Id": 37,
-    "Nome": "simone",
-    "ImmagineId": 45,
+    "Nome": "s.ussi@yahoo.it",
+    "ImmagineId": 22,
     "Stelle": 5.0,
-    "Data": "2024-03-25T00:00:00+01:00",
-    "Commento": "bello",
+    "Data": "2024-04-09T00:00:00+02:00",
+    "Commento": "cibooooooooooooo",
     "Visibile": true,
-    "Moderato": false
+    "Moderato": true
   },
   {
     "Id": 38,
-    "Nome": "chch",
-    "ImmagineId": 59,
+    "Nome": "s.ussi@yahoo.it",
+    "ImmagineId": 62,
     "Stelle": 5.0,
-    "Data": "2024-03-25T00:00:00+01:00",
+    "Data": "2024-04-09T00:00:00+02:00",
     "Commento": null,
     "Visibile": true,
     "Moderato": false
   },
   {
     "Id": 39,
-    "Nome": "simo",
-    "ImmagineId": 58,
-    "Stelle": 5.0,
-    "Data": "2024-03-27T00:00:00+01:00",
-    "Commento": "bellissimo",
+    "Nome": "s.ussi@yahoo.it",
+    "ImmagineId": 25,
+    "Stelle": 4.0,
+    "Data": "2024-04-09T00:00:00+02:00",
+    "Commento": "kjkh",
     "Visibile": true,
     "Moderato": false
   },
   {
     "Id": 40,
-    "Nome": "dfsdf",
-    "ImmagineId": 56,
+    "Nome": "s.ussi@yahoo.it",
+    "ImmagineId": 55,
     "Stelle": 4.0,
-    "Data": "2024-03-27T00:00:00+01:00",
-    "Commento": "dfsdfsd",
+    "Data": "2024-04-09T00:00:00+02:00",
+    "Commento": "ffdgfdgdf",
     "Visibile": true,
     "Moderato": false
   },
   {
     "Id": 41,
-    "Nome": "dffdsfd",
-    "ImmagineId": 56,
-    "Stelle": 5.0,
-    "Data": "2024-03-27T00:00:00+01:00",
-    "Commento": "dfsfsd",
+    "Nome": "s.ussi@yahoo.it",
+    "ImmagineId": 9,
+    "Stelle": 4.0,
+    "Data": "2024-04-09T00:00:00+02:00",
+    "Commento": null,
     "Visibile": true,
     "Moderato": false
   },
   {
     "Id": 42,
-    "Nome": "dsdfsdf",
-    "ImmagineId": 5,
-    "Stelle": 4.0,
-    "Data": "2024-03-27T00:00:00+01:00",
-    "Commento": "dfsdfsd",
+    "Nome": "s.ussi@yahoo.it",
+    "ImmagineId": 82,
+    "Stelle": 5.0,
+    "Data": "2024-04-09T00:00:00+02:00",
+    "Commento": null,
     "Visibile": true,
     "Moderato": false
   },
   {
     "Id": 43,
-    "Nome": "ssadsa",
-    "ImmagineId": 58,
-    "Stelle": 5.0,
-    "Data": "2024-03-27T00:00:00+01:00",
-    "Commento": "sccdac",
+    "Nome": "s.ussi@yahoo.it",
+    "ImmagineId": 83,
+    "Stelle": 4.0,
+    "Data": "2024-04-09T00:00:00+02:00",
+    "Commento": "sdsd",
     "Visibile": true,
     "Moderato": false
   },
   {
     "Id": 44,
-    "Nome": "fdgdfgdf",
-    "ImmagineId": 58,
-    "Stelle": 4.0,
-    "Data": "2024-03-27T00:00:00+01:00",
-    "Commento": "fgdfgdf",
+    "Nome": "s.ussi@yahoo.it",
+    "ImmagineId": 33,
+    "Stelle": 5.0,
+    "Data": "2024-04-09T00:00:00+02:00",
+    "Commento": "sfssa",
     "Visibile": true,
     "Moderato": false
   },
   {
     "Id": 45,
-    "Nome": "dfdfdfd",
-    "ImmagineId": 45,
-    "Stelle": 5.0,
-    "Data": "2024-03-27T00:00:00+01:00",
-    "Commento": "fdsdfsdf",
+    "Nome": "s.ussi@yahoo.it",
+    "ImmagineId": 18,
+    "Stelle": 4.0,
+    "Data": "2024-04-09T00:00:00+02:00",
+    "Commento": null,
     "Visibile": true,
     "Moderato": false
   },
   {
     "Id": 46,
-    "Nome": "dfsdfsd",
-    "ImmagineId": 50,
-    "Stelle": 4.0,
-    "Data": "2024-03-27T00:00:00+01:00",
-    "Commento": "fdds",
+    "Nome": "s.ussi@yahoo.it",
+    "ImmagineId": 19,
+    "Stelle": 5.0,
+    "Data": "2024-04-09T00:00:00+02:00",
+    "Commento": null,
     "Visibile": true,
     "Moderato": false
   },
   {
     "Id": 47,
-    "Nome": "dfdsfds",
-    "ImmagineId": 50,
-    "Stelle": 3.0,
-    "Data": "2024-03-27T00:00:00+01:00",
-    "Commento": "ddfdsfdsf",
+    "Nome": "s.ussi@yahoo.it",
+    "ImmagineId": 81,
+    "Stelle": 5.0,
+    "Data": "2024-04-09T00:00:00+02:00",
+    "Commento": null,
     "Visibile": true,
     "Moderato": false
   },
   {
     "Id": 48,
-    "Nome": "12121",
-    "ImmagineId": 2,
-    "Stelle": 5.0,
-    "Data": "2024-03-27T00:00:00+01:00",
-    "Commento": "fdfffffff",
+    "Nome": "s.ussi@yahoo.it",
+    "ImmagineId": 5,
+    "Stelle": 4.0,
+    "Data": "2024-04-09T00:00:00+02:00",
+    "Commento": null,
     "Visibile": true,
     "Moderato": false
   },
   {
     "Id": 49,
-    "Nome": "4343",
-    "ImmagineId": 59,
-    "Stelle": 5.0,
-    "Data": "2024-03-27T00:00:00+01:00",
-    "Commento": "dsadsadsd",
+    "Nome": "s.ussi@yahoo.it",
+    "ImmagineId": 13,
+    "Stelle": 4.0,
+    "Data": "2024-04-09T00:00:00+02:00",
+    "Commento": null,
     "Visibile": true,
     "Moderato": false
   },
   {
     "Id": 50,
-    "Nome": "4343434",
-    "ImmagineId": 59,
-    "Stelle": 5.0,
-    "Data": "2024-03-27T00:00:00+01:00",
-    "Commento": "dsadsadsd",
+    "Nome": "s.ussi@yahoo.it",
+    "ImmagineId": 8,
+    "Stelle": 3.0,
+    "Data": "2024-04-09T00:00:00+02:00",
+    "Commento": null,
     "Visibile": true,
     "Moderato": false
   },
   {
     "Id": 51,
-    "Nome": "1111",
-    "ImmagineId": 58,
-    "Stelle": 5.0,
-    "Data": "2024-03-27T00:00:00+01:00",
-    "Commento": "ddsdsadsa",
+    "Nome": "s.ussi@yahoo.it",
+    "ImmagineId": 49,
+    "Stelle": 2.0,
+    "Data": "2024-04-09T00:00:00+02:00",
+    "Commento": null,
     "Visibile": true,
     "Moderato": false
   },
   {
     "Id": 52,
-    "Nome": "dgdgsdg",
-    "ImmagineId": 2,
-    "Stelle": 4.0,
-    "Data": "2024-03-27T00:00:00+01:00",
-    "Commento": "dfdfd",
+    "Nome": "s.ussi@yahoo.it",
+    "ImmagineId": 11,
+    "Stelle": 3.0,
+    "Data": "2024-04-09T00:00:00+02:00",
+    "Commento": null,
     "Visibile": true,
     "Moderato": false
   },
   {
     "Id": 53,
-    "Nome": "alex",
-    "ImmagineId": 18,
-    "Stelle": 4.0,
-    "Data": "2024-03-27T00:00:00+01:00",
-    "Commento": "esdreererweew  gregret òfhòo fehfòeo fweof ",
+    "Nome": "s.ussi@yahoo.it",
+    "ImmagineId": 47,
+    "Stelle": 3.0,
+    "Data": "2024-04-09T00:00:00+02:00",
+    "Commento": null,
     "Visibile": true,
     "Moderato": false
   },
   {
     "Id": 54,
-    "Nome": "ererer",
-    "ImmagineId": 18,
-    "Stelle": 1.0,
-    "Data": "2024-03-27T00:00:00+01:00",
-    "Commento": "wetwerewrwe",
+    "Nome": "s.ussi@yahoo.it",
+    "ImmagineId": 45,
+    "Stelle": 5.0,
+    "Data": "2024-04-09T00:00:00+02:00",
+    "Commento": "rrtreter",
     "Visibile": true,
     "Moderato": false
   },
   {
     "Id": 55,
-    "Nome": "12",
-    "ImmagineId": 3,
+    "Nome": "s.ussi@yahoo.it",
+    "ImmagineId": 85,
     "Stelle": 5.0,
-    "Data": "2024-03-27T00:00:00+01:00",
-    "Commento": "ee",
-    "Visibile": true,
-    "Moderato": false
+    "Data": "2024-04-09T00:00:00+02:00",
+    "Commento": "Pongusooooo!!!!",
+    "Visibile": false,
+    "Moderato": true
   },
   {
     "Id": 56,
-    "Nome": "222",
-    "ImmagineId": 3,
+    "Nome": "s.ussi@yahoo.it",
+    "ImmagineId": 24,
     "Stelle": 5.0,
-    "Data": "2024-03-27T00:00:00+01:00",
+    "Data": "2024-04-09T00:00:00+02:00",
     "Commento": null,
     "Visibile": true,
     "Moderato": false
   },
   {
     "Id": 57,
-    "Nome": "21",
-    "ImmagineId": 79,
+    "Nome": "s.ussi@yahoo.it",
+    "ImmagineId": 90,
     "Stelle": 4.0,
-    "Data": "2024-03-27T00:00:00+01:00",
+    "Data": "2024-04-09T00:00:00+02:00",
     "Commento": null,
     "Visibile": true,
     "Moderato": false
   },
   {
     "Id": 58,
-    "Nome": "cxcx",
-    "ImmagineId": 55,
+    "Nome": "s.ussi@yahoo.it",
+    "ImmagineId": 91,
     "Stelle": 5.0,
-    "Data": "2024-03-27T00:00:00+01:00",
+    "Data": "2024-04-09T00:00:00+02:00",
     "Commento": null,
     "Visibile": true,
     "Moderato": false
   },
   {
     "Id": 59,
-    "Nome": "Emy",
-    "ImmagineId": 81,
+    "Nome": "s.ussi@yahoo.it",
+    "ImmagineId": 72,
     "Stelle": 5.0,
-    "Data": "2024-03-28T00:00:00+01:00",
-    "Commento": "Ma che belloooo!!!!",
-    "Visibile": true,
-    "Moderato": false
+    "Data": "2024-04-10T00:00:00+02:00",
+    "Commento": "sssasaas",
+    "Visibile": false,
+    "Moderato": true
   },
   {
     "Id": 60,
-    "Nome": "Simo",
-    "ImmagineId": 81,
-    "Stelle": 5.0,
-    "Data": "2024-03-28T00:00:00+01:00",
-    "Commento": null,
+    "Nome": "giada@gmail.com",
+    "ImmagineId": 3,
+    "Stelle": 4.0,
+    "Data": "2024-04-11T00:00:00+02:00",
+    "Commento": "Insomma",
     "Visibile": true,
-    "Moderato": false
+    "Moderato": true
   },
   {
     "Id": 61,
-    "Nome": "erer",
-    "ImmagineId": 2,
+    "Nome": "s.ussi@yahoo.it",
+    "ImmagineId": 21,
     "Stelle": 4.0,
-    "Data": "2024-03-28T00:00:00+01:00",
-    "Commento": "ere",
+    "Data": "2024-04-11T00:00:00+02:00",
+    "Commento": null,
     "Visibile": true,
     "Moderato": false
   },
   {
     "Id": 62,
-    "Nome": "dd",
-    "ImmagineId": 1,
+    "Nome": "emy@gmail.com",
+    "ImmagineId": 12,
     "Stelle": 4.0,
-    "Data": "2024-03-28T00:00:00+01:00",
-    "Commento": "ds",
+    "Data": "2024-04-12T00:00:00+02:00",
+    "Commento": "Bello",
     "Visibile": true,
     "Moderato": false
   },
   {
     "Id": 63,
-    "Nome": "ewew",
-    "ImmagineId": 81,
-    "Stelle": 4.0,
-    "Data": "2024-03-28T00:00:00+01:00",
-    "Commento": null,
+    "Nome": "s.ussi@yahoo.it",
+    "ImmagineId": 7,
+    "Stelle": 3.0,
+    "Data": "2024-04-12T00:00:00+02:00",
+    "Commento": "Schifo",
     "Visibile": true,
-    "Moderato": false
-  },
-  {
-    "Id": 64,
-    "Nome": "ssfsd",
-    "ImmagineId": 53,
-    "Stelle": 4.0,
-    "Data": "2024-03-28T00:00:00+01:00",
-    "Commento": null,
-    "Visibile": true,
-    "Moderato": false
-  },
-  {
-    "Id": 65,
-    "Nome": "simo",
-    "ImmagineId": 19,
-    "Stelle": 5.0,
-    "Data": "2024-04-03T00:00:00+02:00",
-    "Commento": null,
-    "Visibile": true,
-    "Moderato": false
-  },
-  {
-    "Id": 66,
-    "Nome": null,
-    "ImmagineId": 8,
-    "Stelle": 4.0,
-    "Data": "2024-04-03T00:00:00+02:00",
-    "Commento": "che bello",
-    "Visibile": true,
-    "Moderato": false
-  },
-  {
-    "Id": 67,
-    "Nome": "s.ussi",
-    "ImmagineId": 8,
-    "Stelle": 4.0,
-    "Data": "2024-04-03T00:00:00+02:00",
-    "Commento": "che bello",
-    "Visibile": true,
-    "Moderato": false
-  },
-  {
-    "Id": 68,
-    "Nome": "2s.ussi",
-    "ImmagineId": 4,
-    "Stelle": 4.0,
-    "Data": "2024-04-03T00:00:00+02:00",
-    "Commento": "sdsadsadas",
-    "Visibile": false,
-    "Moderato": false
-  },
-  {
-    "Id": 69,
-    "Nome": "s.ussi",
-    "ImmagineId": 45,
-    "Stelle": 4.0,
-    "Data": "2024-04-03T00:00:00+02:00",
-    "Commento": "fgfdgfdgd",
-    "Visibile": false,
-    "Moderato": false
-  },
-  {
-    "Id": 70,
-    "Nome": "s.ussi",
-    "ImmagineId": 11,
-    "Stelle": 4.0,
-    "Data": "2024-04-04T00:00:00+02:00",
-    "Commento": null,
-    "Visibile": true,
-    "Moderato": false
-  },
-  {
-    "Id": 71,
-    "Nome": "giada01.adamo",
-    "ImmagineId": 14,
-    "Stelle": 5.0,
-    "Data": "2024-04-11T00:00:00+02:00",
-    "Commento": "bellissimo",
-    "Visibile": true,
-    "Moderato": false
+    "Moderato": true
   }
 ]

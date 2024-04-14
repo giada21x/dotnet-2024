@@ -11,5 +11,5 @@ public class GestioneUtentiViewModel
     public int TotaleImmagini { get; set; }
    
     public IEnumerable<AppUser>? Utenti { get; set; }
-
+    public List<string> Roles { get; set; }
 }

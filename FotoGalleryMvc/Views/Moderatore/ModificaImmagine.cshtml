@@ -15,7 +15,7 @@
         {
             <div class="text-center">
                 <h2 class="mb-5" style="color: red;">Devi selezionare almeno un immagine</h2>
-                <a class="btn btn-primary" asp-controller="Moderatore" asp-action="GestisciImmagini">Torna indietro</a>
+                <a class="btn btn-primary" asp-controller="Moderatore" asp-action="GestioneImmagini">Torna indietro</a>
             </div>
         }
         else //carico la pagina con le card e i form post
@@ -86,7 +86,7 @@
                     <button type="submit" class="btn btn-success">
                         Salva
                     </button>
-                    <a class="btn btn-primary ms-2" asp-controller="Admin" asp-action="GestioneImmagini">
+                    <a class="btn btn-primary ms-2" asp-controller="Moderatore" asp-action="GestisciImmagini">
                         Annulla
                     </a>
                 </div>

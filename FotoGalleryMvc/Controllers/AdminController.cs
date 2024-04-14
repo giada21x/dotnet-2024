@@ -30,16 +30,14 @@ namespace FotoGalleryMvc.Controllers
         }
         
         public async Task<IActionResult> GestioneUtenti(int pageIndex = 1)
-        {
-              ViewBag.UrlBack = HttpContext.Request.Path;
+{
+    ViewBag.UrlBack = HttpContext.Request.Path;
 
-        //seleziono l'utene attuale
-        var user = await _userManager.GetUserAsync(User);
-        
-        var roles = await _userManager.GetRolesAsync(user!);
-        
-        var utenti = await _userManager.Users.ToListAsync();
-         var utentiRuoli = new Dictionary<string, string>();
+    // Seleziono l'utente attuale
+    var user = await _userManager.GetUserAsync(User);
+
+    var utenti = await _userManager.Users.ToListAsync();
+    var utentiRuoli = new Dictionary<string, string>();
     foreach (var u in utenti)
     {
         var uRoles = await _userManager.GetRolesAsync(u);
@@ -48,10 +46,14 @@ namespace FotoGalleryMvc.Controllers
             utentiRuoli.Add(u.Id, string.Join(",", uRoles));
         }
     }
-        //creo il modello per gestire la view
-        var model = new GestioneUtentiViewModel
-        {
-           Utenti = utenti.Select(u => new AppUser
+
+    // Carico la lista dei ruoli disponibili
+    var roles = await _roleManager.Roles.Select(r => r.Name).ToArrayAsync();
+
+    // Creo il modello per gestire la view
+    var model = new GestioneUtentiViewModel
+    {
+        Utenti = utenti.Select(u => new AppUser
         {
             Id = u.Id,
             Nome = u.Nome,
@@ -60,165 +62,121 @@ namespace FotoGalleryMvc.Controllers
             Email = u.Email
         }).ToList(),
         ElementiPerPagina = 10,
-        PageIndex = pageIndex
-            
-        
-            
-        };
+        PageIndex = pageIndex,
+        Roles = roles.ToList()
+    };
 
-        //rimuovo l'utente attuale dalla lista
-        if (user != null)
-        {
-            model.Utenti = model.Utenti.Where(u => u.Id != user.Id).ToList();
-        }
-         model.NumeroPagine = (int)Math.Ceiling((double)model.Utenti.Count() / model.ElementiPerPagina);
-        model.Utenti = model.Utenti.Skip((pageIndex - 1) * model.ElementiPerPagina).Take(model.ElementiPerPagina);
+    // Rimuovo l'utente attuale dalla lista
+    if (user != null)
+    {
+        model.Utenti = model.Utenti.Where(u => u.Id != user.Id).ToList();
+    }
 
-        return View(model);
-        }
+    model.NumeroPagine = (int)Math.Ceiling((double)model.Utenti.Count() / model.ElementiPerPagina);
+    model.Utenti = model.Utenti.Skip((pageIndex - 1) * model.ElementiPerPagina).Take(model.ElementiPerPagina);
+
+    return View(model);
+}
+
   
 
- public async Task<IActionResult> EliminaUtente(string id, bool conferma)
+ public async Task<IActionResult> EliminaUtente(string id)
+{
+    var user = await _userManager.FindByIdAsync(id);
+    if (user == null)
     {
-        var user = await _userManager.FindByIdAsync(id);
-        if (user == null)
-        {
-            return NotFound();
-        }
+        return NotFound();
+    }
 
-        if (conferma)
-        {
-            await _userManager.DeleteAsync(user);
-            return RedirectToAction(nameof(GestioneUtenti));
-        }
-
+    // Rimuovi l'utente
+    var result = await _userManager.DeleteAsync(user);
+    if (result.Succeeded)
+    {
+        _logger.LogInformation("Utente eliminato con successo: {userId}", id);
         return RedirectToAction(nameof(GestioneUtenti));
     }
-
-    public async Task<IActionResult> GestioneImmagini(int? pageIndex)
+    else
+    {
+        foreach (var error in result.Errors)
         {
-              ViewBag.UrlBack = HttpContext.Request.Path;
-              _logger.LogInformation("GestisciImmagini - PageIndex: {0}", pageIndex);
-
-            pageIndex ??= 1;
-
-            var jsonPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "json", "immagini.json");
-            var jsonPath3 = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "json", "categorie.json");
-
-            var jsonFile = System.IO.File.ReadAllText(jsonPath);
-            var immagini = JsonConvert.DeserializeObject<List<Immagine>>(jsonFile)!.OrderByDescending(i => i.Id);
-
-            var jsonFile3 = System.IO.File.ReadAllText(jsonPath3);
-            var categorie = JsonConvert.DeserializeObject<List<string>>(jsonFile3)!;
-
-            var numeroPagine = (int)Math.Ceiling((double)immagini.Count() / 10);
-            var immaginiPaginate = immagini.Skip((pageIndex.Value - 1) * 10).Take(10);
-
-            var model = new GestioneImmaginiViewModel
-            {
-                NumeroPagine = numeroPagine,
-                PageIndex = pageIndex,
-                Immagini = immaginiPaginate,
-                Categorie = categorie
-            };
-
-            return View(model);
+            ModelState.AddModelError("", error.Description);
         }
+        return RedirectToAction(nameof(GestioneUtenti));
+    }
         
-          public IActionResult EliminaImmagine(List<int> selezione)
-        {
-            var jsonPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "json", "immagini.json");
-            var jsonFile = System.IO.File.ReadAllText(jsonPath);
-            var immagini = JsonConvert.DeserializeObject<List<Immagine>>(jsonFile) ?? new List<Immagine>();
+}
+public async Task<IActionResult> ModificaRuolo(string id)
+{
+    var user = await _userManager.FindByIdAsync(id);
+    if (user == null)
+    {
+        return NotFound();
+    }
+    var roles = await _roleManager.Roles.Select(r => r.Name).ToListAsync();
+    var model = new ModificaRuoloViewModel
+    {
+        UserId = user.Id,
+        Roles = await _roleManager.Roles.Select(r => r.Name).ToListAsync()
+    };
 
-            foreach (var id in selezione)
-            {
-                _logger.LogInformation("Selezione: {0}", id);
-                var immagineToRemove = immagini.FirstOrDefault(i => i.Id == id);
-                if (immagineToRemove != null)
-                {
-                    immagini.Remove(immagineToRemove);
-                }
-            }
-
-            System.IO.File.WriteAllText(jsonPath, JsonConvert.SerializeObject(immagini, Formatting.Indented));
-
-            return RedirectToAction(nameof(GestioneImmagini));
-        }
-        
-        [HttpGet]
-        public IActionResult ModificaImmagine(List<int> selezione)
-        {
-            var jsonPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "json", "immagini.json");
-             var jsonPath3 = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "json", "categorie.json");
-            var model = new ModificaImmagineViewModel();
-
-            model.Selezione = selezione;
-
-            // Log selezione 
-            foreach (var id in selezione)
-            {
-                _logger.LogInformation("Selezione: {0}", id);
-            }
-
-            // Leggi le categorie dal file JSON
-            var jsonFile3 = System.IO.File.ReadAllText(jsonPath3);
-            var categorie = JsonConvert.DeserializeObject<List<string>>(jsonFile3) ?? new List<string>();
-
-            // Costruisci oggetti SelectListItem e assegnali a Categorie
-            foreach (var c in categorie)
-            {
-                model.Categorie.Add(new SelectListItem { Value = c, Text = c });
-            }
-
-            // Memorizza le immagini per la selezione degli Id input
-            var jsonFile = System.IO.File.ReadAllText(jsonPath);
-            model.Immagini = JsonConvert.DeserializeObject<List<Immagine>>(jsonFile)!;
-
-            return View(model);
-        }
-
-        [HttpPost]
-        public IActionResult Modifica(List<InputModelMod> imgMod)
-        {
-            var jsonPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "json", "immagini.json");
-            if (!ModelState.IsValid)
-            {
-                _logger.LogInformation("Errore validazione modulo - " + DateTime.Now.ToString("T"));
-                return RedirectToAction(nameof(Index));
-            }
-
-            var immagini = new List<Immagine>();
-
-            if (imgMod != null && imgMod.Any())
-            {
-                var jsonFile = System.IO.File.ReadAllText(jsonPath);
-                immagini = JsonConvert.DeserializeObject<List<Immagine>>(jsonFile) ?? new List<Immagine>();
-
-                foreach (var img in imgMod)
-                {
-                    _logger.LogInformation("ID: {0}", img.Id);
-                    var immagine = immagini.FirstOrDefault(i => i.Id == img.Id);
-                    if (immagine != null)
-                    {
-                        immagine.Autore = img.Autore;
-                        immagine.Titolo = img.Titolo;
-                        immagine.Categoria = img.Categoria;
-                        immagine.Path = img.Path;
-                    }
-                }
-
-                System.IO.File.WriteAllText(jsonPath, JsonConvert.SerializeObject(immagini, Formatting.Indented));
-            }
-
-            return RedirectToAction(nameof(GestioneImmagini));
-        }
-
-       
-    
+    return View(model);
+}
+[HttpPost]
+public async Task<IActionResult> ModificaRuolo(string id, string nuovoRuolo)
+{
+    // Trova l'utente
+    var user = await _userManager.FindByIdAsync(id);
+    if (user == null)
+    {
+        return NotFound();
     }
 
-    
+    // Trova il ruolo esistente dell'utente
+    var userRoles = await _userManager.GetRolesAsync(user);
+    var userCurrentRole = userRoles.FirstOrDefault();
 
-    
+    // Se l'utente non ha un ruolo attualmente oppure il nuovo ruolo è diverso dal ruolo attuale
+    if (userCurrentRole == null || userCurrentRole != nuovoRuolo)
+    {
+        // Rimuove l'utente dal ruolo attuale (se esiste)
+        if (userCurrentRole != null)
+        {
+            var removeRoleResult = await _userManager.RemoveFromRoleAsync(user, userCurrentRole);
+            if (!removeRoleResult.Succeeded)
+            {
+                foreach (var error in removeRoleResult.Errors)
+                {
+                    ModelState.AddModelError("", error.Description);
+                }
+                return RedirectToAction(nameof(GestioneUtenti));
+            }
+        }
+
+        // Aggiunge il nuovo ruolo all'utente
+        var addRoleResult = await _userManager.AddToRoleAsync(user, nuovoRuolo);
+        if (addRoleResult.Succeeded)
+        {
+            _logger.LogInformation("Ruolo utente modificato con successo: {userId}, Nuovo ruolo: {newRole}", id, nuovoRuolo);
+            return RedirectToAction(nameof(GestioneUtenti));
+        }
+        else
+        {
+            foreach (var error in addRoleResult.Errors)
+            {
+                ModelState.AddModelError("", error.Description);
+            }
+            return RedirectToAction(nameof(GestioneUtenti));
+        }
+    }
+    else
+    {
+        // Il ruolo è lo stesso, non è necessario fare nulla
+        ModelState.AddModelError("", "Il ruolo selezionato è già assegnato all'utente.");
+        return RedirectToAction(nameof(GestioneUtenti));
+    }
 }
+
+
+    }}
+        
+ 

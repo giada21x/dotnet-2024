@@ -2,10 +2,10 @@
   {
     "Id": 1,
     "Path": "/img/img_01.jpg",
-    "Titolo": "Immagine 1",
+    "Titolo": "img1",
     "Voto": 2.4,
     "NumeroVoti": 21,
-    "Autore": "Autore 1",
+    "Autore": "aut 1",
     "Data": "2024-02-23T00:00:00",
     "Categoria": "Paesaggi"
   },
@@ -46,16 +46,6 @@
     "Voto": 4.8,
     "NumeroVoti": 22,
     "Autore": "Autore 5",
-    "Data": "2024-02-23T00:00:00",
-    "Categoria": "Paesaggi"
-  },
-  {
-    "Id": 7,
-    "Path": "/img/img_07.jpg",
-    "Titolo": "Immagine 7",
-    "Voto": 3.4,
-    "NumeroVoti": 20,
-    "Autore": "Autore 7",
     "Data": "2024-02-23T00:00:00",
     "Categoria": "Paesaggi"
   },
@@ -603,8 +593,8 @@
     "Id": 68,
     "Path": "https://www.focusjunior.it/content/uploads/2018/10/giraffe-2222908_960_720-e1548405712185.jpg",
     "Titolo": "Titolo 68",
-    "Voto": 0.0,
-    "NumeroVoti": 0,
+    "Voto": 5.0,
+    "NumeroVoti": 1,
     "Autore": "Autore 68",
     "Data": "2024-03-26T00:00:00+01:00",
     "Categoria": "Animali"
@@ -657,6 +647,26 @@
     "NumeroVoti": 0,
     "Autore": "Boh",
     "Data": "2024-04-03T00:00:00+02:00",
+    "Categoria": "Animali"
+  },
+  {
+    "Id": 86,
+    "Path": "https://www.wallpapergeeks.com/wp-content/uploads/2014/03/Nature_107.jpg",
+    "Titolo": "fiume",
+    "Voto": 0.0,
+    "NumeroVoti": 0,
+    "Autore": "io",
+    "Data": "2024-04-13T17:40:30.7059509+02:00",
+    "Categoria": "Paesaggi"
+  },
+  {
+    "Id": 87,
+    "Path": "https://images2.alphacoders.com/212/thumb-1920-212200.jpg",
+    "Titolo": "tigre",
+    "Voto": 0.0,
+    "NumeroVoti": 0,
+    "Autore": "io",
+    "Data": "2024-04-13T20:42:38.7298369+02:00",
     "Categoria": "Animali"
   }
 ]

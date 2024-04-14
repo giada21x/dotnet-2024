@@ -36,27 +36,25 @@
             </div>
 
             <!-- Select Categoria -->
-            <div class="form-group">
-    <label asp-for="Categoria"></label>
-    <select asp-for="Categoria" class="form-control" asp-items="Model.Categorie">
-        <option value="">Seleziona una categoria</option>
-    </select>
-    <span asp-validation-for="Categoria" class="text-danger"></span>
-</div>
+            <label asp-for="Categoria"></label> <!-------------- leggi sopra (*)---------->
+            <select asp-for="Categoria" asp-items="Model.Categorie"
+                class="form-control @(ViewData.ModelState["Input.Categoria"]?.Errors.Any() ?? false ? "box-danger" : "")">
+                <option value="">Scegli categoria</option>
+            </select>
+            <span asp-validation-for="Categoria" class="text-danger"></span>
 
             <!-- Path -->
             <div class="form-group">
-    <label asp-for="Path"></label>
-    <input asp-for="Path" type="text" class="form-control" />
-    <span asp-validation-for="Path" class="text-danger"></span>
-</div>
+                <label asp-for="Path"></label> <!--------------- leggi sopra (*)---------->
+                <input asp-for="Path" type="text"
+                    class="form-control @(ViewData.ModelState["Input.Path"]?.Errors.Any() ?? false ? "box-danger" : "")" />
+            </div>
+            <span asp-validation-for="Path" class="text-danger"></span>
             <br>
 
             <!-- Submit Aggiungi -->
             <button type="submit" class="btn btn-primary">Aggiungi</button>
-            <a asp-controller="User" asp-action="Immagini" class="btn btn-primary" type="button">
-                Torna alle immagini
-            </a>
+            <a class="btn btn-primary" asp-area="" asp-controller="User" asp-action="Immagini">Torna alle Immagini</a>
         </form>
     </div>
 </div>

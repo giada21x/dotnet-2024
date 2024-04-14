@@ -17,103 +17,111 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = FotoGalleryMvc
 build_property.RootNamespace = FotoGalleryMvc
-build_property.ProjectDir = C:\Users\DOTNET\Documents\pinguino\dotnet-2024\FotoGalleryMvc\
+build_property.ProjectDir = C:\Users\giada\.dotnet\C#\AREA DI LAVORO\dotnet-2024\FotoGalleryMvc\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\DOTNET\Documents\pinguino\dotnet-2024\FotoGalleryMvc
+build_property.MSBuildProjectDirectory = C:\Users\giada\.dotnet\C#\AREA DI LAVORO\dotnet-2024\FotoGalleryMvc
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/DOTNET/Documents/pinguino/dotnet-2024/FotoGalleryMvc/Areas/Identity/Pages/Account/Register.cshtml]
+[C:/Users/giada/.dotnet/C\#/AREA DI LAVORO/dotnet-2024/FotoGalleryMvc/Areas/Identity/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DOTNET/Documents/pinguino/dotnet-2024/FotoGalleryMvc/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+[C:/Users/giada/.dotnet/C\#/AREA DI LAVORO/dotnet-2024/FotoGalleryMvc/Areas/Identity/Pages/Account/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DOTNET/Documents/pinguino/dotnet-2024/FotoGalleryMvc/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+[C:/Users/giada/.dotnet/C\#/AREA DI LAVORO/dotnet-2024/FotoGalleryMvc/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DOTNET/Documents/pinguino/dotnet-2024/FotoGalleryMvc/Areas/Identity/Pages/_ViewImports.cshtml]
+[C:/Users/giada/.dotnet/C\#/AREA DI LAVORO/dotnet-2024/FotoGalleryMvc/Areas/Identity/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DOTNET/Documents/pinguino/dotnet-2024/FotoGalleryMvc/Areas/Identity/Pages/_ViewStart.cshtml]
+[C:/Users/giada/.dotnet/C\#/AREA DI LAVORO/dotnet-2024/FotoGalleryMvc/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DOTNET/Documents/pinguino/dotnet-2024/FotoGalleryMvc/Views/Admin/EliminaImmagine.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWxpbWluYUltbWFnaW5lLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/DOTNET/Documents/pinguino/dotnet-2024/FotoGalleryMvc/Views/Admin/GestioneImmagini.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cR2VzdGlvbmVJbW1hZ2luaS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/DOTNET/Documents/pinguino/dotnet-2024/FotoGalleryMvc/Views/Admin/GestioneUtenti.cshtml]
+[C:/Users/giada/.dotnet/C\#/AREA DI LAVORO/dotnet-2024/FotoGalleryMvc/Views/Admin/GestioneUtenti.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cR2VzdGlvbmVVdGVudGkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DOTNET/Documents/pinguino/dotnet-2024/FotoGalleryMvc/Views/Admin/ModificaImmagine.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTW9kaWZpY2FJbW1hZ2luZS5jc2h0bWw=
+[C:/Users/giada/.dotnet/C\#/AREA DI LAVORO/dotnet-2024/FotoGalleryMvc/Views/Admin/ModificaRuolo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTW9kaWZpY2FSdW9sby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DOTNET/Documents/pinguino/dotnet-2024/FotoGalleryMvc/Views/Admin/_DropdownModifica.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cX0Ryb3Bkb3duTW9kaWZpY2EuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/DOTNET/Documents/pinguino/dotnet-2024/FotoGalleryMvc/Views/Home/Index.cshtml]
+[C:/Users/giada/.dotnet/C\#/AREA DI LAVORO/dotnet-2024/FotoGalleryMvc/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DOTNET/Documents/pinguino/dotnet-2024/FotoGalleryMvc/Views/Home/Privacy.cshtml]
+[C:/Users/giada/.dotnet/C\#/AREA DI LAVORO/dotnet-2024/FotoGalleryMvc/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DOTNET/Documents/pinguino/dotnet-2024/FotoGalleryMvc/Views/Shared/Error.cshtml]
+[C:/Users/giada/.dotnet/C\#/AREA DI LAVORO/dotnet-2024/FotoGalleryMvc/Views/Moderatore/EliminaImmagine.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9kZXJhdG9yZVxFbGltaW5hSW1tYWdpbmUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/giada/.dotnet/C\#/AREA DI LAVORO/dotnet-2024/FotoGalleryMvc/Views/Moderatore/GestioneCommenti.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9kZXJhdG9yZVxHZXN0aW9uZUNvbW1lbnRpLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/giada/.dotnet/C\#/AREA DI LAVORO/dotnet-2024/FotoGalleryMvc/Views/Moderatore/GestioneImmagini.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9kZXJhdG9yZVxHZXN0aW9uZUltbWFnaW5pLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/giada/.dotnet/C\#/AREA DI LAVORO/dotnet-2024/FotoGalleryMvc/Views/Moderatore/ModificaImmagine.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9kZXJhdG9yZVxNb2RpZmljYUltbWFnaW5lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/giada/.dotnet/C\#/AREA DI LAVORO/dotnet-2024/FotoGalleryMvc/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DOTNET/Documents/pinguino/dotnet-2024/FotoGalleryMvc/Views/Shared/_LoginPartial.cshtml]
+[C:/Users/giada/.dotnet/C\#/AREA DI LAVORO/dotnet-2024/FotoGalleryMvc/Views/Shared/_DropdownModifica.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Ecm9wZG93bk1vZGlmaWNhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/giada/.dotnet/C\#/AREA DI LAVORO/dotnet-2024/FotoGalleryMvc/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DOTNET/Documents/pinguino/dotnet-2024/FotoGalleryMvc/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/giada/.dotnet/C\#/AREA DI LAVORO/dotnet-2024/FotoGalleryMvc/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DOTNET/Documents/pinguino/dotnet-2024/FotoGalleryMvc/Views/User/AggiungiImmagine.cshtml]
+[C:/Users/giada/.dotnet/C\#/AREA DI LAVORO/dotnet-2024/FotoGalleryMvc/Views/User/AggiungiImmagine.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxBZ2dpdW5naUltbWFnaW5lLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DOTNET/Documents/pinguino/dotnet-2024/FotoGalleryMvc/Views/User/Categorie.cshtml]
+[C:/Users/giada/.dotnet/C\#/AREA DI LAVORO/dotnet-2024/FotoGalleryMvc/Views/User/Categorie.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxDYXRlZ29yaWUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DOTNET/Documents/pinguino/dotnet-2024/FotoGalleryMvc/Views/User/Classifica.cshtml]
+[C:/Users/giada/.dotnet/C\#/AREA DI LAVORO/dotnet-2024/FotoGalleryMvc/Views/User/Classifica.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxDbGFzc2lmaWNhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DOTNET/Documents/pinguino/dotnet-2024/FotoGalleryMvc/Views/User/Immagine.cshtml]
+[C:/Users/giada/.dotnet/C\#/AREA DI LAVORO/dotnet-2024/FotoGalleryMvc/Views/User/Immagine.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbW1hZ2luZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DOTNET/Documents/pinguino/dotnet-2024/FotoGalleryMvc/Views/User/Immagini.cshtml]
+[C:/Users/giada/.dotnet/C\#/AREA DI LAVORO/dotnet-2024/FotoGalleryMvc/Views/User/Immagini.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbW1hZ2luaS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DOTNET/Documents/pinguino/dotnet-2024/FotoGalleryMvc/Views/_ViewImports.cshtml]
+[C:/Users/giada/.dotnet/C\#/AREA DI LAVORO/dotnet-2024/FotoGalleryMvc/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DOTNET/Documents/pinguino/dotnet-2024/FotoGalleryMvc/Views/_ViewStart.cshtml]
+[C:/Users/giada/.dotnet/C\#/AREA DI LAVORO/dotnet-2024/FotoGalleryMvc/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DOTNET/Documents/pinguino/dotnet-2024/FotoGalleryMvc/Views/Shared/_Layout.cshtml]
+[C:/Users/giada/.dotnet/C\#/AREA DI LAVORO/dotnet-2024/FotoGalleryMvc/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-tltl8g0n1y
