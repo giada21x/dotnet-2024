@@ -13,7 +13,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace FotoGalleryMvc.Controllers
 {
-    [Authorize]
+    
     public class UserController : Controller
     {
         private readonly UserManager<AppUser> _userManager; private readonly ILogger<UserController> _logger;

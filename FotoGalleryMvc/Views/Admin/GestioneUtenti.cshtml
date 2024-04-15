@@ -58,7 +58,7 @@
 </a>
 
                      <!-- Pulsante Elimina -->  
-    <a class="btn btn-danger" asp-controller="Admin" asp-action="EliminaUtente" asp-route-id="@u.Id">
+    <a class="btn btn-danger" href="@Url.Action("EliminaUtente", "Admin", new { id = u.Id })">
             Elimina Utente
         </a>
            

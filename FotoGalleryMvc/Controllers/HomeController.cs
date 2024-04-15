@@ -30,16 +30,15 @@ public class HomeController : Controller
     /// <returns>La view principale a seconda dell'utente autenticato oppure no.</returns>
     public IActionResult Index()
     {
-        if (User.Identity!.IsAuthenticated)
-        {
+        
+         
             return RedirectToAction("Immagini", "User");
 
 
-        }
-        else
-        {
-            return View();
-        }
+    
+
+
+        
 
     }
 

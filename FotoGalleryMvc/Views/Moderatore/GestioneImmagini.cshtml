@@ -1,7 +1,7 @@
 
 @model GestioneImmaginiViewModel
 @{
-    ViewData["Title"] = "Gestisci Immagini";
+    ViewData["Title"] = "Gestione Immagini";
     //string url = HttpContext.Request.Path + HttpContext.Request.QueryString; //memorizzo url
 }
 
@@ -10,11 +10,7 @@
     <div class="text-center">
         <h1 class="display-4">@ViewData["Title"]</h1>
     </div>
-    @if (User.IsInRole("User"))
-                    {
-                       <a class="dropdown-item btn btn-primary " asp-page="/AggiungiImmagine" style="color: blue; width: fit-content;">
-         Aggiungi Immagine</a> 
-                    }
+    
     
     <!---------------------- tabella di modifica ---------------->
     <form method="get">

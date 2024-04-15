@@ -1,0 +1,25 @@
+@model EliminaUtenteViewModel
+
+@{
+    ViewData["Title"] = "Elimina Utente";
+}
+
+<div class="mx-5">
+    <!-- Titolo della pagina -->
+    <div class="text-center">
+        <h1 class="display-5">@ViewData["Title"]</h1>
+    </div>
+
+    <!-- Paragrafo di conferma eliminazione -->
+    <div class="d-flex flex-row justify-content-center pt-3 pb-2">
+        <h2>Sei sicuro di voler eliminare l'utente "@Model.UserName"?</h2>
+    </div>
+
+    <!-- Form per confermare o annullare l'eliminazione -->
+    <div class="d-flex flex-row justify-content-center pt-3 ">
+        <form asp-action="EliminaUtenteConferma" asp-route-id="@Model.UserId" method="post" class="mr-2">
+            <button type="submit" class="btn btn-danger">Elimina</button>
+        </form>
+        <a asp-action="GestioneUtenti" class="btn btn-primary ms-3">Annulla</a>
+    </div>
+</div>

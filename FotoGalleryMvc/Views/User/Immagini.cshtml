@@ -9,7 +9,7 @@
 
         @if (string.IsNullOrEmpty(Model.Categoria))
         {
-            @if (User.IsInRole("User"))
+            @if (User.Identity!.IsAuthenticated)
             {
                 var user = User.Identity?.Name!.Split("@");
 
@@ -30,15 +30,24 @@
     <!----------------------------- controlli per gli utenti registrati -------------->
     <div class="row mb-md-2">
         <!----------------------------- tasto aggiungi immagine -------------------------->
+        
         <div class="col-6 col-md-1 text-start">
-            <a class="btn" asp-controller="User" asp-action="AggiungiImmagine" style="color: blue; width: max-content;">
-                <i class="bi bi-plus-circle-fill" />
-                </i> Aggiungi
+            @if (User.Identity!.IsAuthenticated)
+            {
+                <a class="btn" asp-controller="User" asp-action="AggiungiImmagine" style="color: blue; width: max-content;">
+                 <i class="bi bi-plus-circle-fill" >
+                </i>Aggiungi
             </a>
+            }
+            
         </div>
+        
+        
         
         <!-------------------------- dropdown filtro categorie ------------------------>
         <div class="col-md-1 dropdown text-center text-md-end">
+            @if (User.Identity!.IsAuthenticated)
+            {
             <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="bi bi-archive-fill"></i>
             </button>
@@ -51,7 +60,9 @@
                     </li>
                 }
             </ul>
+            }
         </div>
+        
     </div>
 
     <!---------------------- row delle immagini ------------------------>
@@ -63,10 +74,17 @@
             <div class="col-lg-3 col-md-4 col-sm-6 col-12 p-0 m-0 align-items-center">
                 <div class="card-index d-flex flex-wrap flex-row-reverse m-1 border-1">
                     <div class="image-container">
+                        @if (User.Identity!.IsAuthenticated)
+            {
                         <a asp-controller="User" asp-action="Immagine" asp-route-id="@immagine.Id"
                             asp-route-urlback="@ViewBag.UrlBack">
                             <img src="@immagine.Path" class="img-fluid" />
                         </a>
+                        }
+                        else
+                        {
+                            <img src="@immagine.Path" class="img-fluid" />
+                        }
                         <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
                     </div>
 

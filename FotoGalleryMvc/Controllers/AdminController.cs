@@ -79,8 +79,23 @@ namespace FotoGalleryMvc.Controllers
 }
 
   
+public async Task<IActionResult> EliminaUtente(string id)
+{
+    var user = await _userManager.FindByIdAsync(id);
+    if (user == null)
+    {
+        return NotFound();
+    }
 
- public async Task<IActionResult> EliminaUtente(string id)
+    var viewModel = new EliminaUtenteViewModel
+    {
+        UserId = user.Id,
+        UserName = user.UserName
+    };
+
+    return View(viewModel);
+}
+ public async Task<IActionResult> EliminaUtenteConferma(string id)
 {
     var user = await _userManager.FindByIdAsync(id);
     if (user == null)
@@ -112,10 +127,14 @@ public async Task<IActionResult> ModificaRuolo(string id)
     {
         return NotFound();
     }
+     var userRoles = await _userManager.GetRolesAsync(user);
+    var userCurrentRole = userRoles.FirstOrDefault();
     var roles = await _roleManager.Roles.Select(r => r.Name).ToListAsync();
     var model = new ModificaRuoloViewModel
     {
         UserId = user.Id,
+        RuoloAttuale = userCurrentRole,
+        UserName = user.UserName,
         Roles = await _roleManager.Roles.Select(r => r.Name).ToListAsync()
     };
 
@@ -140,7 +159,9 @@ public async Task<IActionResult> ModificaRuolo(string id, string nuovoRuolo)
     {
         // Rimuove l'utente dal ruolo attuale (se esiste)
         if (userCurrentRole != null)
+        
         {
+            
             var removeRoleResult = await _userManager.RemoveFromRoleAsync(user, userCurrentRole);
             if (!removeRoleResult.Succeeded)
             {

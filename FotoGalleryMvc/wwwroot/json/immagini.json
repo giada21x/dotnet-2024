@@ -2,10 +2,10 @@
   {
     "Id": 1,
     "Path": "/img/img_01.jpg",
-    "Titolo": "img1",
+    "Titolo": "Immagine 1",
     "Voto": 2.4,
     "NumeroVoti": 21,
-    "Autore": "aut 1",
+    "Autore": "Autore 1",
     "Data": "2024-02-23T00:00:00",
     "Categoria": "Paesaggi"
   },
@@ -32,10 +32,10 @@
   {
     "Id": 4,
     "Path": "/img/img_05.jpg",
-    "Titolo": "Immagine 4",
+    "Titolo": "albero",
     "Voto": 1.4,
     "NumeroVoti": 21,
-    "Autore": "Autore 4",
+    "Autore": "admin",
     "Data": "2024-02-23T00:00:00",
     "Categoria": "Paesaggi"
   },
@@ -56,16 +56,6 @@
     "Voto": 1.6,
     "NumeroVoti": 23,
     "Autore": "Autore 8",
-    "Data": "2024-02-23T00:00:00",
-    "Categoria": "Paesaggi"
-  },
-  {
-    "Id": 9,
-    "Path": "/img/img_09.jpg",
-    "Titolo": "Immagine 9",
-    "Voto": 2.8,
-    "NumeroVoti": 21,
-    "Autore": "Autore 9",
     "Data": "2024-02-23T00:00:00",
     "Categoria": "Paesaggi"
   },
@@ -103,8 +93,8 @@
     "Id": 14,
     "Path": "/img/img_14.jpg",
     "Titolo": "Immagine 14",
-    "Voto": 2.4,
-    "NumeroVoti": 21,
+    "Voto": 2.5,
+    "NumeroVoti": 22,
     "Autore": "Autore 14",
     "Data": "2024-02-23T00:00:00",
     "Categoria": "Paesaggi"
@@ -667,6 +657,16 @@
     "NumeroVoti": 0,
     "Autore": "io",
     "Data": "2024-04-13T20:42:38.7298369+02:00",
+    "Categoria": "Animali"
+  },
+  {
+    "Id": 88,
+    "Path": "https://www.hdwallpapers.in/download/big_tiger_is_lying_down_on_green_grass_during_daytime_4k_hd_animals-HD.jpg",
+    "Titolo": "tigre",
+    "Voto": 0.0,
+    "NumeroVoti": 0,
+    "Autore": "admin",
+    "Data": "2024-04-15T11:00:30.5592608+02:00",
     "Categoria": "Animali"
   }
 ]
