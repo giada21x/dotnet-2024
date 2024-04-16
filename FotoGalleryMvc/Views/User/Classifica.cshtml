@@ -5,11 +5,11 @@
     //string url = HttpContext.Request.Path + HttpContext.Request.QueryString; //memorizzo url
 
     //calcola il numero N progressivo da inserire nella tabella classifica per ogni paginazione
-    bool reverse = Model.Reverse;
+    string? reverse = Model.Reverse;
     int n;
-    if (!Model.Reverse)
+     if (Model.Reverse!.EndsWith("Off"))
     {
-        n = ((Model.PageIndex ?? 1) - 1) * 10;
+        n = ((Model.PageIndex ?? 1) -1) * 10;
     }
     else
     {
@@ -30,19 +30,53 @@
             <tr>
                 <th>#</th>
                 <th>Immagine</th>
-                <th>Titolo</th>
-                <th>Autore</th>
-                <th>Data pubblicazione</th>
-                <th>Voto
-                    @if (Model.Reverse)
+                <th>Titolo
+                    @if (Model.Reverse != "titoloOn")
                     {
-                        <a class="voto" asp-page="/Classifica" asp-route-reverse="@false">
-                            <i class="bi bi-caret-up"></i></a>
+                        <a class="voto" asp-controller="User" asp-action="Classifica" asp-route-reverse="titoloOn">
+                            <i class="bi bi-caret-down"></i></a>
                     }
                     else
                     {
-                        <a class="voto" asp-page="/Classifica" asp-route-reverse="@true">
+                        <a class="voto" asp-controller="User" asp-action="Classifica" asp-route-reverse="titoloOff">
+                            <i class="bi bi-caret-up"></i></a>
+                    }
+                </th>
+                <th>Autore
+                    @if (Model.Reverse != "autoreOn")
+                    {
+                        <a class="voto" asp-controller="User" asp-action="Classifica" asp-route-reverse="autoreOn">
                             <i class="bi bi-caret-down"></i></a>
+                    }
+                    else
+                    {
+                        <a class="voto" asp-controller="User" asp-action="Classifica" asp-route-reverse="autoreOff">
+                            <i class="bi bi-caret-up"></i></a>
+                    }
+                </th>
+                <th>Data pubblicazione
+                    
+                    @if (Model.Reverse != "dataOn")
+                    {
+                        <a class="voto" asp-controller="User" asp-action="Classifica" asp-route-reverse="dataOn">
+                            <i class="bi bi-caret-down"></i></a>
+                    }
+                    else
+                    {
+                        <a class="voto" asp-controller="User" asp-action="Classifica" asp-route-reverse="dataOff">
+                            <i class="bi bi-caret-up"></i></a>
+                    }
+                </th>
+                <th>Voto
+                    @if (Model.Reverse != "votoOn")
+                    {
+                        <a class="voto" asp-controller="User" asp-action="Classifica" asp-route-reverse="votoOn">
+                            <i class="bi bi-caret-down"></i></a>
+                    }
+                    else
+                    {
+                        <a class="voto" asp-controller="User" asp-action="Classifica" asp-route-reverse="votoOff">
+                            <i class="bi bi-caret-up"></i></a>
                     }
                 </th>
             </tr>
@@ -51,7 +85,7 @@
 
             @foreach (var img in Model.Immagini)
             {
-                if (!Model.Reverse)
+                if (Model.Reverse!.EndsWith("Off"))
                 {
                     n++;
                 }
@@ -128,7 +162,7 @@
                         <span class="numero-voti px-1">(@img.NumeroVoti)</span>
                     </td>
                 </tr>
-                if (Model.Reverse)
+                if (Model.Reverse!.EndsWith("On"))
                 {
                     n--;
                 }

@@ -30,16 +30,23 @@ public class HomeController : Controller
     /// <returns>La view principale a seconda dell'utente autenticato oppure no.</returns>
     public IActionResult Index()
     {
-        
+        if (User.IsInRole("Admin"))
+        {
+            return RedirectToAction("GestioneUtenti", "Admin");
+
+        }
          
             return RedirectToAction("Immagini", "User");
-
 
     
 
 
         
 
+    }
+    public IActionResult Privacy()
+    {
+        return View();
     }
 
     // <summary>

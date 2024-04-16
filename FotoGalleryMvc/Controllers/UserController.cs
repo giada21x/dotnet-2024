@@ -118,6 +118,7 @@ namespace FotoGalleryMvc.Controllers
 
             return View(model);
         }
+         
         [HttpGet]
         public IActionResult AggiungiImmagine()
         {
@@ -215,7 +216,7 @@ namespace FotoGalleryMvc.Controllers
                 });
             }
         }
-        public ActionResult Classifica(int? pageIndex, bool reverse)
+        public ActionResult Classifica(int? pageIndex, string reverse = "votoOff" )
         {
             var jsonPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "json", "immagini.json");
             int pageNumber = pageIndex ?? 1;
@@ -229,16 +230,44 @@ namespace FotoGalleryMvc.Controllers
             model.Immagini = JsonConvert.DeserializeObject<List<Immagine>>(jsonFile);
             model.TotaleImmagini = model.Immagini.Count();
 
-            if (reverse)
-            {
-                
-                model.Immagini = model.Immagini.OrderBy(i => i.Voto);
-            }
-            else
-            {
-                
+            switch (reverse)
+        {
+            case "votoOff":
                 model.Immagini = model.Immagini.OrderByDescending(i => i.Voto);
-            }
+                break;
+
+            case "votoOn":
+                model.Immagini = model.Immagini.OrderBy(i => i.Voto);
+                break;
+
+            case "dataOff":
+                model.Immagini = model.Immagini.OrderByDescending(i => i.Data);
+                break;
+
+            case "dataOn":
+                model.Immagini = model.Immagini.OrderBy(i => i.Data);
+                break;
+
+            case "titoloOff":
+                model.Immagini = model.Immagini.OrderByDescending(i => i.Titolo);
+                break;
+
+            case "titoloOn":
+                model.Immagini = model.Immagini.OrderBy(i => i.Titolo);
+                break;
+
+            case "autoreOff":
+                model.Immagini = model.Immagini.OrderByDescending(i => i.Autore);
+                break;
+
+            case "autoreOn":
+                model.Immagini = model.Immagini.OrderBy(i => i.Autore);
+                break;
+
+            default:
+                model.Immagini = model.Immagini.OrderByDescending(i => i.Voto);
+                break;
+        }
 
             model.NumeroPagine = (int)Math.Ceiling((double)model.TotaleImmagini / model.ElementiPerPagina);
             model.Immagini = model.Immagini.Skip(((pageIndex ?? 1) -1) * model.ElementiPerPagina).Take(model.ElementiPerPagina).ToList();
