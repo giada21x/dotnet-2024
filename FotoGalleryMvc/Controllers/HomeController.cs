@@ -35,6 +35,10 @@ public class HomeController : Controller
             return RedirectToAction("GestioneUtenti", "Admin");
 
         }
+        else if (User.IsInRole("Moderatore"))
+        {
+            return RedirectToAction("GestioneCommenti", "Moderatore");
+        }
          
             return RedirectToAction("Immagini", "User");
 

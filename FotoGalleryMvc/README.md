@@ -205,3 +205,13 @@ Il file **categorie** conterrà le seguenti 6 categorie (con possibilità di agg
 - [ ] Documentare i test unitari.
 - [ ] Documentare la fase di Beta Testing.
 - [ ] Documentare la fase di post Beta Testing.
+
+## Email e password utenti:
+ADMIN
+- email: admin@admin.com 
+- password: AdminPass1!
+ 
+
+TUTTI GLI ALTRI UTENTI
+- email: user@user.com
+- password: Gia210301.

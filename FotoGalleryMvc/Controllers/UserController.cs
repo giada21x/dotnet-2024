@@ -94,16 +94,26 @@ namespace FotoGalleryMvc.Controllers
                     Moderato = false
                 });
 
-                int numeroDiVoti = immagine.NumeroVoti;
-                double sommaVoti = immagine.Voto * numeroDiVoti;
+                double sommaTotaleStelle = 0;
+                int totaleVoti = 0;
 
-                numeroDiVoti++;
-                sommaVoti += stars.Value;
+                foreach (var voto in voti)
+                {
+                    if (voto.ImmagineId == id)
+                    {
+                        sommaTotaleStelle += voto.Stelle;
+                        totaleVoti++;
+                    }
+                }
 
-                double votoAggiornato = Math.Round(sommaVoti / numeroDiVoti * 1.0, 1);
+                double mediaPonderataStelle = totaleVoti > 0 ? sommaTotaleStelle / totaleVoti : 0;
 
-                immagine.Voto = votoAggiornato;
-                immagine.NumeroVoti = numeroDiVoti;
+                
+
+                
+
+                immagine.Voto = Math.Round(mediaPonderataStelle, 1);
+                immagine.NumeroVoti = totaleVoti;
 
                 System.IO.File.WriteAllText(jsonPath2, JsonConvert.SerializeObject(voti, Formatting.Indented));
                 System.IO.File.WriteAllText(jsonPath, JsonConvert.SerializeObject(immagini, Formatting.Indented));

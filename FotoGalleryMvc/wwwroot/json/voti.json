@@ -17,7 +17,7 @@
     "Data": "2024-03-21T00:00:00+01:00",
     "Commento": "sfdgdagegr",
     "Visibile": true,
-    "Moderato": true
+    "Moderato": false
   },
   {
     "Id": 3,
@@ -77,7 +77,7 @@
     "Data": "2024-03-22T00:00:00+01:00",
     "Commento": "djkpsghzkgbsrdfnsdfbsdobfsobfafa fsugfsuoagfosa fioagfoisagf soufg sofgso fsaoufg sof sofg soufg soaufg suofg sofgsofg saofgs fosa ",
     "Visibile": true,
-    "Moderato": true
+    "Moderato": false
   },
   {
     "Id": 9,
@@ -87,7 +87,7 @@
     "Data": "2024-03-22T00:00:00+01:00",
     "Commento": "sjinfisfnfds",
     "Visibile": true,
-    "Moderato": false
+    "Moderato": true
   },
   {
     "Id": 10,
@@ -146,8 +146,8 @@
     "Stelle": 5.0,
     "Data": "2024-03-24T00:00:00+01:00",
     "Commento": "<xzxz<",
-    "Visibile": true,
-    "Moderato": false
+    "Visibile": false,
+    "Moderato": true
   },
   {
     "Id": 16,
@@ -346,8 +346,8 @@
     "Stelle": 5.0,
     "Data": "2024-04-09T00:00:00+02:00",
     "Commento": "bellla!!!",
-    "Visibile": true,
-    "Moderato": false
+    "Visibile": false,
+    "Moderato": true
   },
   {
     "Id": 36,
@@ -396,8 +396,8 @@
     "Stelle": 4.0,
     "Data": "2024-04-09T00:00:00+02:00",
     "Commento": "ffdgfdgdf",
-    "Visibile": true,
-    "Moderato": false
+    "Visibile": false,
+    "Moderato": true
   },
   {
     "Id": 41,
@@ -427,7 +427,7 @@
     "Data": "2024-04-09T00:00:00+02:00",
     "Commento": "sdsd",
     "Visibile": true,
-    "Moderato": false
+    "Moderato": true
   },
   {
     "Id": 44,
@@ -536,8 +536,8 @@
     "Stelle": 5.0,
     "Data": "2024-04-09T00:00:00+02:00",
     "Commento": "rrtreter",
-    "Visibile": true,
-    "Moderato": false
+    "Visibile": false,
+    "Moderato": true
   },
   {
     "Id": 55,
@@ -631,22 +631,12 @@
   },
   {
     "Id": 64,
-    "Nome": "admin",
+    "Nome": "s.ussi@yahoo.it",
     "ImmagineId": 14,
     "Stelle": 5.0,
     "Data": "2024-04-15T00:00:00+02:00",
-    "Commento": "bello",
+    "Commento": "asdashdha",
     "Visibile": true,
-    "Moderato": true
-  },
-  {
-    "Id": 65,
-    "Nome": "user",
-    "ImmagineId": 1,
-    "Stelle": 5.0,
-    "Data": "2024-04-15T00:00:00+02:00",
-    "Commento": "bello",
-    "Visibile": true,
-    "Moderato": true
+    "Moderato": false
   }
 ]

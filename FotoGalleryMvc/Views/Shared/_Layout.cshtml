@@ -42,27 +42,21 @@
                         }
                         @if (User.IsInRole("Admin") || User.IsInRole("Moderatore"))
                         {
-                            <div class="dropdown">
-                            <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Moderatore
-                            </button>
-                            <ul class="dropdown-menu">
-                                
-                                <li><a class="dropdown-item" asp-area="" asp-controller="Moderatore" asp-action="GestioneImmagini">
-                            Gestione Immagini</a>
-                            <li><a class="dropdown-item" asp-area="" asp-controller="Moderatore" asp-action="GestioneCommenti">
-                            Gestione Commenti</a>
-
-                            </ul>
-                            </div>
+                             <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Moderatore"
+                                    asp-action="GestioneImmagini">Gestione Immagini</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="User"
+                                    asp-action="Immagini"> Immagini</a>
+                            </li>
                     
                         }
                         @if (User.IsInRole("Admin"))
                         {
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Admin"
-                                    asp-action="GestioneUtenti">Gestione Utenti</a>
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Moderatore"
+                                    asp-action="GestioneCommenti">Gestione Commenti</a>
                             </li>
                         }
                 </ul>
